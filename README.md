@@ -1,65 +1,75 @@
-# QDA-SQL：多类型多轮Text-to-SQL对话自动生成
-**Read this in other languages: [中文](README_zh.md).**
+# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL
+**Other language versions: [中文](README_cn.md).**
 
+QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue samples with diverse question types for Text-to-SQL data augmentation. Given a set of question examples and databases, it produces high-quality samples. This document uses the CoSQL dataset as an example, which does not include domain-specific knowledge. If domain-specific knowledge is required, please specify it in `goals_of_cosql_dev.csv`.
 
+</br>
+👍 `13/6/2024`: Source code for [QDA-SQL](https://github.com/mcxiaoxiao/QDA-SQL) and [MMSQL](https://github.com/mcxiaoxiao/mmsql) is now available!!
 
-## 生成区分行为类型的对话
-⚠️ 代码以 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
+</br>
 
-### STEP 1: 解析数据集
-(**csv 已经生成好，如果不需要加入新数据可以直接进行下一步**。可以按照`goals_of_cosql_dev.csv`的示例格式添加新的数据)
-解析数据集步骤：填写 `cosql_all_info_dialogs.json` 地址，运行 `cosql_parse_to_csv.py` 生成 `goals_of_cosql_dev.csv`。
+## Getting Started
+
+### STEP 1: Parse Dataset (Optional)
+(**CSV file has already been generated. If no new data needs to be added, you can proceed to the next step**. New data can be added following the format in `goals_of_cosql_dev.csv`). To parse the dataset, specify the path to `cosql_all_info_dialogs.json` and run `cosql_parse_to_csv.py` to generate `goals_of_cosql_dev.csv`.
 ```
 python cosql_parse_to_csv.py
 ```
 
-### STEP 2: 问答对生成
-运行 `classification_generate_multithread.py` 生成有分类的多轮数据。参数说明：
-- `csv_file_path`: 整理好的 goalsql 存放的 csv 文件路径。
-- `type_needed`: 最多对话数量。
-- `start_id`: id 开始。
-- `end_id`: id 结束。
-- `threads`: 线程数。
-- `projectname`: 保存文件夹名。
+### STEP 2: Generate Question-Answer Pairs
+Run `classification_generate_multithread.py` to generate multi-turn dialogues with classification. Parameters:
+- `csv_file_path`: Path to the CSV file containing the organized goalsql data.
+- `type_needed`: Maximum number of dialogues to generate.
+- `start_id`: Starting ID.
+- `end_id`: Ending ID.
+- `threads`: Number of threads.
+- `projectname`: Name of the folder to save the results.
 
-例如，`type_needed = 8` 和 `id_needed = [1000, 1500]` 意味着生成对话最多组合 8 次随机组合Thematic Relation和Q-A type，选定 goalsql 的 question_id（`goals_of_cosql_dev.csv` 中的 id）区间为 1000～1500。生成的问答将保存到 `QAs_generate/c_outputs/XXX`。
 ```
-# 示例
+# Example
 python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev.csv --type_needed 10 --start_id 20 --end_id 1000 --threads 5 --projectname "test"
 ```
+💡 For instance, `type_needed = 8` and `id_needed = [1000, 1500]` mean generating dialogues with up to 8 different combinations of Thematic Relation and Q-A type, within the question_id range [1000, 1500] from goalsql (`goals_of_cosql_dev.csv`). The generated Q&A pairs will be saved in `QAs_generate/c_outputs/XXX`.
 
-### STEP 3: 筛选和优化
-运行 `critic_merge_classification_generate.py` 合并筛选优化上一步生成的多轮数据，分别保存到 `XXX.json`（初步筛选）、`XXX_optimized.json`（优化后）、`XXX_filtered.json`（最终筛选）。参数说明：
-- `csv_file_path`: 第一步整理好的 goalsql 存放的 csv 文件路径。
-- `filename`: 保存文件夹名。
+### STEP 3: Filter and Optimize
+Run `critic_merge_classification_generate.py` to merge, filter, and optimize the multi-turn data generated in the previous step. The results will be saved as `XXX.json` (initial filter), `XXX_optimized.json` (optimized), and `XXX_filtered.json` (final filter). Parameters:
+- `csv_file_path`: Path to the CSV file containing the organized goalsql data.
+- `filename`: Name of the folder to save the results.
+
 ```
-# 示例
-python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_dev.csv --projectname "test" --threads 5 --savename "合并后的测试.json"
+# Example
+python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_dev.csv --projectname "test" --threads 5 --savename "merged_test.json"
 ```
 
-## 数据集
-### 多轮 SQL 生成任务: QM, IM, EX, IX
-我们遵循 Spider 的评估方法来计算组件匹配、精确集合匹配、执行准确率、对话精确集合匹配和对话执行准确率。更多详情请参见 [Spider Github 页面](https://github.com/taoyds/spider)。
+## Evaluation
+### SQL Generation Task
+We follow the Spider evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [Spider GitHub page](https://github.com/taoyds/spider).
 
-### 其他任务: 指标
-评估方法。
+### SQL Generation + Intent Recognition Task
+The evaluation employs the MMSQL test set and the AccS metric to simultaneously assess the model's ability to recognize user intent and generate SQL queries. For datasets and scripts, refer to [MMSQL](https://github.com/mcxiaoxiao/mmsql).
 
-## 文件夹/文件的作用
+## File Structure
 
-- **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate/datasets/BIRD/dev/dev_databases` 和 `dev/datasets/BIRD/dev/dev_tables.json`。
-- **QAs_generate/outputs/**: 存放生成的对话，例如 `QAs_generate/outputs/test2/` 用于存放任务名为 test2 的生成对话，`dev/outputs/test2_merged.json` 存放 test2 对话的合并结果（可以添加其他处理，如衡量难度、筛选高质量生成结果）。
-- **QAs_generate/tools/**: 存放使用的工具。
+- **QAs_generate/datasets/**: Stores datasets, such as `QAs_generate/datasets/cosql_dataset/database` and `QAs_generate/datasets/BIRD/dev/dev_databases`. The dataset organization should follow the format of [Spider](https://github.com/taoyds/spider).
+Recommended datasets:
 
-- **QAs_generate/function_test.ipynb**: 测试和使用各个引用工具的案例：
-  - **db_detail**: 根据数据集的表描述文件生成对指定数据库的描述。
-  - **evaluation**: 生成解析后的 SQL 和 SQL 难度（Spider 标准）。
-  - **generate_questions**: 填充提示，生成各种问题。
-  - **llm**: 调用 LLM（如 GPT、GLM、Gemini 等）。
-  - **sql_execute**: 执行 SQL 语句，目前仅支持 SQLite，返回执行状况、执行耗时和执行结果。
-  - **merge_outputs**: 合并 `dev/datasets/` 下的对话数据，可以制定筛选规则，增加合并数据（如难度、标注行为）。
+| Dataset | Description | Download Link |
+|---------|-------------|---------------|
+| Spider  | A large-scale complex and cross-domain semantic parsing and text-to-SQL dataset | [Spider](https://yale-lily.github.io/spider) |
+| CoSQL   | A conversational text-to-SQL dataset | [CoSQL](https://yale-lily.github.io/cosql) |
+| SParC   | A cross-domain semantic parsing in context dataset | [SParC](https://yale-lily.github.io/sparc) |
+| BIRD    | A Big Bench for Large-Scale Database Grounded Text-to-SQLs | [BIRD](https://bird-bench.github.io/) |
 
-- **QAs_generate/cosql_parse_to_csv.py**: 解析 CoSQL 数据集，提取有用数据，生成标准的 `dev/goals_of_cosql_dev.csv` 供之后的对话生成程序使用。如果有其他数据集，可以创建相应的 `XXXXX_parse` 文件生成 `dev/goals_of_XXXXX.csv`，列名不变。
+These datasets are organized in format compatible with our generation scripts.
 
-- **QAs_generate/token_count.txt**: 使用 OpenAI API 进行 token 数量计数，如果需要归零，将数字改为 0 即可。
+- **QAs_generate/outputs/**: Stores generated dialogues, such as `QAs_generate/outputs/test2/` for dialogues generated with the project name test2, and `dev/outputs/test2_merged.json` for the merged results of test2 dialogues (additional processing like difficulty assessment and high-quality result filtering can be added).
 
-- **QAs_generate/classification_generate_multithread.py**: 多线程运行 `classification_generate` 加速生成。
+- **QAs_generate/tools/**: Stores utility tools.
+
+- **QAs_generate/function_test.ipynb**: Provides code examples for testing and using various tools, facilitating deeper modifications of each interface.
+
+- **QAs_generate/cosql_parse_to_csv.py**: Parses the CoSQL dataset, extracts useful data, and generates a standard `dev/goals_of_cosql_dev.csv` for subsequent dialogue generation. For other datasets, create corresponding `XXXXX_parse` files to generate `dev/goals_of_XXXXX.csv`, keeping the column names unchanged.
+
+- **QAs_generate/token_count.txt**: Tracks token usage with the OpenAI API. To reset the count, set the number to 0.
+
+- **QAs_generate/classification_generate_multithread.py**: Runs `classification_generate` in multiple threads to speed up the generation of Q&A samples.
