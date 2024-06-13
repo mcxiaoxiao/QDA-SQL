@@ -1,6 +1,8 @@
 # QDA-SQL：多类型多轮Text-to-SQL对话自动生成
 **其他语言版本: [English](README.md).**</br>
-代码以 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
+QDA-SQL是利用LLM生成多问题类型的多轮对话样本的Text-to-SQL数据增强方案，通过给定问题案例和数据库生成高质量样本。这里以 CoSQL 数据集中的问题案例和数据库为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
+</br>
+👍 `13/6/2024`: [QDA-SQL](https://github.com/mcxiaoxiao/QDA-SQL) 及 [MMSQL](https://github.com/mcxiaoxiao/mmsql) 源码公布！！
 
 ### STEP 1: 解析数据集
 (**csv 已经生成好，如果不需要加入新数据可以直接进行下一步**。可以按照`goals_of_cosql_dev.csv`的示例格式添加新的数据)
@@ -42,7 +44,7 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 ## 文件夹/文件的作用
 
-- **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate\datasets\cosql_dataset\database`、`QAs_generate/datasets/BIRD/dev/dev_databases` 。数据集的组织需要参照[Spider](https://github.com/taoyds/spider)的格式。
+- **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate\datasets\cosql_dataset\database`、`QAs_generate/datasets/BIRD/dev/dev_databases` 。数据集的组织需要参照 [Spider](https://github.com/taoyds/spider)的格式。
 推荐数据集：
 
 | Dataset | Description | Download Link |
