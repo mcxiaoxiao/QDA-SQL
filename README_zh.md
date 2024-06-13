@@ -1,9 +1,5 @@
 # QDA-SQL：多类型多轮Text-to-SQL对话自动生成
 **其他语言版本: [English](README.md).**
-
-
-
-## 生成区分行为类型的对话
 ⚠️ 代码以 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
 
 ### STEP 1: 解析数据集
@@ -46,7 +42,17 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 ## 文件夹/文件的作用
 
-- **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate/datasets/BIRD/dev/dev_databases` 和 `dev/datasets/BIRD/dev/dev_tables.json`。
+- **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate\datasets\cosql_dataset\database`、`QAs_generate/datasets/BIRD/dev/dev_databases` 。数据集的组织需要参照[Spider](https://github.com/taoyds/spider)的格式。
+推荐数据集：
+| Dataset | Description | Download Link |
+|---------|-------------|---------------|
+| Spider  | A large-scale complex and cross-domain semantic parsing and text-to-SQL dataset | [Spider](https://yale-lily.github.io/spider) |
+| CoSQL   | A conversational text-to-SQL dataset | [CoSQL](https://yale-lily.github.io/cosql) |
+| SParC   | A cross-domain semantic parsing in context dataset | [SParC](https://yale-lily.github.io/sparc) |
+| BIRD    | A Big Bench for Large-Scale Database Grounded Text-to-SQLs | [BIRD](https://bird-bench.github.io/) |
+
+这些数据集以与我们的生成脚本兼容的格式组织。
+
 - **QAs_generate/outputs/**: 存放生成的对话，例如 `QAs_generate/outputs/test2/` 用于存放任务名为 test2 的生成对话，`dev/outputs/test2_merged.json` 存放 test2 对话的合并结果（可以添加其他处理，如衡量难度、筛选高质量生成结果）。
 - **QAs_generate/tools/**: 存放使用的工具。
 
