@@ -32,13 +32,12 @@ python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev
 # 示例
 python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_dev.csv --projectname "test" --threads 5 --savename "合并后的测试.json"
 ```
-
-## 数据集
-### 多轮 SQL 生成任务: QM, IM, EX, IX
+## 测试
+### SQL生成任务
 我们遵循 Spider 的评估方法来计算组件匹配、精确集合匹配、执行准确率、对话精确集合匹配和对话执行准确率。更多详情请参见 [Spider Github 页面](https://github.com/taoyds/spider)。
 
-### 其他任务: 指标
-评估方法。
+### SQL生成+意图识别任务
+评估方法采用我们提出的 MMSQL 测试集及 AccS 指标用于同时测试模型对用户提问的意图识别能力和SQL生成能力。数据集及脚本参见 [MMSQL](https://github.com/mcxiaoxiao/mmsql)。
 
 ## 文件夹/文件的作用
 
