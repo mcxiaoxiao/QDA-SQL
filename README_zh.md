@@ -18,11 +18,12 @@ python cosql_parse_to_csv.py
 - `threads`: 线程数。
 - `projectname`: 保存文件夹名。
 
-例如，`type_needed = 8` 和 `id_needed = [1000, 1500]` 意味着生成对话最多组合 8 次随机组合Thematic Relation和Q-A type，选定 goalsql 的 question_id（`goals_of_cosql_dev.csv` 中的 id）区间为 1000～1500。生成的问答将保存到 `QAs_generate/c_outputs/XXX`。
+
 ```
 # 示例
 python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev.csv --type_needed 10 --start_id 20 --end_id 1000 --threads 5 --projectname "test"
 ```
+💡 例如，`type_needed = 8` 和 `id_needed = [1000, 1500]` 意味着生成对话最多组合 8 次随机组合Thematic Relation和Q-A type，选定 goalsql 的 question_id（`goals_of_cosql_dev.csv` 中的 id）区间为 1000～1500。生成的问答将保存到 `QAs_generate/c_outputs/XXX`。
 
 ### STEP 3: 筛选和优化
 运行 `critic_merge_classification_generate.py` 合并筛选优化上一步生成的多轮数据，分别保存到 `XXX.json`（初步筛选）、`XXX_optimized.json`（优化后）、`XXX_filtered.json`（最终筛选）。参数说明：
