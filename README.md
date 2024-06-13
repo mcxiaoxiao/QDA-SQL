@@ -43,7 +43,7 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 ## Evaluation
 ### SQL Generation Task
-We follow the SParC evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [SParC GitHub page](https://github.com/taoyds/sparc).
+We follow the SParC evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [SParC GitHub page](https://github.com/taoyds/sparc).</br>
 We have provided an evaluation script `evaluation.py` in the `evaluation` folder, adapted from the SParC test scripts, to evaluate our outputs. An example model output is also provided as `example.json`.
 
 ```
