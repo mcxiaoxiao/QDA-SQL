@@ -27,7 +27,7 @@ python cosql_parse_to_csv.py
 python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev.csv --type_needed 10 --start_id 20 --end_id 1000 --threads 5 --projectname "test"
 ```
 
-### STEP 3: 优化+筛选
+### STEP 3: 筛选和优化
 运行 `critic_merge_classification_generate.py` 合并筛选优化上一步生成的多轮数据，分别保存到 `XXX.json`（初步筛选）、`XXX_optimized.json`（优化后）、`XXX_filtered.json`（最终筛选）。参数说明：
 - `csv_file_path`: 第一步整理好的 goalsql 存放的 csv 文件路径。
 - `filename`: 保存文件夹名。
@@ -35,16 +35,6 @@ python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev
 # 示例
 python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_dev.csv --projectname "test" --threads 5 --savename "合并后的测试.json"
 ```
-
-### STEP 4: 人工修改
-对上一步骤生成的 json 进行人工优化。
-
-### STEP 5: 拆分成可以用来测试的数据集
-- 为了分解出多轮 SQL 生成任务，参照 `generate_SQL_task_datasets.ipynb` 筛选适合多轮 SQL 生成任务的数据集。
-- 其他任务的格式。
-
-# 多轮对话 benchmark 数据集
-根据 QAs_generate 中生成的完整多轮对话拆分成多个任务训练集和开发集。
 
 ## 数据集
 ### 多轮 SQL 生成任务: QEM, IEM, QEX, IEX
