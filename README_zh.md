@@ -1,5 +1,5 @@
 # QDA-SQL：多类型多轮Text-to-SQL对话自动生成
-**Read this in other languages: [中文](README_zh.md).**
+**其他语言版本: [English](README.md).**
 
 
 
