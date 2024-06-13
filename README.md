@@ -4,10 +4,11 @@
 
 
 ## 生成区分行为类型的对话
-⚠️ CoSQL 数据集中没有领域知识。
+⚠️ 代码已 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
 
 ### STEP 1: 解析数据集
-(**csv 已经生成好，如果不需要加入新数据可以直接进行下一步**。规范格式可以手动写新的数据进 csv)。解析数据集步骤：填写 `cosql_all_info_dialogs.json` 地址，运行 `cosql_parse_to_csv.py` 生成 `goals_of_cosql_dev.csv`。
+(**csv 已经生成好，如果不需要加入新数据可以直接进行下一步**。可以按照`goals_of_cosql_dev.csv`的示例格式添加新的数据)
+解析数据集步骤：填写 `cosql_all_info_dialogs.json` 地址，运行 `cosql_parse_to_csv.py` 生成 `goals_of_cosql_dev.csv`。
 ```
 python cosql_parse_to_csv.py
 ```
