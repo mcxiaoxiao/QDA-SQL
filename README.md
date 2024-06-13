@@ -1,5 +1,6 @@
 # QDA-SQL：多类型多轮Text-to-SQL对话自动生成
 ## QDA-SQL：Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL
+**其他语言版本: [English](README.md).**
 
 
 
