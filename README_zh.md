@@ -44,6 +44,7 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 - **QAs_generate/datasets/**: 存放数据集，例如 `QAs_generate\datasets\cosql_dataset\database`、`QAs_generate/datasets/BIRD/dev/dev_databases` 。数据集的组织需要参照[Spider](https://github.com/taoyds/spider)的格式。
 推荐数据集：
+
 | Dataset | Description | Download Link |
 |---------|-------------|---------------|
 | Spider  | A large-scale complex and cross-domain semantic parsing and text-to-SQL dataset | [Spider](https://yale-lily.github.io/spider) |
