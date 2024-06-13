@@ -43,7 +43,13 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 ## Evaluation
 ### SQL Generation Task
-We follow the Spider evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [Spider GitHub page](https://github.com/taoyds/spider).
+We follow the SParC evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [SParC GitHub page](https://github.com/taoyds/sparc).
+We have provided an evaluation script `evaluation.py` in the `evaluation` folder, adapted from the SParC test scripts, to evaluate our outputs. An example model output is also provided as `example.json`.
+
+```
+# Example
+python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
+```
 
 ### SQL Generation + Intent Recognition Task
 The evaluation employs the MMSQL test set and the AccS metric to simultaneously assess the model's ability to recognize user intent and generate SQL queries. For datasets and scripts, refer to [MMSQL](https://github.com/mcxiaoxiao/mmsql).

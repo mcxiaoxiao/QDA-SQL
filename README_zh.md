@@ -40,7 +40,12 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 
 ## 测试
 ### SQL生成任务
-我们遵循 Spider 的评估方法来计算 SQL 语句的 Exact Match(EM)、Interaction Exact Match(IEM)、Execution Match(EX) 和 Interaction Execution Match(IEX) 等指标。详情定义参见 [Spider Github 页面](https://github.com/taoyds/spider)。
+我们遵循 SParC 的评估方法来计算 SQL 语句的 Exact Match(EM)、Interaction Exact Match(IEM)、Execution Match(EX) 和 Interaction Execution Match(IEX) 等指标。详情定义参见 [SParC Github 页面](https://github.com/taoyds/sparc)。</br>
+我们根据 SParC 测试脚本在 evalution 文件夹下提供了对我们的输出进行适配的测试脚本 `evaluation.py` 及案例模型输出 `example.json`。
+```
+# 示例
+python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
+```
 
 ### SQL生成+意图识别任务
 评估方法采用我们提出的 MMSQL 测试集及 AccS 指标用于同时测试模型对用户提问的意图识别能力和 SQL 生成能力。数据集及脚本参见 [MMSQL](https://github.com/mcxiaoxiao/mmsql)。
