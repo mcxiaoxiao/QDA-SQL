@@ -1,6 +1,6 @@
 # QDA-SQL：多类型多轮Text-to-SQL对话自动生成
 **其他语言版本: [English](README.md).**</br>
-⚠️ 代码以 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
+代码以 CoSQL 为例，数据集中没有领域知识，若需要包含领域知识则在`goals_of_cosql_dev.csv`中注明。
 
 ### STEP 1: 解析数据集
 (**csv 已经生成好，如果不需要加入新数据可以直接进行下一步**。可以按照`goals_of_cosql_dev.csv`的示例格式添加新的数据)
