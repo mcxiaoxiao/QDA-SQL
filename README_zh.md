@@ -34,7 +34,7 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 ```
 ## 测试
 ### SQL生成任务
-我们遵循 Spider 的评估方法来计算组件匹配、精确集合匹配、执行准确率、对话精确集合匹配和对话执行准确率。更多详情请参见 [Spider Github 页面](https://github.com/taoyds/spider)。
+我们遵循 Spider 的评估方法来计算SQL语句的 Exact Match(EM)、Interaction Exact Match(IEM)、Execution Match(EX)、Interaction Execution Match(IEX) 等指标。详情定义参见 [Spider Github 页面](https://github.com/taoyds/spider)。
 
 ### SQL生成+意图识别任务
 评估方法采用我们提出的 MMSQL 测试集及 AccS 指标用于同时测试模型对用户提问的意图识别能力和SQL生成能力。数据集及脚本参见 [MMSQL](https://github.com/mcxiaoxiao/mmsql)。
