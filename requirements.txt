@@ -1,0 +1,4 @@
+zhipuai
+openai
+pandas
+sqlparse
