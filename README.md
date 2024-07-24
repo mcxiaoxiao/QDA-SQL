@@ -47,8 +47,6 @@ We have provided an evaluation script `evaluation.py` in the `evaluation` folder
 python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
 ```
 
-### SQL Generation + Intent Recognition Task
-The evaluation employs the MMSQL test set and the AccS metric to simultaneously assess the model's ability to recognize user intent and generate SQL queries. For datasets and scripts, refer to [MMSQL](https://github.com/mcxiaoxiao/mmsql).
 
 ## File Structure
 
