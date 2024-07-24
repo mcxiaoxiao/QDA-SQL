@@ -6,7 +6,7 @@ QDA-SQL 是一种利用大型语言模型（LLM）生成多类型问题的多轮
 ## 开始使用
 
 ### STEP 1: 解析数据集（可选）
-(**csv 文件已生成，如果不需要加入新数据可以直接进行下一步**。也可以按照 `goals_of_cosql_dev.csv` 的示例格式添加新的数据)。解析数据集步骤：填写 `cosql_all_info_dialogs.json` 的路径，运行 `cosql_parse_to_csv.py` 生成 `goals_of_cosql_dev.csv` (因此你需要根据[文件规则](/#文件夹/文件的作用)首先布置好自己的数据集)。
+(**csv 文件已生成，如果不需要加入新数据可以直接进行下一步**。也可以按照 `goals_of_cosql_dev.csv` 的示例格式添加新的数据)。解析数据集步骤：填写 `cosql_all_info_dialogs.json` 的路径，运行 `cosql_parse_to_csv.py` 生成 `goals_of_cosql_dev.csv` (因此你需要根据[文件规则](#文件夹文件的作用)首先布置好自己的数据集)。
 ```
 python cosql_parse_to_csv.py
 ```
