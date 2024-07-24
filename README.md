@@ -7,7 +7,7 @@ QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue s
 ## Getting Started
 
 ### STEP 1: Parse Dataset (Optional)
-(**CSV file has already been generated. If no new data needs to be added, you can proceed to the next step**. New data can be added following the format in `goals_of_cosql_dev.csv`). To parse the dataset, specify the path to `cosql_all_info_dialogs.json` and run `cosql_parse_to_csv.py` to generate `goals_of_cosql_dev.csv`.
+(**CSV file has already been generated. If no new data needs to be added, you can proceed to the next step**. New data can be added following the format in `goals_of_cosql_dev.csv`). To parse the dataset, specify the path to `cosql_all_info_dialogs.json` and run `cosql_parse_to_csv.py` to generate `goals_of_cosql_dev.csv`.（To ensure the project runs correctly, you need to first organize your dataset according to the [file structure](#file-structure)）
 ```
 python cosql_parse_to_csv.py
 ```
