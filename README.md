@@ -5,7 +5,7 @@ QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue s
 
 
 ## Getting Started
-
+😉 To ensure the project runs correctly, you need to first organize your dataset according to the [file structure](#file-structure)
 ### STEP 1: Parse Dataset (Optional)
 (**CSV file has already been generated. If no new data needs to be added, you can proceed to the next step**. New data can be added following the format in `goals_of_cosql_dev.csv`). To parse the dataset, specify the path to `cosql_all_info_dialogs.json` and run `cosql_parse_to_csv.py` to generate `goals_of_cosql_dev.csv`.
 ```
@@ -47,8 +47,6 @@ We have provided an evaluation script `evaluation.py` in the `evaluation` folder
 python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
 ```
 
-### SQL Generation + Intent Recognition Task
-The evaluation employs the MMSQL test set and the AccS metric to simultaneously assess the model's ability to recognize user intent and generate SQL queries. For datasets and scripts, refer to [MMSQL](https://github.com/mcxiaoxiao/mmsql).
 
 ## File Structure
 
