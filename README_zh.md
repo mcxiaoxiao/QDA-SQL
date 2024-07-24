@@ -2,9 +2,6 @@
 **其他语言版本: [English](README.md).**</br></br>
 QDA-SQL 是一种利用大型语言模型（LLM）生成多类型问题的多轮对话样本的 Text-to-SQL 数据增强方案。通过给定的问题案例和数据库，生成高质量样本。本文以 CoSQL 数据集中的问题案例和数据库为例，数据集中不包含领域知识，若需要包含领域知识，请在 `goals_of_cosql_dev.csv` 中注明。
 
-</br>
-👍 `13/6/2024`: [QDA-SQL](https://github.com/mcxiaoxiao/QDA-SQL) 及 [MMSQL](https://github.com/mcxiaoxiao/mmsql) 源码公布！！
-</br>
 
 ## 开始使用
 
