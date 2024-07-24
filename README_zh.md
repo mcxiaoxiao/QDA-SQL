@@ -44,8 +44,6 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
 ```
 
-### SQL生成+意图识别任务
-评估方法采用我们提出的 MMSQL 测试集及 AccS 指标用于同时测试模型对用户提问的意图识别能力和 SQL 生成能力。数据集及脚本参见 [MMSQL](https://github.com/mcxiaoxiao/mmsql)。
 
 ## 文件夹/文件的作用
 
