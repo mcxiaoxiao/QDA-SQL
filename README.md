@@ -3,10 +3,6 @@
 
 QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue samples with diverse question types for Text-to-SQL data augmentation. Given a set of question examples and databases, it produces high-quality samples. This document uses the CoSQL dataset as an example, which does not include domain-specific knowledge. If domain-specific knowledge is required, please specify it in `goals_of_cosql_dev.csv`.
 
-</br>
-👍 `13/6/2024`: Source code for [QDA-SQL](https://github.com/mcxiaoxiao/QDA-SQL) and [MMSQL](https://github.com/mcxiaoxiao/mmsql) is now available!!
-
-</br>
 
 ## Getting Started
 
