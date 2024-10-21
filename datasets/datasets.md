@@ -1,2 +1,1 @@
 Stores datasets, such as `QAs_generate/datasets/cosql_dataset/database` and `QAs_generate/datasets/BIRD/dev/dev_databases`. The dataset organization should follow the format of [Spider](https://github.com/taoyds/spider).
-Recommended datasets:
