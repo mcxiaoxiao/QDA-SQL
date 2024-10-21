@@ -1,0 +1,4742 @@
+[
+    {
+        "question": "How many violin players were at those performances on average?",
+        "answer": "Do you mean the attendance of those performances?"
+    },
+    {
+        "question": "No, how many violin players were present during the performances?",
+        "answer": "Each performance is only associated with one violin player from the table."
+    },
+    {
+        "question": "Which violin player attended the most?",
+        "answer": "Do you mean the name of the violin player that attended the most number of performances?"
+    },
+    {
+        "question": "Show me Third-rate ship of the line class",
+        "answer": "Here is the information of the captain with a class third rate ship of the line. For example, Captain Sir Henry Langford with Captain id 1 has ship with id 1. His age is  40.  The class is third-rate ship of the line and the rank is Midshipman."
+    },
+    {
+        "question": "Show me the captain rank that has no captain in these class",
+        "answer": "Sorry I don't understand"
+    },
+    {
+        "question": "please list the singers\n",
+        "answer": "did you mean list their names?"
+    },
+    {
+        "question": "What is the maximum capacity in Lambert?",
+        "answer": "Did you mean Lamberton?"
+    },
+    {
+        "question": "Can you show me all tracks which were opened after 2000?",
+        "answer": "Do you mean the names of all the tracks which were opened after 2000?"
+    },
+    {
+        "question": "Hello, what is the name of the student with student id 1008?",
+        "answer": "The first and last name of the student with student id 1008 is Jandy Nelson."
+    },
+    {
+        "question": "Can you show me the last name and address for him?",
+        "answer": "Do you want his current address or the permanent address?"
+    },
+    {
+        "question": "Which customers have ordered \"food\"?\n",
+        "answer": "ok, did you want to just return their names?"
+    },
+    {
+        "question": "How many customers have cancelled orders?\n",
+        "answer": "Do you mean the customers in the previous result?"
+    },
+    {
+        "question": "Top selling artist?",
+        "answer": "There is no info about the amount sold. Could you please give me another question?"
+    },
+    {
+        "question": "what are all games are presented on the table",
+        "answer": "What kind of infromation for the games do you want ? "
+    },
+    {
+        "question": "Can you give me a list of documents that don't have any images?",
+        "answer": "Do you want document code?"
+    },
+    {
+        "question": "Last name of Tracy",
+        "answer": "Did you want the last name of the student with first name Tracy?"
+    },
+    {
+        "question": "What product has the most distinct characteristic names?",
+        "answer": "Sorry I cannot answer this question. Can you break down the question or ask something else?"
+    },
+    {
+        "question": "Is there another balance available?",
+        "answer": "I am sorry but I do not understand your question, please be more specific."
+    },
+    {
+        "question": "How many of them are females?",
+        "answer": "Sorry, I can't answer that how many of the staff members are female given the table information. "
+    },
+    {
+        "question": "What are the names of those?",
+        "answer": "Sorry, we don't have names for characteristics. Please ask something else."
+    },
+    {
+        "question": "How many length of park Kemah Boardwalk?",
+        "answer": "Did you mean to ask for the length of the park with name Kemah Boardwalk?"
+    },
+    {
+        "question": "find the distinct names of all wines that have prices higher than some wins from john anthony winery\n",
+        "answer": "The  names of  all  wines  that have prices higher than some wines from John Anthony winery  are  shown  in the  table \n\n"
+    },
+    {
+        "question": "out of those show me prices higher than 30\n",
+        "answer": "The names of all wines that have prices both higher than some wines from John Anthony winery  and  higher  than  30 are shown in the table"
+    },
+    {
+        "question": "Which lots are not used in any transactions?",
+        "answer": "do you mean the id of lots or the details of lot"
+    },
+    {
+        "question": "Show founder names that begin with letter \"S\"",
+        "answer": "Did you mean founder‘s name that begin with letter 'S'?"
+    },
+    {
+        "question": "Are all the donors from the same country?\n",
+        "answer": "Sorry we don't have the information about the nationality of the donators. Please ask other related questions."
+    },
+    {
+        "question": "Was there any single donation that was bigger than all the others combined?",
+        "answer": "Sorry I can't answer this question using SQL.  "
+    },
+    {
+        "question": "Was there a set goal for the donation amount?",
+        "answer": "Sorry I don't think this question is related to this table."
+    },
+    {
+        "question": "what is the savings balance of  id 1?",
+        "answer": "Did you mean the saving balance of the customer with id 1?"
+    },
+    {
+        "question": "Can you filter this list to show me only the tallest building?",
+        "answer": "Do you mean you want the number of different institutions of the tallest building?"
+    },
+    {
+        "question": "Thanks! I would be fine just know which is the tallest building.",
+        "answer": "Do you mean you want to know the name of the tallest building? Or anything else?"
+    },
+    {
+        "question": "What states is Tesco located in?",
+        "answer": "do you mean the address id or the address details?"
+    },
+    {
+        "question": "How many dock stations are there in San Jose?",
+        "answer": "Do you mean the total dock counts of all stations in city San Jose?"
+    },
+    {
+        "question": "How many trucks are in both movies and musical playlists.",
+        "answer": "Did you mean to ask for the number of tracks in both movies and music playlists?"
+    },
+    {
+        "question": "HOW MANY ON THE TABLE",
+        "answer": "did you mean HOW MANY player  ON THE TABLE ?"
+    },
+    {
+        "question": "Are there any other categories?\n",
+        "answer": "Do you mean the other category has books after year 1989? Gay SF/F is the only one category has books after year 1989"
+    },
+    {
+        "question": "Which aircraft did not win any match?",
+        "answer": "What information do you want about the aircrafts? Their names, their ids, or all their information? "
+    },
+    {
+        "question": "Can you list all of the apartments with more than 4 bedrooms?",
+        "answer": "do you mean the apartment ids of apartments with more than 4 bedrooms?"
+    },
+    {
+        "question": "How many people live in the apartments with gym facilities?",
+        "answer": "I cannot answer this question, please give another question"
+    },
+    {
+        "question": "nothing",
+        "answer": "thank you, good bye!"
+    },
+    {
+        "question": "Which of the document is described with the prefix initial?",
+        "answer": "Document with type code APP is described with the prefix initial."
+    },
+    {
+        "question": "what is customer Wendell address?",
+        "answer": "Do  you  mean  the customer address of  Wendell"
+    },
+    {
+        "question": "which horsepower is hight?",
+        "answer": "Can you please clarify your question?"
+    },
+    {
+        "question": "What campuses were opened after that?",
+        "answer": "Do you mean opened after 1939?"
+    },
+    {
+        "question": "what is the zip code of the highest number of trips taken\n",
+        "answer": "What do you mean by \"highest number of trips taken\"?"
+    },
+    {
+        "question": "what was the humidity at the starting station for zip code 94107",
+        "answer": "Sorry the question cannot be answered by information in this table."
+    },
+    {
+        "question": "which engineer made the least number of visits?",
+        "answer": "Here are the id, first, and last names of the engineer who has the least number of visits."
+    },
+    {
+        "question": "Can you show me a list of colleges that have an enrollment of 15,000 or higher?",
+        "answer": "Do you want the names of the schools that have an enrollment of 15000 or higher?"
+    },
+    {
+        "question": "Can you add the minimum enrollment count to the table?",
+        "answer": "No, I cannot."
+    },
+    {
+        "question": "which author wrote the paper nameless, painless",
+        "answer": "do you mean which author wrote the paper titled \"nameless, painless\"?"
+    },
+    {
+        "question": "what about top 5?",
+        "answer": "Here are the top 5 cities that have the most white population"
+    },
+    {
+        "question": "How many companies operate airlines in each airport?",
+        "answer": "Do you want the result by airport id, or airport name or all airport information? "
+    },
+    {
+        "question": "how many times has a customer chosen car",
+        "answer": "There are 4 times that a customer chose a policy with type code car."
+    },
+    {
+        "question": "How many people are named Janessa?\n",
+        "answer": "Do you mean the number of people whose first name is Janessa?"
+    },
+    {
+        "question": "What is the Zip Code where Janessa Lived?",
+        "answer": "Do you mean the zip postcode in the address where Janessa lived?"
+    },
+    {
+        "question": "and Camylle?\n",
+        "answer": "Do you mean the zip postcode in the area where the person with first name Camylle lived?"
+    },
+    {
+        "question": "What is the zip postcode where Kaitlin lived?\n",
+        "answer": "Do you mean the zip postcode in the ares where the staff with first name Kaitlin lived?"
+    },
+    {
+        "question": "What is Kaitlin's last name?",
+        "answer": "Do you mean the last name of the staff whose first name is Kaitlin?"
+    },
+    {
+        "question": "and Janessa?",
+        "answer": "Do you mean the last name of the staff whose first name is Janessa?"
+    },
+    {
+        "question": "What is the zip postcode where staff named Janessa Sawayn lived?",
+        "answer": "Do you mean the zip code of staff with first name Janessa and last name Sawayn lived?"
+    },
+    {
+        "question": " list the branch for registered  members?",
+        "answer": "did you mean the ids of branches with registered members?"
+    },
+    {
+        "question": "Find the membership amount of the popert?",
+        "answer": "did you mean the membership amount of the branch with the name \"Popert\"?"
+    },
+    {
+        "question": "List the name with registered members?",
+        "answer": "There are the names of branches with registered members."
+    },
+    {
+        "question": "What kinds of playlists are available?",
+        "answer": "what  do  you  mean by available"
+    },
+    {
+        "question": "when does the datetime detention end\t",
+        "answer": "What did you mean by the datetime detention end? Do you want a list of all the datetime detention end or a specific one?"
+    },
+    {
+        "question": "Where is the European Grand Prix held?",
+        "answer": "Do you want to return the location, country or latitude and longitude?"
+    },
+    {
+        "question": "Can you tell me which customers placed orders between 2009-01-01 and 2010-0101?",
+        "answer": "do you want the id or the name of the customer?"
+    },
+    {
+        "question": "How about for the supplier who supplies the least products?",
+        "answer": "Did  you  want to get the supplier id  who supplies the least products?"
+    },
+    {
+        "question": "What is the total amount of money requested for three persons?",
+        "answer": "Sorry, which three persons do you want?"
+    },
+    {
+        "question": "what is the local name ",
+        "answer": "Did you mean to ask for all local names?"
+    },
+    {
+        "question": "Who is the youngest?",
+        "answer": "Did you mean the youngest students whose GPA is higher than 3?"
+    },
+    {
+        "question": "Who studied at Norterstein University?",
+        "answer": "did You mean list the name of authors who belong to the institution \"Northeastern University\""
+    },
+    {
+        "question": "Which track id's do not have their composer name in the table...",
+        "answer": "Sorry, could you rephrase your question?"
+    },
+    {
+        "question": "find the customer date of the orders that have the status\" delivered\"",
+        "answer": "did you mean the order date?"
+    },
+    {
+        "question": "What are the names of city of airport which is the source for the most number of flight routes",
+        "answer": "Do you mean the name of city which is the source for the most number of flight routes?"
+    },
+    {
+        "question": "Whats the elevation of hartsfueld jacksin atlanta?",
+        "answer": "Do you mean the elevation of the airport named Hartsfield Jackson Atlanta International Airport?"
+    },
+    {
+        "question": "What is the highest ram mib from those 8, and tell me how many chips which are used by phones have ram mib equal to or greater than that number",
+        "answer": "Sorry, I can only answer one question at a time."
+    },
+    {
+        "question": "what is the address of Aniyah",
+        "answer": "Did you mean to ask for the address of the customer with first name Aniyah?"
+    },
+    {
+        "question": "Show me the details of all professors",
+        "answer": "do you mean all information about them?"
+    },
+    {
+        "question": "List album titles for albums containing Reggae genre tracks.",
+        "answer": "Did  you  mean   both contain  'Reggae' and 'Rock' genre tracks?"
+    },
+    {
+        "question": "What is the composer of Greatest Hits?",
+        "answer": "I can  not  find the info  about  Greatest Hits"
+    },
+    {
+        "question": "race circuits in spain",
+        "answer": "Could you ask that in a more concrete way?"
+    },
+    {
+        "question": "who is the department manager?",
+        "answer": "Do you want the ids of staffs who are department managers?"
+    },
+    {
+        "question": "How many countries have professional golfers?",
+        "answer": "we don't have that information."
+    },
+    {
+        "question": "what is the name of the id 2?",
+        "answer": "Are you asking about the car or the carmaker?"
+    },
+    {
+        "question": "show the customer ids, first name and last name with card type and number",
+        "answer": "Do  you  mean card  type code?"
+    },
+    {
+        "question": "Who is the director of \"walter hill\"?",
+        "answer": "do you mean which film is directed by the director of \"walter hill\"?"
+    },
+    {
+        "question": "where is the location of the conference?",
+        "answer": "What conference?"
+    },
+    {
+        "question": "What are the names of the most popular English Artist",
+        "answer": "That information cannot be found in the database."
+    },
+    {
+        "question": "How many different lens are there?",
+        "answer": "Did  you  mean  the  different  brand of lens are there"
+    },
+    {
+        "question": "Can you please list the ones that contain substring \"Digital\" in their names?",
+        "answer": "The names of the camera lens that contain substring \"Digital\" in their names are Olympus M.Zuiko Digital ED 45mm f/1.8,\nOlympus M.Zuiko Digital ED 75mm f/1.8"
+    },
+    {
+        "question": "Hmm, I want to know which friends are above 40 years old or below 30 years old. ",
+        "answer": "do you mean the name of the person who has friends with age above 40 and under age 30?"
+    },
+    {
+        "question": "What bridge is the longest bridge measured in feet?",
+        "answer": "Do you want the name of the longest bridge measured in feet?"
+    },
+    {
+        "question": "How about the year before that? ",
+        "answer": "Did you mean which college conferred the most number of degrees in 2003?"
+    },
+    {
+        "question": "How much of the faculty are males for California State University-Channel Islands, in the year of 2002?",
+        "answer": "Sorry, we do not have information on the gender of the faculty."
+    },
+    {
+        "question": "How about for California State University-chico?",
+        "answer": "Do you mean in the year 2002?"
+    },
+    {
+        "question": "What is the location for California State University-Bakersfield today?",
+        "answer": "Sorry, we do not have location information for the current year."
+    },
+    {
+        "question": "Show me the name of instructors?",
+        "answer": "Here is the table of first and last names of faculties. "
+    },
+    {
+        "question": "what is the fname of Tracy",
+        "answer": "Do you mean LName of Tracy? Tracy is the first name?"
+    },
+    {
+        "question": "Fname",
+        "answer": "I cannot understand that yet. Could you ask your question in another way?"
+    },
+    {
+        "question": "what is the name of the usa airline",
+        "answer": "What did you mean by \"the name of the USA airline?\""
+    },
+    {
+        "question": "What is the Physician name of the following Employee ID?  tell me the SSN.",
+        "answer": "Sorry what employee IDs are you talking about?"
+    },
+    {
+        "question": "What is the Physician name of the following Position Staff Internist ? tell me the SSN, and Employee ID,",
+        "answer": "Do you want the name, SSN, and employee ID?"
+    },
+    {
+        "question": "What are the names of those airlines?",
+        "answer": "Here are the names of airlines who are active."
+    },
+    {
+        "question": "What about the call sign?",
+        "answer": "the call sign of  Aloha Airlines is ALOHA"
+    },
+    {
+        "question": "What about the icao?",
+        "answer": "the icao of Aloha Airlines is AAH"
+    },
+    {
+        "question": "How many courses in this table?",
+        "answer": "Do you mean the number of the courses with different course ids?"
+    },
+    {
+        "question": "How many students in this table?",
+        "answer": "Sorry, I can't answer this question."
+    },
+    {
+        "question": "What location airports is near by me has two airports?",
+        "answer": "What do you mean by near by you? Sorry, We cannot answer this."
+    },
+    {
+        "question": "What is the one of the best team?",
+        "answer": "Do you mean the team with the most number of wins?"
+    },
+    {
+        "question": "what ship is steered by a captain with lieutenant rank? ",
+        "answer": "do you want to return the names of these ships?"
+    },
+    {
+        "question": "how many membership cards?",
+        "answer": "There are 2 different membership cards."
+    },
+    {
+        "question": "Find the routes operated by all airlines?",
+        "answer": "Do you mean return all the routes?"
+    },
+    {
+        "question": "who has the most orders?",
+        "answer": "Do you want just the customer name?"
+    },
+    {
+        "question": "Which company has the most buildings?",
+        "answer": "Do you want to the name of the company?"
+    },
+    {
+        "question": "which ones are London bound?",
+        "answer": "Sorry, This question is not answerable by the table information. You can ask what country is their destination. "
+    },
+    {
+        "question": "What is the average amount of pit stops those drivers had? I have an internal server error on that table, so I don't know if that's the right name for it.",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "What are the names of all the employees?",
+        "answer": "Do you want first name or last name?"
+    },
+    {
+        "question": "Who are the customers that Steve supports?",
+        "answer": "This is the information for all the customers that Steve Johnson  supports"
+    },
+    {
+        "question": "Which procedure has the highest cost?",
+        "answer": "Do you mean the name of the procedure that has the highest cost?"
+    },
+    {
+        "question": "And what is the name of the procedure that has the most average cost?",
+        "answer": "I cannot understand what is \"most average cost\". Please rephrase."
+    },
+    {
+        "question": "What are the names of contact individuals of the \"Labour Party\"? ",
+        "answer": "Do you want to know the first name, middle name, last name?"
+    },
+    {
+        "question": "Who is the latest contact individual? ",
+        "answer": "the last name of the latest contact individual of the organization \"Labour Party\" is Bradtke"
+    },
+    {
+        "question": "please list out the operating system",
+        "answer": "Can you please clarify which operating system do you need?"
+    },
+    {
+        "question": "WHICH ONE HAS THE HIGHEST PUBLISHED RECORD",
+        "answer": "Sorry, there are three publishers who published the same number of catalogs."
+    },
+    {
+        "question": "Which company has its headquarter in the US?",
+        "answer": "Did you mean to ask for the companies with headquarters in USA?"
+    },
+    {
+        "question": "how much is it worth?",
+        "answer": "Did you mean to ask for the market value in billions for BNP Paribas?"
+    },
+    {
+        "question": "What about just actors?",
+        "answer": "I'm sorry. Here is no info about gender."
+    },
+    {
+        "question": "How many films were all people with names that start with N in?",
+        "answer": "I'm sorry. But here is no info about film names."
+    },
+    {
+        "question": "how many player are presented on the table",
+        "answer": "Did you mean to ask for the number of entries in the table player?"
+    },
+    {
+        "question": "Perfect, and who has the highest support percentage?",
+        "answer": "Do you want the people id?"
+    },
+    {
+        "question": "Which dorm has the largest capacity?",
+        "answer": "Hi do you need the dorm name or dorm id ?"
+    },
+    {
+        "question": "what is the survery?",
+        "answer": "Please ask questions related to the tables. Thanks"
+    },
+    {
+        "question": "what is browser id 2 name?",
+        "answer": "Sorry we don't have the information about the names of the browsers. "
+    },
+    {
+        "question": "who is using Appliance (Linux) Operating system?",
+        "answer": "Do you want the name of the accelerator?"
+    },
+    {
+        "question": "When did they get a policy?",
+        "answer": "Who are they?"
+    },
+    {
+        "question": "Did any policy holder cancel a policy?",
+        "answer": "Sorry, we don't have that information."
+    },
+    {
+        "question": "what is the airport code for the city abilene",
+        "answer": "The airport codes for the city Abilene are shown  in the  table "
+    },
+    {
+        "question": "can you show me which gender is much?",
+        "answer": "Could you clarify what you mean?"
+    },
+    {
+        "question": "yes",
+        "answer": "What information do you want to know about each gender?"
+    },
+    {
+        "question": "How many built year same in this table?",
+        "answer": "did you mean 'How many built year saved this table'?"
+    },
+    {
+        "question": "What is the payment?",
+        "answer": "I am not sure what you mean. Could you please clarify?"
+    },
+    {
+        "question": "How do staff get paid?",
+        "answer": "Sorry, I am not sure how the staff gets paid."
+    },
+    {
+        "question": "Any of those have apartments with more than 1 bedrooms?",
+        "answer": "Sorry, do you want me to list apartments with more than 1 bedrooms?"
+    },
+    {
+        "question": "Who won the most manager award?",
+        "answer": "Do you mean the first name of the person who won the most manager award?"
+    },
+    {
+        "question": "how many survied  entirely",
+        "answer": "Sorry, we don't have this information."
+    },
+    {
+        "question": "what is the location of ID 3",
+        "answer": "Do you mean the perpetrator ID?"
+    },
+    {
+        "question": "how many names or products in the table",
+        "answer": "Do  you  mean  the  names of products in the products table "
+    },
+    {
+        "question": "how many revenue in the Manufacturers table",
+        "answer": "Do you  mean  the  sum of  revenue in the Manufacturers table "
+    },
+    {
+        "question": "Can I receive a list of all orders?",
+        "answer": "Did  you mean the  order ID？\n"
+    },
+    {
+        "question": "Yes, from that list can I have it sorted by order ID?",
+        "answer": "Did  you  mean  in the Order  table  order  by \norder id ? desc  or asc?"
+    },
+    {
+        "question": "Is it possible to narrow the results?",
+        "answer": "how  to  narrow? could  give  more infor?"
+    },
+    {
+        "question": "Yes, can I narrow the table based on the date order was placed?",
+        "answer": "Did  you  mean  you just  want only \tdate order placed?"
+    },
+    {
+        "question": "Find the names of top 3 departments?",
+        "answer": "What do you mean by top?"
+    },
+    {
+        "question": "How many claim processing stages in this table?",
+        "answer": "The number of different claim status names is 2."
+    },
+    {
+        "question": "That's great! Then this will be my last question, could you please let me know the height and weight of Duncan Bannatyne?",
+        "answer": "Sorry the table doesn't tell us the  height and weight of Duncan Bannatyne."
+    },
+    {
+        "question": "What of the median?",
+        "answer": "I cannot find the median."
+    },
+    {
+        "question": "What of the mean?",
+        "answer": "the mean for all grade points is 2.2846153846153845"
+    },
+    {
+        "question": "What is the class time of ACCT-211?",
+        "answer": "There are multiple class times for ACCT-211, would you like all of them?"
+    },
+    {
+        "question": "How many hours per week did David Shieber play?",
+        "answer": "Do you mean the total hours per week did David Shieber play? (He can play different sports)"
+    },
+    {
+        "question": "How many female students attend Lebanon Valley College?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "Tell me the Draft Pick Number for the country 6 ?",
+        "answer": "For which season do you want?"
+    },
+    {
+        "question": "WHAT IS THE DEPARTMENT id OF CLARA",
+        "answer": "* I have left the chat *"
+    },
+    {
+        "question": "What polls are those from?",
+        "answer": "Did you want the poll source for these polls?"
+    },
+    {
+        "question": "What is the highest average monthly rental?",
+        "answer": "what do you mean by \"highest average monthly rental\""
+    },
+    {
+        "question": "Who the founder of Sony?",
+        "answer": "Did you mean the founder of the manufacturer named Sony?"
+    },
+    {
+        "question": "Which company is headed by Austin city?",
+        "answer": "Did you mean the name of manufacturers whose headquarters are Austin?"
+    },
+    {
+        "question": "What are the parts with more than 2 faults?\n",
+        "answer": "Here are the names of the parts with more than 2 faults"
+    },
+    {
+        "question": "Where does the student live?",
+        "answer": "Which student are you referring to?"
+    },
+    {
+        "question": "How many teams have winning records?",
+        "answer": "I'm sorry. I cannot answer you with sql. Could you please give me another question?"
+    },
+    {
+        "question": "how many customers are presented on the table",
+        "answer": "Did you mean to ask how many entries there are in the table customer?"
+    },
+    {
+        "question": "what is the city id of mary",
+        "answer": "The city id of the customer with first name mary is 463."
+    },
+    {
+        "question": "what is the district of PATRICIA",
+        "answer": "The district of the customer with first name PATRICIA is California."
+    },
+    {
+        "question": "Display the 10 least expensive invoices",
+        "answer": "Would you like a list of the id's of these invoices?"
+    },
+    {
+        "question": "What are the machines they are assigned to repair?",
+        "answer": "do you want to return the machine ids?"
+    },
+    {
+        "question": "I want the names of the machines they are assigned to repair",
+        "answer": "There is no information about the names of machines."
+    },
+    {
+        "question": "Which flight has the least velocity in the list?",
+        "answer": "What info do you want about that flight? id? date? number? or something else?"
+    },
+    {
+        "question": "Can you show me the names and ids for this list?",
+        "answer": "The result shows the full names and ids of 3 players that won the most awards."
+    },
+    {
+        "question": "Can I get all the documents with 'w' in them",
+        "answer": "Do you want documents with 'w' in the name or description?"
+    },
+    {
+        "question": "how many names or student in the table",
+        "answer": "Do  you  mean  the  LName  or  Fname ?"
+    },
+    {
+        "question": "How many of them are from Miami?",
+        "answer": "Do you mean the number of authors who are from Miami?"
+    },
+    {
+        "question": "Can you give me a list of all authors from Florida, or Temple?",
+        "answer": "Do you mean the authors whose college is Florida or Temple?"
+    },
+    {
+        "question": "What is the number of staff living in Port Melyssa and what are their names?",
+        "answer": "first name or last name?"
+    },
+    {
+        "question": "What is the average salary for all the staff living in Port Melyssa?",
+        "answer": "We don't have that information."
+    },
+    {
+        "question": "Show me all the dogs",
+        "answer": "do you want to show all the attributes of the dogs?"
+    },
+    {
+        "question": "What does the ones and twos mean in the table?",
+        "answer": "Sorry, I don't know the answer. Please ask me other questions related to the data."
+    },
+    {
+        "question": "Ok sure. Tell me who treated these dogs",
+        "answer": "Sorry, could you specify your question, There are all attributes of the dog treatments, which one do you want to show?"
+    },
+    {
+        "question": "Show me the name of the cities",
+        "answer": "sorry ,I  have  no  answer  to  this  question"
+    },
+    {
+        "question": "Show me the number of students of all cities",
+        "answer": "Do you  mean  the  total  count of  students"
+    },
+    {
+        "question": "Which cities have served as host cities?",
+        "answer": "Do you want the names of the cities who served as host cities?"
+    },
+    {
+        "question": "could you please show their names as well?",
+        "answer": "Do you mean the apartment type code?"
+    },
+    {
+        "question": "what is the Check of service_id",
+        "answer": "Do you mean the service_id of all services with service_type_code \"Check\"?"
+    },
+    {
+        "question": "what are the busiest airport in china?",
+        "answer": "busiest source airport or destination airport?"
+    },
+    {
+        "question": "How many branches have the number of members in each branch registered after 2015?",
+        "answer": "Did you mean the number of branches which have some members registered after 2015?"
+    },
+    {
+        "question": "What is the time of purchase of Ashby,Lazale?",
+        "answer": "The time of purchase of Ashby, Lazale is 18."
+    },
+    {
+        "question": "What is the level of membership of Campbell,Jessie?",
+        "answer": "The level of membership of Campbell, Jessie is 6."
+    },
+    {
+        "question": "What is the address of Id number 2?",
+        "answer": "The address of ID number 2 is Waterbury."
+    },
+    {
+        "question": "What is the grade of CID 550.681?",
+        "answer": "Did you mean the grades of students who enrolled in the course with CID 550.681?"
+    },
+    {
+        "question": "How many female players are there?",
+        "answer": "I cannot answer that question as no such information is in the table."
+    },
+    {
+        "question": "How many male players are there?\n",
+        "answer": "That information is also not in the table."
+    },
+    {
+        "question": "Show me the cities",
+        "answer": "Do you mean you want the cities where there are branches there?"
+    },
+    {
+        "question": "what is the Open Date of Pure Church of Christ?",
+        "answer": "Did you mean the open date of the church named Pure Church of Christ?"
+    },
+    {
+        "question": "which church was organized by Ezra Booth?",
+        "answer": "Did you want the name of the church organized by Ezra Booth."
+    },
+    {
+        "question": "What is the document date of project ID 105?",
+        "answer": "Do  you mean Document ID 105"
+    },
+    {
+        "question": "Can you show me all the product names, codes and ids?",
+        "answer": "Do you mean the product names, color codes and ids?"
+    },
+    {
+        "question": "I'm looking for the things with Close status before 2017-06-19 02:59:21\n",
+        "answer": "Do you want things that satisfy both criteria or at least at of them? And do you want the ids or other?"
+    },
+    {
+        "question": "of those things which are closed before 2017-06-19 02:59:21",
+        "answer": "Do you still want the number of them?"
+    },
+    {
+        "question": "What is the organisation details of Id 3?\n",
+        "answer": "Do you mean the organisation id of grant id 3?"
+    },
+    {
+        "question": "Find the station id of Ananthapuri Express?",
+        "answer": "the station ids that serve the train Ananthapuri Express are 1 and 2"
+    },
+    {
+        "question": "How many people visited the plaza museum in 2009?\n",
+        "answer": "Sorry, we do not have information on the number of visits in each year."
+    },
+    {
+        "question": "What is the average number of tickets sold at the Plaza Museum?",
+        "answer": "Sorry, we do not have information on the number of tickets sold at museums."
+    },
+    {
+        "question": "What are the dates for apartment 585 ?\n",
+        "answer": "Did you mean the booking start and end dates of the apartments with id 585?"
+    },
+    {
+        "question": "What year did the earliest film release that does not have any market estimation information",
+        "answer": "Sorry I don't have information about the year of films that don't have any market estimation.Please ask something else."
+    },
+    {
+        "question": "Which of these 3 mountains is the tallest and has the most prominence?",
+        "answer": "Sorry, can you ask two questions separately?"
+    },
+    {
+        "question": "Which account had the most transactions?\n",
+        "answer": "Account Id 9 has the most number of transactions."
+    },
+    {
+        "question": "Which city code of Smith?",
+        "answer": "Is Smith first name or last name?"
+    },
+    {
+        "question": "What grades do they teach?",
+        "answer": "The   grades  of courses that the teachers for the math teach are 1 and 3"
+    },
+    {
+        "question": "Okay, which members are there?\n",
+        "answer": "Do you mean which members are in United States?"
+    },
+    {
+        "question": "Can you list the highest dose prescribed for any medication?",
+        "answer": "What information do you want for the prescriptions? Do you want all information or just the dose amount?"
+    },
+    {
+        "question": "Show me all the employees in the same department as Clara.",
+        "answer": "Here is all the information of all the employees in the same department as the employee with a first name Clara."
+    },
+    {
+        "question": "What are their genders?",
+        "answer": "Would you like their names and their genders? "
+    },
+    {
+        "question": "and how many have the largest days held?",
+        "answer": "There can only be one with largest days held, what do you mean by \"how many\"?"
+    },
+    {
+        "question": "can you list the elimination times of those with the largest days held?",
+        "answer": "Again, there can only be one with the largest days held, would you like that one? There are  not multiple that can be \"largest\""
+    },
+    {
+        "question": "what is the name of Chadubai's manufacturer?",
+        "answer": "Sorry, I don't have information about the name of Chadubai's manufacturer. I only have the id."
+    },
+    {
+        "question": "show me the details of the events.",
+        "answer": "here are the details of all events"
+    },
+    {
+        "question": "What is the id for HMS Gorgon?",
+        "answer": "Did  you mean  ship  id?"
+    },
+    {
+        "question": "How many classes are there?",
+        "answer": "Did  you  mean  the number of distinct  type classes of ships?"
+    },
+    {
+        "question": "What is the high aged Manager name of the list?",
+        "answer": "Do you mean the name of the most aged manager on the list?"
+    },
+    {
+        "question": "Which store has the most staff?",
+        "answer": "Do  you  want  to get  the shop ID which has the  most  staff?"
+    },
+    {
+        "question": "Which shop has a happy hour in may?",
+        "answer": "Do  you  want  to get  shop  ID  or  another attribute?"
+    },
+    {
+        "question": "Can you also show me their addresses ?",
+        "answer": "Here are the addresses of shops that have happy hours in may"
+    },
+    {
+        "question": "what are the companies that produce the most expensive furniture",
+        "answer": "Do you mean the names of manufacturers that produce the most expensive furniture?"
+    },
+    {
+        "question": "what is the longest race?",
+        "answer": "Sorry, there is no info about that."
+    },
+    {
+        "question": "what are the color descriptions for the products? ",
+        "answer": "Do you want both the names and the color descriptions? "
+    },
+    {
+        "question": "what is the date of settlement on Overtime Meal Subsidy",
+        "answer": "Did you want the date of settlement of claim headers with a type code Overtime Meal Subsidy?"
+    },
+    {
+        "question": "Can you list that club? ",
+        "answer": "BK Slide is the name of the club that has players with position \"Right Wing\"."
+    },
+    {
+        "question": "How many players are from the U.S.?",
+        "answer": "Sorry, I can't answer this question! Can you ask something else?"
+    },
+    {
+        "question": "Do they all have all amenities?",
+        "answer": "Did you mean whether all dorms have all amenities?"
+    },
+    {
+        "question": "Needed id of routes",
+        "answer": "Sorry can you clarify your question?"
+    },
+    {
+        "question": "whose source and destination airports are in the United States",
+        "answer": "Do you want the id of the routes whose source and destination airports are in the United States?"
+    },
+    {
+        "question": "How many type of thing code includes 'Electronics'?",
+        "answer": "Do you mean how many things include type of thing code 'Electronics'?"
+    },
+    {
+        "question": "How many tourists visited all 10 attractions?",
+        "answer": "Sorry I cannot answer this question."
+    },
+    {
+        "question": "what is the bikes available of San Jose Diridon Caltrain Station",
+        "answer": "Sorry, we do not have information on the bike availability of San Jose Diridon Caltrain Station."
+    },
+    {
+        "question": "tell me how many settlements each claim responds to ",
+        "answer": "Did you mean to ask for the claim id and number of settlements that each claim responds to?"
+    },
+    {
+        "question": "How many events with \"Marriage\" type codes are there? ",
+        "answer": "There are 5 events with the \"Marriage\" service type code."
+    },
+    {
+        "question": "what is the Country Code of Herat",
+        "answer": "Do you mean the country code of city Herat?"
+    },
+    {
+        "question": "what is the start date of Howard at 2nd ",
+        "answer": "Do you mean its start station is Howard at 2nd?"
+    },
+    {
+        "question": "Please show me all customers and their contact channels\n",
+        "answer": "Do you want the names of customers or id?"
+    },
+    {
+        "question": "The column \"product_id \" in Table: \"problems\" refers to column \"product_id\" in Table: \" product\"",
+        "answer": "could  give more info about  this question?"
+    },
+    {
+        "question": "Find all stores in the Attock district",
+        "answer": "Do you want the id or the name of these stores?"
+    },
+    {
+        "question": "Check whether Mr. Eduardo Martin is a customer or not?",
+        "answer": "Great. Which is the first name?"
+    },
+    {
+        "question": "what is the contact number of 'Woodstock discos' company?",
+        "answer": "The phone of the customer of the company 'Woodstock Discos' is +55 (11) 3033-5446."
+    },
+    {
+        "question": "Which railways do not have trains?\n",
+        "answer": "Did you mean the object number of railways that do not have any train?"
+    },
+    {
+        "question": "Hi can you show me all the headquarters of a company in backing industry?",
+        "answer": "Do you mean banking, not backing?"
+    },
+    {
+        "question": "Which of the claims had only one settlement?",
+        "answer": "There is no claim which had only one settlement."
+    },
+    {
+        "question": "what is email id of Mary",
+        "answer": "Did you mean what is the email of Mary or uid or her?"
+    },
+    {
+        "question": "what is martin's student id in the table?",
+        "answer": "The id of the student with the details \"Martin\" is 121. "
+    },
+    {
+        "question": "That's great - finally, can you please tell me the number of the Ananthapuri Express train?",
+        "answer": "The numbers of the train \"Ananthapuri Express\" are \"16724\" and \"16723\"."
+    },
+    {
+        "question": "What are the students name living in PHL city?\n",
+        "answer": "Here are the first names of students who live in PHL city"
+    },
+    {
+        "question": "Who are the students that are between 20 and 25 years of age?",
+        "answer": "Do you mean the last name or the first name of the students between 20 and 25 years of age?"
+    },
+    {
+        "question": "what are the student names who are in PHL city and are between 20 and 25 years of age",
+        "answer": "First name or last name?"
+    },
+    {
+        "question": "And how many are female?\n",
+        "answer": "Do you mean the people who are female?"
+    },
+    {
+        "question": "what is their unsure rate?\n",
+        "answer": "Do you mean the unsure rate of the people who are female?"
+    },
+    {
+        "question": "and the males?",
+        "answer": "Do you mean the unsure rate of the people who are male?"
+    },
+    {
+        "question": "what is employee number of james ?",
+        "answer": "Is James a first name or last name?"
+    },
+    {
+        "question": "please show me the DOB OF EMPLOYEE WHO HAS THIS AS HIS FIRST NAME\n",
+        "answer": "Do you mean the first name \"James\"?"
+    },
+    {
+        "question": "Is the house that the instructor who teaches the least no of courses connected to WiFi?",
+        "answer": "the question is not related"
+    },
+    {
+        "question": "What was the least quantity of items purchased?",
+        "answer": "do you mean the id of product or the id of order?"
+    },
+    {
+        "question": "WHAT IS THE POPULATION OF THE PEOPLE LIVING IN THE NATIONS NOT USING ENGLISH",
+        "answer": "did you mean you want the Population of the country  DO NOT USE ENGLISH"
+    },
+    {
+        "question": "What are the names of each of those codes?",
+        "answer": "Sorry I don't have that information. Can you ask anything else?"
+    },
+    {
+        "question": "What is the weight of make id 1?",
+        "answer": "Did you mean to ask for the weight of the car with make id 1?"
+    },
+    {
+        "question": "Which year launch the car model  buick?",
+        "answer": "Did you want to ask for the year on which the car model buick was launched?"
+    },
+    {
+        "question": "Which shop is hiring the highest number of employees?",
+        "answer": "do you want the name of the shop ?"
+    },
+    {
+        "question": "What is the median base price for all rooms?",
+        "answer": "sorry I cannot answer that. please ask anything else."
+    },
+    {
+        "question": "for which user id rating is high",
+        "answer": "did you mean for which user id is the rating highest?"
+    },
+    {
+        "question": "What is the the birth country of player-ids?",
+        "answer": "Do you mean the birth country of all players?"
+    },
+    {
+        "question": "and for aaronto01?",
+        "answer": "You mean the birth city for the player with ID aaronto01?"
+    },
+    {
+        "question": "How many with a batter value of R are still playing?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "What is Hon John Anderson's  Party ID ?",
+        "answer": "Hon John Anderson's Party ID is 1."
+    },
+    {
+        "question": "What events is Hon John Anderson in charge of ?",
+        "answer": "Hon John Anderson is in charge of the events Annaual Meeting, Conference and Election Meeting."
+    },
+    {
+        "question": "Hi there!  Can you provide me with the country and state province county information for the staff member named Janessa Sawayn?",
+        "answer": "Are you referring to the staff member having first name Janessa and last name Sawayn?"
+    },
+    {
+        "question": "what is the lname of grade 2",
+        "answer": "Do you mean what are the last names of the students in grade 2?"
+    },
+    {
+        "question": "What about Mrs. Hanna Willms ?",
+        "answer": "Did  you  mean the number of policies Mrs. Hanna Willms has listed?"
+    },
+    {
+        "question": "Which items were ordered four or more times?",
+        "answer": "There is no item that was ordered four or more times"
+    },
+    {
+        "question": "What is the product id of the product?\n",
+        "answer": "We already showed that info."
+    },
+    {
+        "question": "What is the latest date that orders were sent by supplier id 4?",
+        "answer": "Did you mean date of supplied from or to?"
+    },
+    {
+        "question": "What colleges do the players play for?",
+        "answer": "I'm sorry, do you mean you wanna see the whole collages' names?"
+    },
+    {
+        "question": "who all are the contest",
+        "answer": "Did you mean  to ask for the names of all contestants?"
+    },
+    {
+        "question": "how is about the summer?",
+        "answer": "I am sorry, I cannot understand that question. Can you rephrase it?"
+    },
+    {
+        "question": "how many female contestants are there?",
+        "answer": "Sorry, I cannot answer that question."
+    },
+    {
+        "question": "who is the first contestant?",
+        "answer": "Did you mean to ask for the name of the contestant with contestant number 1?"
+    },
+    {
+        "question": "What are the last name of staff id 1?",
+        "answer": "Do you mean customer, not staff?"
+    },
+    {
+        "question": "what is the lname of mark",
+        "answer": "The  last name of the faculty with a first name Mark is Giuliano."
+    },
+    {
+        "question": "what is the activity id of 1082",
+        "answer": "sorry  i  have  no  answer  to this  question"
+    },
+    {
+        "question": "Wow great, thank you. This will be my last question, could you please let me know which ones of them are good to drink now?",
+        "answer": "There are 466 wines which can be drunk now."
+    },
+    {
+        "question": "Ok and what is the employee id for the head?",
+        "answer": "Sorry I don't have that information."
+    },
+    {
+        "question": "What is the estimation ID of those nine films?",
+        "answer": "Sorry, we do not market estimation information for films that do not have market estimations."
+    },
+    {
+        "question": "What about film IDs?",
+        "answer": "Do you mean the film IDs of the 9 films that do not have market estimations?"
+    },
+    {
+        "question": "Hmm. Can you give me their names.",
+        "answer": "sorry, there is no info about their names in the tables."
+    },
+    {
+        "question": "And what are the name of the departments requiring between 100 and 200 hours",
+        "answer": "there is no info about departments, did you mean projects?"
+    },
+    {
+        "question": "The given codes of country is not speak in English please tell ",
+        "answer": "Did you mean the codes of countries that do not speak English?"
+    },
+    {
+        "question": "Thanks! Whose government forms Republic",
+        "answer": "Did you want the names of countries that do not speak English and whose government forms are not Republic?"
+    },
+    {
+        "question": "Awesome!  Can you show me which of the contestants received the most votes and show me that total please?",
+        "answer": "Sorry, I can't answer the question based on the information in the table."
+    },
+    {
+        "question": "What is the product category of \"laurel\"?",
+        "answer": "Did you mean the product category of the product named \"laurel\"?"
+    },
+    {
+        "question": "Great, can you show the role code with the last employees?",
+        "answer": "Did you mean the employee with the largest id?"
+    },
+    {
+        "question": "Of the people who earn the smallest salary in each department, who has the highest salary?",
+        "answer": "do you mean the first name and last name and department id for the people?"
+    },
+    {
+        "question": "Give me their salary and their manager's salary",
+        "answer": "do you mean the salary and manager's salary of all people?"
+    },
+    {
+        "question": "what is the first name of gentral manager?",
+        "answer": "I cannot find \"gentral manager\" in the table. Did you mean general manager?"
+    },
+    {
+        "question": "display the emails of the employees who have a commission percentage",
+        "answer": "Did you mean the employees who have commission percentage more than 0?"
+    },
+    {
+        "question": "List their names please",
+        "answer": "Did you mean their FIRST NAME\tand LAST NAME?"
+    },
+    {
+        "question": "What are the dates of the projects with at least 2 documents, please?",
+        "answer": "Do you mean the projects of documents, not projects, right?"
+    },
+    {
+        "question": "Which festival name  was nimonated for artwork?",
+        "answer": "you want all of festival name was nimonated for artwork?"
+    },
+    {
+        "question": "What was LA awards  num of audience?",
+        "answer": "sorry,i dont have the anwser to your question"
+    },
+    {
+        "question": "Which technician is the oldest?",
+        "answer": "Do you mean the id of the oldest technician?"
+    },
+    {
+        "question": "on what day was it?",
+        "answer": "Did  you  mean  the day of week in  weekly weather table "
+    },
+    {
+        "question": "Can you show me a list of all of the technicians names the machines they are assigned to repair?",
+        "answer": "Did you want the names of technicians and the ids of machines they are assigned to repair?"
+    },
+    {
+        "question": "What are the user IDs associated with those?",
+        "answer": "there are no users associated with those, because they are not in review"
+    },
+    {
+        "question": "What did the users say about those products?",
+        "answer": "I can't answer the question, please give another problem"
+    },
+    {
+        "question": "What is their name",
+        "answer": "First name or last name?"
+    },
+    {
+        "question": "what is the name of most winning aircraft ?",
+        "answer": "sorry, I cannot answer this question based on the tables. there is no info about aircraft name. could you please ask other related questions?"
+    },
+    {
+        "question": " where is Flamengo Beach , Rio de Janeiro situated ? ",
+        "answer": "did you want to return its country?"
+    },
+    {
+        "question": "where its located ?",
+        "answer": "Flamengo Beach , Rio de Janeiro is already a location. The only geographical info else i can provide is its country. do you want to show it?"
+    },
+    {
+        "question": "Ok. Who graduated the earliest?",
+        "answer": "What attributes of this student who graduated the earliest would you like to know? "
+    },
+    {
+        "question": "what are the programs by Beijing television?",
+        "answer": "Did you want the program names by the owner Beijing television (BTV)"
+    },
+    {
+        "question": "who is Toonmax owner?",
+        "answer": "Did you want the owner of the program named Toonmax?"
+    },
+    {
+        "question": "what was the amount claimed?",
+        "answer": "On this day?"
+    },
+    {
+        "question": "tell me which city had high temperature in the month of May ?",
+        "answer": "Sorry, what do you mean by high?"
+    },
+    {
+        "question": "high value of temperature...\n",
+        "answer": "I mean how high is high? You can say temperature higher than a certain number."
+    },
+    {
+        "question": "which candidates got assessed?",
+        "answer": "Do you mean the ids of all the candidates who got assessed?"
+    },
+    {
+        "question": "yes",
+        "answer": "Here are all the candidates' ids who got assessed."
+    },
+    {
+        "question": "what is the total number of most social media songs?",
+        "answer": "sorry,the question cannot be understood and answered, can you give more details? thanks"
+    },
+    {
+        "question": "list the most played game type.",
+        "answer": "Sorry, that information is not in the table."
+    },
+    {
+        "question": "list the name of a shooting game.\n",
+        "answer": "Do you mean \"First-person shooter\" games?"
+    },
+    {
+        "question": "please list out the campus",
+        "answer": "which column do you want to list?"
+    },
+    {
+        "question": "Could you add in the rates they paid to the table please?",
+        "answer": "Sorry, did you mean the base price of the room?"
+    },
+    {
+        "question": "Which film has the most actors and actresses?",
+        "answer": "What attributes of the film that has the most actors and actresses would you like to know? "
+    },
+    {
+        "question": "what is the building id for this apartment\n",
+        "answer": "what did you mean by this apartment? Please give more info"
+    },
+    {
+        "question": "how many bathrooms are there in these 2 rooms",
+        "answer": "Did  you mean the number of bathrooms in the  apartment with id  is  2?"
+    },
+    {
+        "question": "What kind of payment methods are there?",
+        "answer": "Do you mean the number of payment kinds?"
+    },
+    {
+        "question": "Which customer bought the most items?",
+        "answer": "Do you want the name of the customer?"
+    },
+    {
+        "question": "What are the department numbers of the students with the last name Smith?",
+        "answer": "Sorry, there is no attribute in the table as department number."
+    },
+    {
+        "question": "Show me the names",
+        "answer": "Do you mean the name of all the person?"
+    },
+    {
+        "question": "show me the name of persons",
+        "answer": "The names of persons are Alice, Bob, Dan and Zach"
+    },
+    {
+        "question": "Details of staff id 1?",
+        "answer": "Do you mean the staff gender and staff name of staff id 1?"
+    },
+    {
+        "question": "job title code for staff id?",
+        "answer": "Do you mean all the job title codes for all the staff ids?"
+    },
+    {
+        "question": "How many songs are there in \"Let there Be Rock\"?",
+        "answer": "Sorry, I don't have the answer to your question."
+    },
+    {
+        "question": "What about balls to the wall?",
+        "answer": "Sorry, I don't have the answer to your question."
+    },
+    {
+        "question": "How many songs does AC/DC have in that album?",
+        "answer": "Sorry, I don't have the answer to your question. We don't have the tables that store the number of songs in an album."
+    },
+    {
+        "question": "Find average grade of the students?",
+        "answer": "Do you want me to find the average grade of entries in the Highschooler table?"
+    },
+    {
+        "question": "What are their names?",
+        "answer": "did you mean the names of the players who have the least common occupation?"
+    },
+    {
+        "question": "Hello. What universities are in San Francisco?",
+        "answer": "Would you like to know the names of all campuses located in San Francisco?"
+    },
+    {
+        "question": "what are the name of the wrestler ",
+        "answer": "Would you like to know the names of all wrestlers with location Tokyo, Japan?"
+    },
+    {
+        "question": "Can I please have a list of architects who have built at least two bridges, or at least one mill?",
+        "answer": "What attributes of the architects do you want?"
+    },
+    {
+        "question": "what is the name of the student with the id 1002",
+        "answer": "Would you like first name and last name of the student with student id 1002?"
+    },
+    {
+        "question": "find the country in the list?",
+        "answer": "What do you mean?"
+    },
+    {
+        "question": "What is the theme for these cities?",
+        "answer": "The themes of competitions with host cities having populations larger than 1000 are Carnival M is back!, Codehunters, and MTV Asia Aid"
+    },
+    {
+        "question": "What year did the sound of music come out and who was the director?",
+        "answer": "Do you mean the year of the movie whose title is The Sound of Music came out and the director of it?"
+    },
+    {
+        "question": "What movie title has the highest rating?",
+        "answer": "Do you mean the title of the movie with the highest stars?"
+    },
+    {
+        "question": "How many female drivers are there?",
+        "answer": "sorry  i  can  not  answer  this question"
+    },
+    {
+        "question": "Who was the host of the earliest party listed?",
+        "answer": "The host of the earliest party listed is the host with id 7."
+    },
+    {
+        "question": "WHO IS THE HON TONY ABBOTT",
+        "answer": "did you mean the Member ID of HON TONY ABBOTT"
+    },
+    {
+        "question": "what are the shops?",
+        "answer": "Do you want the names of all the shops?"
+    },
+    {
+        "question": "what is the class timing for the student who enrolled in 10014",
+        "answer": "The class time for the class with code 10014 is TTh 2:30-3:45 p.m."
+    },
+    {
+        "question": "may i know the class room for the class section 1",
+        "answer": "ok, so which column info do you want to return for these classes?"
+    },
+    {
+        "question": "What are their names?",
+        "answer": "The table shows the first and last names of the employees who report to Nancy Edward."
+    },
+    {
+        "question": "Who does Nancy Edwards report to?",
+        "answer": "The first and last names of the employee whom Nancy Edwards reports to is Andrew Adams."
+    },
+    {
+        "question": "What product type is the one that has the least expensive product price?",
+        "answer": "Did  you  want  to get \tProduct Type  Code    that has the least expensive product price ?"
+    },
+    {
+        "question": "Which players scored highest? Give me names",
+        "answer": "Do you mean the names of player with the most points?"
+    },
+    {
+        "question": "How many students are there?",
+        "answer": "Sorry, I can't answer how many students there are. Could you ask something else?"
+    },
+    {
+        "question": "how many are assistant professors?",
+        "answer": "Did you mean to ask for the number of assistant professors in total?"
+    },
+    {
+        "question": "How many or women?",
+        "answer": "Did you mean to ask for the number of female assistant professors?"
+    },
+    {
+        "question": "What is the appelation of Giana",
+        "answer": "What is Giana?"
+    },
+    {
+        "question": "Can you show me the climbers who climbed mountains in Country Uganda?",
+        "answer": "The climbers with IDs of 9 and 10 climbed mountains in the country Uganda"
+    },
+    {
+        "question": "can you tell me who that teacher is?",
+        "answer": "The teacher is Alvis\tMacer Schultz"
+    },
+    {
+        "question": "Okay, how about the year that the most employees for the job code PROF were hired?",
+        "answer": "Sorry, I cannot answer that."
+    },
+    {
+        "question": "Find the album id of  accept?",
+        "answer": "The album ids of the artist named 'Accept' are 2 and 3."
+    },
+    {
+        "question": "How many albums in this table?",
+        "answer": "did you mean the number of all the albums shown in the table?"
+    },
+    {
+        "question": "which dog is highest weight on table",
+        "answer": "Do you want the name of the dog with the highest weight?"
+    },
+    {
+        "question": "what is the size code of BUL",
+        "answer": "Did you mean the  size codes of dogs with a breed code BUL?"
+    },
+    {
+        "question": "can you show me European music festival?",
+        "answer": "Sorry we don't have explicit information whether or not each festival is in Europe. Please ask something else."
+    },
+    {
+        "question": "Which artist made the most songs?",
+        "answer": "did you want to return his/her name?"
+    },
+    {
+        "question": "What is the largest amount of the 5 reports.",
+        "answer": "what amount do you mean?"
+    },
+    {
+        "question": "And what is their total number of enrollment? ",
+        "answer": "The total number of the enrollment of colleges which don't have a gloalie player is 41000."
+    },
+    {
+        "question": "What is the driver reference and nationality of Fernando?",
+        "answer": "Do you mean the driver reference and nationality of the driver whose forename is Fernando?"
+    },
+    {
+        "question": "What position and how many wins does the forename Fernando have?",
+        "answer": "Do you mean the position of the driver with forename Fernando when he ranked 1 and the number of times that he ranked 1?"
+    },
+    {
+        "question": "find the chromosome of the PGB diaminsea ?",
+        "answer": "Sorry, I could not understand. Could you please describe what is PGB diaminsea ?"
+    },
+    {
+        "question": "i mean chromosome value ?",
+        "answer": "You mean PBG deaminase?"
+    },
+    {
+        "question": "What is the average oldest students with different sex?\n",
+        "answer": "Do you mean what is the average age of students?"
+    },
+    {
+        "question": "How many balance of customer id 1?",
+        "answer": "Do you want the saving balance of the customer with id 1?"
+    },
+    {
+        "question": "When are the auditions?\n",
+        "answer": "Would you like to know the dates of all performances with the type audition?"
+    },
+    {
+        "question": "Which apartments has the largest number of total rooms?",
+        "answer": "what attribute did you want me to return for the apartment with the largest number of total rooms? the apartment type code?"
+    },
+    {
+        "question": "List out the editors name?",
+        "answer": "sorry, did you mean you need the Editor ID"
+    },
+    {
+        "question": "which builder has the highest total points? ",
+        "answer": "Do you want their name or id?"
+    },
+    {
+        "question": "What are those id's\n",
+        "answer": "You mean the detailed information about the lesson with id 4?"
+    },
+    {
+        "question": "how many mountain does Tanzania have?\n",
+        "answer": "Do you mean the number of mountains in the country Tanzania？"
+    },
+    {
+        "question": "highest mountain in Tanzania",
+        "answer": "Do you mean the name of the highest mountain in country Tanzania?"
+    },
+    {
+        "question": "The name of the smallest mountain from all countries ",
+        "answer": "Do you mean the name of the lowest mountain?"
+    },
+    {
+        "question": "Thanks for that!  Can you filter this list to show only the cities that have populations of more than 20,000, and display the corresponding population for each city?",
+        "answer": "sorry,i dont have the answer to your question"
+    },
+    {
+        "question": "Can you update this list with the population value that corresponds to each city?",
+        "answer": "sorry,i dont have the answer to your question ,i only have the population value that corresponds to each county"
+    },
+    {
+        "question": "Which stadium had the most games?",
+        "answer": "The stadium which had the most games has an id of 10."
+    },
+    {
+        "question": "What is the average number of games per stadium?",
+        "answer": "Sorry, i CANNOT ANSWER THIS QUESTION."
+    },
+    {
+        "question": "That is so helpful.  Is there a month of the year that brings in more claims than another?",
+        "answer": "You are welcome. Sorry, I cannot answer this question."
+    },
+    {
+        "question": "Claim number 801 had 4 settlements, what was the largest one?",
+        "answer": "Do you mean largest in terms of the amount claimed or amount settled?"
+    },
+    {
+        "question": "Hello!  Can you provide me with a list of all churches please?",
+        "answer": "Do you need their names or ids?"
+    },
+    {
+        "question": "What is the id for those users?",
+        "answer": "Do you mean users followed by only Mary, or only Susan, or by either?"
+    },
+    {
+        "question": "Are there any distinct creation years managed by a secretary",
+        "answer": "Sorry do you mean the distinct creation years of the departments managed by a secretary? But I think all the departments are managed by a secretary."
+    },
+    {
+        "question": "what is the brand name of id  2 ?",
+        "answer": "Did you mean the brand or name of the camera lens with ID 2?"
+    },
+    {
+        "question": "Perfect! And is there an account number of 337?",
+        "answer": "Do you mean the account name?"
+    },
+    {
+        "question": "what are all the companies on the table",
+        "answer": "Do  you  mean the companies that  customers  work?"
+    },
+    {
+        "question": "what is the city of Luís",
+        "answer": "The  city  of  customers  whose  firstname is \"Luís    is São José dos Campos"
+    },
+    {
+        "question": "what is the highest total on the table",
+        "answer": "what do you mean the highest total?"
+    },
+    {
+        "question": "WHAT IS THE ID OF THE AIRCRAFT",
+        "answer": "Do you mean the aircraft id of the aircraft named Boeing 727?"
+    },
+    {
+        "question": "how many cities are the aiports",
+        "answer": "Did you mean the number of cities that have any airport?"
+    },
+    {
+        "question": "show me the journalists from England\n",
+        "answer": "Do you want their names?"
+    },
+    {
+        "question": "Can you show me the names of those journalists ?",
+        "answer": "Do you mean the journalists from Wales and England who have worked for over a year?"
+    },
+    {
+        "question": "What about any journalists from Wales or England which have not worked at all ?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "what is the rank for Goodrich",
+        "answer": "Goodrich is the last name, right?"
+    },
+    {
+        "question": "What are the names of those employees?",
+        "answer": "Do you mean the first name and last name of those employees?"
+    },
+    {
+        "question": "what is the first movie's year?",
+        "answer": "What do you mean by \"first\"? Do you mean the earliest movie?"
+    },
+    {
+        "question": "list the catalogs that have level number greater than 5",
+        "answer": "Do you want catalog name or id?"
+    },
+    {
+        "question": "How many students took any course?",
+        "answer": "Did you mean how many students there are?"
+    },
+    {
+        "question": "or a C?",
+        "answer": "You want the students just with grade \"C\" or including \"A\""
+    },
+    {
+        "question": "How about the name of the director?",
+        "answer": "Do you mean the name of the director of Avatar?"
+    },
+    {
+        "question": "How many flights are arriving in Washington DC today? ",
+        "answer": "Sorry, what is the date you meant by today?"
+    },
+    {
+        "question": "Do all 3 destinations have the same number of flights?",
+        "answer": "Yes, all three destinations have the same number of flights. "
+    },
+    {
+        "question": "How many models does each car maker make?",
+        "answer": "Here is the result table of the full name of car makers and the number of models they made. For example, the car maker \"American Motor Company\" made 1 model."
+    },
+    {
+        "question": "What is the difference in percent to Dutch speaking and Papiamento speaking countries?",
+        "answer": "What difference do you want?"
+    },
+    {
+        "question": "The difference of the overall percent",
+        "answer": "Do you mean average percent?"
+    },
+    {
+        "question": "what is the enrollment of the conference",
+        "answer": "The enrollment of the oldest college is 19067.0."
+    },
+    {
+        "question": "Please show me the type of grape available at Old Kraft Vineyard\n",
+        "answer": "The type of grape in the wine with a name of Old Kraft Vineyard is Zinfandel."
+    },
+    {
+        "question": "Which of these is spoken in the most other countries?",
+        "answer": "Could you ask another question? I cannot answer this."
+    },
+    {
+        "question": "How many people in Canada speak Chinese?",
+        "answer": "Sorry, we don't have that information."
+    },
+    {
+        "question": "How large is the ROM?",
+        "answer": "What do you mean by ROM? "
+    },
+    {
+        "question": "Show me all products supplied by supplier id 2.",
+        "answer": "Do you mean the product ID of all products supplied by supplier id 2?"
+    },
+    {
+        "question": "Which of the previous products are more expensive than the average price of all products?",
+        "answer": "Do you mean to find the names of those products that are more expensive than the average price of all products?"
+    },
+    {
+        "question": "how many student played the game?",
+        "answer": "Would you like to know how many entries in the plays games table correspond to The Vanishing of Eric Calder?"
+    },
+    {
+        "question": "what is the location of the  Federico colbertaldo?",
+        "answer": "Sorry, I cannot answer acoording to the information I have"
+    },
+    {
+        "question": "Which accelerator did the client user have?",
+        "answer": "Do you mean the name of the accelerator that the client named user has?"
+    },
+    {
+        "question": "Which one of this contains a substring called Opera?",
+        "answer": "Do you mean the name of the accelerators whose name contains a substring called \"Opera\" and that the client named user has?"
+    },
+    {
+        "question": "What is the name of the author who teaches the most courses?",
+        "answer": "Which kinds of names do you prefer?"
+    },
+    {
+        "question": "What lots are associate with those transactions with a count smaller than 50?",
+        "answer": "Do you mean all the information about lots or some specific attributes?"
+    },
+    {
+        "question": "what are the departments?",
+        "answer": "Do you want the names of all department?"
+    },
+    {
+        "question": "Tell me the position for the student id 1001 ?",
+        "answer": "Do you mean the city code for students?"
+    },
+    {
+        "question": "Show me the details of the body builders",
+        "answer": "Which information would you like to know about the body builders?"
+    },
+    {
+        "question": "Show me the scores of the body builders",
+        "answer": "Which score, Snatch, Clean Jerk, or Total?"
+    },
+    {
+        "question": "What are the engineers first names?",
+        "answer": "Do you mean the first name of all the engineers?"
+    },
+    {
+        "question": "I want to know all the engineers corresponding skill description?",
+        "answer": "Do you mean the corresponding skill description for all the engineers?"
+    },
+    {
+        "question": "What are the details for all the engineers?",
+        "answer": "Do you mean the other details for all the engineers?"
+    },
+    {
+        "question": "Which party has the most seats?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "What about for the artist Aerosmith?",
+        "answer": "sorry   i  can not  answer, can  you  ask  other  question?"
+    },
+    {
+        "question": "What is the student_capacity of Smith Hall?",
+        "answer": "Are you asking about the student capacity of the dorm named Smith Hall?"
+    },
+    {
+        "question": "What is the amenity_name of Dorm_amenity?",
+        "answer": "Did you want all amenity names for dorms?"
+    },
+    {
+        "question": "Show me the names of students",
+        "answer": "Do you mean full names of all the students?"
+    },
+    {
+        "question": "Also, what is their customer ID?",
+        "answer": "Weeks's id?"
+    },
+    {
+        "question": "What are the average hours worked by all scientists, please?",
+        "answer": "Do you mean average hours on each project among all scientists?"
+    },
+    {
+        "question": "How many students are enrolled in any type of accounting course?",
+        "answer": "Do you mean the course taught by some professor from the accounting department?"
+    },
+    {
+        "question": "Yes, what is the class time?",
+        "answer": "Do you want to know all class time?"
+    },
+    {
+        "question": "When is the earliest day of pay?",
+        "answer": "Sorry we don't have information about the pay day."
+    },
+    {
+        "question": "Please list staff names of staff assigned to at least 1 problem",
+        "answer": "First or last name?"
+    },
+    {
+        "question": "how many cars are their in usa",
+        "answer": "do you mean car makers? "
+    },
+    {
+        "question": "Can you show the names of owners and the states they live in?",
+        "answer": "Do you want the first and last names of owners and the states they live in?"
+    },
+    {
+        "question": "How many hours have they played?",
+        "answer": "Sorry. can you clarify your question?"
+    },
+    {
+        "question": "Hello!  Can you provide me with a list of all product IDs and the associated product titles?",
+        "answer": "Are you asking for all item IDs and their corresponding item titles?"
+    },
+    {
+        "question": "Thank you!  Can you filter that list to show only the entries with a rank that is higher than 3 please?",
+        "answer": "Are you looking for ranks that are better than 3 or higher in value than 3?"
+    },
+    {
+        "question": "Perfect!  Are these rating values that use listed averages?",
+        "answer": "I cannot answer this question using the information in the table."
+    },
+    {
+        "question": "Show me the departments managed by heads whose temporary acting value is 'Yes', please",
+        "answer": "The table shows the ids of departments managed by heads whose temporary acting value is 'Yes'."
+    },
+    {
+        "question": "What about the names of all classes whose description has the word \"Statistics\"?",
+        "answer": "Sorry, we do not have information about class names."
+    },
+    {
+        "question": "What are the zip codes of those stations?",
+        "answer": "Sorry we don't have zip code of specific station. Please ask anything else."
+    },
+    {
+        "question": "Can you find me student with first name \"Emma\"?",
+        "answer": "What do you want to know about that student?"
+    },
+    {
+        "question": "the corresponding number of gymnasts?",
+        "answer": "Can you clarity what do you mean by the corresponding number?"
+    },
+    {
+        "question": "details about paul hamm",
+        "answer": "Can you be more specific for what details do you need for Paul Hamm?"
+    },
+    {
+        "question": "How many male students  are there?\n",
+        "answer": "Sorry the information is not available from the table."
+    },
+    {
+        "question": "What are the departments managed by heads whose temporary acting value is \"yes\"?",
+        "answer": "The following table shows the names of departments managed by heads whose temporary acting value is \"yes\"."
+    },
+    {
+        "question": "how many stars does Star wars have? ",
+        "answer": "we don't have the information about stars in Star Wars "
+    },
+    {
+        "question": "what is the rank of Mark",
+        "answer": "Do you mean the rank of the faculty whose fname is Mark?"
+    },
+    {
+        "question": "Find name of all students?",
+        "answer": "Do you mean First or Last name of the students?"
+    },
+    {
+        "question": "What is the most common city of all customers with the customer status code \"Bad Customer\"?",
+        "answer": "What do you mean by saying the most common city?"
+    },
+    {
+        "question": "WHAT IS THE Iran\tOF CAPITAL",
+        "answer": "Did you mean the capital of the country named Iran?"
+    },
+    {
+        "question": "Who are the staff for the organisation with id 5?",
+        "answer": "Do you mean the id of the staffs for orginisation with id 5?"
+    },
+    {
+        "question": "Which shop has the lowest number of staff?",
+        "answer": "The shop with ID 1 has  the lowest number of staff."
+    },
+    {
+        "question": "How many of them are there have no performance?",
+        "answer": "Did you mean to ask for the number of orchestras that have no performance?"
+    },
+    {
+        "question": "Is there any party that has no record?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "What assets have been aquired?",
+        "answer": "What kind of information about the assets do you want me to return?"
+    },
+    {
+        "question": "Which employees did not destroy any documents?\n",
+        "answer": "Do you want the ids of all the employees who did not destroy any documents?"
+    },
+    {
+        "question": "Thank you. What are their ages?",
+        "answer": "Sorry, we don't have information about ages. Do you mean the date of birth?"
+    },
+    {
+        "question": "What is the median price of wines produced in Sonoma County?",
+        "answer": "Did you mean the average price of wines produced in Sonoma County?"
+    },
+    {
+        "question": "Show me the events they reported",
+        "answer": "which columuns to return"
+    },
+    {
+        "question": "What is the most common age for students in each dorm?",
+        "answer": "Sorry, I am unable to answer this question. Could you please ask other related questions?"
+    },
+    {
+        "question": "What is the mode of ages for the students in each dorm?",
+        "answer": "Sorry, there is no info related to the mode of ages in tables. Could you please ask other related questions?"
+    },
+    {
+        "question": "What is the age  of most students in each dorm?",
+        "answer": "Sorry, I am unable to answer this question. Could you please ask other related questions?"
+    },
+    {
+        "question": "which party event is rank best \n",
+        "answer": "Sorry, we do not have information about rank. Can you ask something else?"
+    },
+    {
+        "question": "how many flights does United Airlines operate in USA?",
+        "answer": "What do you mean by operate in USA?"
+    },
+    {
+        "question": "state the projects with least hours?",
+        "answer": "Do you need the project code or name?"
+    },
+    {
+        "question": "What are the tourist attractions available?",
+        "answer": "Did you mean to show you all the attractions?"
+    },
+    {
+        "question": "What movies were either directed by James Cameron, or made before 1980?",
+        "answer": "Here is the result table of the movies that were either directed by James Cameron or made before 1980. For example, one of them is Star Wars."
+    },
+    {
+        "question": "Which of them are higher than 100?",
+        "answer": "Do you mean among all roller costers or among the those longer than 3300?"
+    },
+    {
+        "question": "What is the name of the city that already served as host more than once?",
+        "answer": "The names in English or Hanzi?"
+    },
+    {
+        "question": "Which movie has the highest average rating?",
+        "answer": "The title of the movie that has the highest average rating is Snow White"
+    },
+    {
+        "question": "Which student have allergy to both milk and cats? ",
+        "answer": "Here are the student ids of the students who have allergies to both milk and cat."
+    },
+    {
+        "question": "What is the used id 1?",
+        "answer": "Do you mean what is the name of the user with id 1?"
+    },
+    {
+        "question": "When was the order with the tracking number 3452 placed?",
+        "answer": "Did you want the order id of the order with shipment tracking number 3452?"
+    },
+    {
+        "question": "Can you show me a list of owner ids and zip codes?",
+        "answer": "can  you  give more infor  about  this question?"
+    },
+    {
+        "question": "Which owner name and id has paid the largest amount of money in total for their dogs?",
+        "answer": "Did  you mean  the  full name?"
+    },
+    {
+        "question": "which product is highest price on the table",
+        "answer": "Which kinds of product information do you want?"
+    },
+    {
+        "question": "Who is the oldest person?",
+        "answer": "What attributes do you want for this person, name or something else?"
+    },
+    {
+        "question": "Which team had the least number of attendances?",
+        "answer": "Do you mean which game of the sum of attendance of a team in its home game?"
+    },
+    {
+        "question": "Yes",
+        "answer": "Sorry. I mean which game OR the sum of attendance of a team in its home game"
+    },
+    {
+        "question": "What was the actual attendance in number?",
+        "answer": "What do you mean by actual attendance "
+    },
+    {
+        "question": "How many openings?",
+        "answer": "Do you mean the number of attendance?"
+    },
+    {
+        "question": "Which location is most profitable?",
+        "answer": "What do you mean by location? We have different companies in different countries."
+    },
+    {
+        "question": "Which manager has been at this company the longest",
+        "answer": "Sorry, we don't have that information."
+    },
+    {
+        "question": "Hi can you tell me how many games were in 1885?",
+        "answer": "Did  you  also  requre  the   \"ties\" is '1'"
+    },
+    {
+        "question": "what was the name of the winning team in 1885?",
+        "answer": "There  is no  infor  about name of the winning team in 1885"
+    },
+    {
+        "question": "Which student is older than the average age.",
+        "answer": "Do you want their id or last name or first name?"
+    },
+    {
+        "question": "Great, in what departments do they work?",
+        "answer": "Sorry we do not have information about departments. Can you ask something else?"
+    },
+    {
+        "question": "Are there names that are mostly used by professional but aren't used for dog names",
+        "answer": "Can you please clarify what you would like me to search the database for?"
+    },
+    {
+        "question": "What email can i use to contact Taryn",
+        "answer": "Would you like the email address of professionals with name Taryn?"
+    },
+    {
+        "question": "What are the current average age of all males",
+        "answer": "I do not have information about age in the table."
+    },
+    {
+        "question": "which of the male has he highest weight",
+        "answer": "Would you like to know the name of the person who has the highest weight among sex M?"
+    },
+    {
+        "question": "The column \"customer_id \" in Table: \"Accounts\" refers to column \"customer_id\" in Table: \" Customers\"",
+        "answer": "Sorry I don't understand. Could you ask something else?"
+    },
+    {
+        "question": "ok .Who is the number one customer?",
+        "answer": "Do you mean the customer with id 1"
+    },
+    {
+        "question": "What are names of customers who have both mailshots in \"order\" outcome?",
+        "answer": "Do you want the names of customers who have mailshot with an outcome code \"Order\"?"
+    },
+    {
+        "question": "Hello, can you tell me which city hosted events in the most recent year?",
+        "answer": "Which attribute of the city do you want?"
+    },
+    {
+        "question": "List the cartoons that are directed by Ben Jones.",
+        "answer": "Here are the titles of cartoons that are directed by Ben Jones"
+    },
+    {
+        "question": "List all the wines that use color white grapes.",
+        "answer": "What kinds of attributes of wines do you want?"
+    },
+    {
+        "question": "Can you also tell me how many documents are there for that location?\n",
+        "answer": "Do you mean the number of documents in the location with code x?"
+    },
+    {
+        "question": "what is the average elevation of the routes from the United States to Canada",
+        "answer": "Sorry, that information is not in the database."
+    },
+    {
+        "question": "find the shortest route from the United States to Canada",
+        "answer": "Sorry, that information is also not in the database."
+    },
+    {
+        "question": "Show the album details.",
+        "answer": "There is no details attribute for albums, which attribute do you want to return instead?"
+    },
+    {
+        "question": "What units of measurement are used?",
+        "answer": "can you give more information about you question?"
+    },
+    {
+        "question": "what are the different type of document on the table?",
+        "answer": "What do you mean by \"different type of document\"?"
+    },
+    {
+        "question": "what is population of city 1",
+        "answer": "The population of the city with id 1 is 5706.0"
+    },
+    {
+        "question": "what is the census ranking for plaster rock",
+        "answer": "The census ranking for the city with official name plaster rock is \"1936 of 5,008\""
+    },
+    {
+        "question": "what is the status of Perth-Andover",
+        "answer": "The status of the city with official name Perth-Andover is Village."
+    },
+    {
+        "question": "Can you list the loan types, branch names and ids, and loan amounts?",
+        "answer": "Did you mean the Ids of the branches?"
+    },
+    {
+        "question": "Hmm, I want to know the number of customers each bank branch has. ",
+        "answer": "Would you like both the branch name and the branch ID?"
+    },
+    {
+        "question": "Which station has dock count higher than 15...",
+        "answer": "Would you like to know the station name or all the information? "
+    },
+    {
+        "question": "And in Africa?",
+        "answer": "Do you mean among country in Africa, or among the country in Africa and in Asia."
+    },
+    {
+        "question": "which students are female?",
+        "answer": "Do you want the ids of students who are female?"
+    },
+    {
+        "question": "Show me the name of the film with film id 1?",
+        "answer": "Do  you  mean  the title in the  table  file"
+    },
+    {
+        "question": "Show all the films longer than 100 minutes?",
+        "answer": "do  you  mean  the films id  ?"
+    },
+    {
+        "question": "How many students registered the least number of courses?",
+        "answer": "Sorry I cannot answer this question."
+    },
+    {
+        "question": "Add a column for monthly rental to the table Addresses",
+        "answer": "i cannot understand your question, can you give more information? thanks"
+    },
+    {
+        "question": "And for horses?",
+        "answer": "Do you mean total horses or working horses?"
+    },
+    {
+        "question": "and what states are they, please?",
+        "answer": "Do you mean the states of all the branches?"
+    },
+    {
+        "question": "What were the dates of those transactions?",
+        "answer": "Do you mean the transactions with share count equal to or larger than 10?"
+    },
+    {
+        "question": "Cool who was the winner?",
+        "answer": "Sorry the information is not available from the table."
+    },
+    {
+        "question": "Can you find the entries with the highest room count and only keep those in the table?",
+        "answer": "And still return the apartment type code and the room count?"
+    },
+    {
+        "question": "Which product have they complained about?",
+        "answer": "Who do you mean by \"they\"?"
+    },
+    {
+        "question": "Can you list the top 8 countries for me?",
+        "answer": "sorry I have no answer to this. Could you give more info?"
+    },
+    {
+        "question": "What are the names of the 8 countries with the greatest gross invoice size?",
+        "answer": "Can  you  give details  about the countries? Do you mean billing country?"
+    },
+    {
+        "question": "include claim stage id in the table",
+        "answer": "Do you wanna see all the claim stage ids?"
+    },
+    {
+        "question": "Which bank branches provide business loans?",
+        "answer": "do you want the id or the name of the bank branches?"
+    },
+    {
+        "question": "Awesome!  Can you update this list to show the ratings of these two stores as well?",
+        "answer": "I don't have ratings for these two stores. Do you mean by ranking instead?"
+    },
+    {
+        "question": "What injury had maicon",
+        "answer": "Maicon had the injury Knee problem."
+    },
+    {
+        "question": "Give me the name for the student 1001",
+        "answer": "Do you want the last name or first name?"
+    },
+    {
+        "question": "can you give me the students with president vote 1004",
+        "answer": "What attributes of that student do you want?"
+    },
+    {
+        "question": "Find me the 5 customers who most recently purchased something.",
+        "answer": "What information about the customer do you need?"
+    },
+    {
+        "question": "What is the date date problem reported of w?",
+        "answer": "Sorry, what is date date problem?"
+    },
+    {
+        "question": "What is the name of the person who reported a problem on 1976-12-18 23:54:41?",
+        "answer": "Here are the first and last names of the staff who reported a problem on 1976-12-18 23:54:41."
+    },
+    {
+        "question": "What is the average GPA?",
+        "answer": "Sorry, I cannot answer that question."
+    },
+    {
+        "question": "Do you know the total credits for the Civil Eng. Department?",
+        "answer": "Did you want the sum of total credits across all students in the Civil Eng. department?"
+    },
+    {
+        "question": "Who is the department head?",
+        "answer": "Sorry, I cannot answer that question. "
+    },
+    {
+        "question": "Ok, do you know the ID number for the department?",
+        "answer": "Did you want the ID numbers for the students in the Civil Eng. department?"
+    },
+    {
+        "question": "What are the names of their coaches?",
+        "answer": "Do you mean list the names of players and names of their coaches together?"
+    },
+    {
+        "question": "Tell me how old the youngest is.",
+        "answer": "Do you mean the youngest among those that have gone through any treatment?"
+    },
+    {
+        "question": "How about the average age?",
+        "answer": "Do you mean the average age of those that have gone through any treatment?"
+    },
+    {
+        "question": "can you show me Manufacturers' name that starting with 'S'?",
+        "answer": "Sorry, I cannot answer. Please change\n"
+    },
+    {
+        "question": "Hi there! How many different semesters does this list have?",
+        "answer": "Do  you  mean  the type of  semester name？"
+    },
+    {
+        "question": "What is difference between person table and person friend table?",
+        "answer": "I cannot answer this question using SQL.  Would you like to ask anything else?"
+    },
+    {
+        "question": "Find the name of all the cities and states.",
+        "answer": "you want the columns of town_city and state_province_county,right?"
+    },
+    {
+        "question": "List all instructors who taught a class in Fall 2009",
+        "answer": "Did you  mean the  instructor IDs who taught a class in Fall 2009"
+    },
+    {
+        "question": "Remove all instructor IDs who did not teach in Spring 2010 from the list.",
+        "answer": "Did  you  mean  retain  the instructor IDs who  both teach in Spring 2010   and  in Fall 2009"
+    },
+    {
+        "question": "what is stations' total passengers?",
+        "answer": "Do you mean sum of total passengers in all stations?"
+    },
+    {
+        "question": "How many assets does each third party company supply?",
+        "answer": "Here is the result table of third-party companies and the number of ASSETS they held. For EXAMPLE, COMPANY 1 HELD 1 ASSET."
+    },
+    {
+        "question": "What do the codes stand for?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "Which project have no outcome?",
+        "answer": "so  what would  you  want  to  know about the project have no outcome"
+    },
+    {
+        "question": "Can you list all the schools that have less than 5 different departments?",
+        "answer": "BUS is the school code for schools with less than 5 different departments."
+    },
+    {
+        "question": "Which candidate was most supported\n",
+        "answer": "You mean the candidate who got the highest support rate?"
+    },
+    {
+        "question": "What are the names of the scientists assigned to that project?",
+        "answer": "There is no record of the names of the scientists assigned to that project. "
+    },
+    {
+        "question": "Show me the routes details",
+        "answer": "do you mean the  routes details of John F Kennedy International Airport?"
+    },
+    {
+        "question": "Tell me the prices of Dining Policy",
+        "answer": "I cannot find a product called \"Dining Policy\" in the table. Did you mean \"Dining\"?"
+    },
+    {
+        "question": "Tell me the prices of Dining",
+        "answer": "Sorry, there is no product named \"Dining\". There is, however, a product named \"Dinning\". This might be a typo. Do you want to know the prices of \"Dinning\"?"
+    },
+    {
+        "question": "What is the highest number of skills needed to fix a part fault?",
+        "answer": "what  did  you want  to get  about the highest number of skills needed to fix a part fault"
+    },
+    {
+        "question": "What is the part id for the top part fault?",
+        "answer": " the part id for the part fault that requires the most skills is 1"
+    },
+    {
+        "question": "Which tracks were opened after year 2000?\n",
+        "answer": "Here are the ids for tracks that were opened after year 2000, including 2 and 6."
+    },
+    {
+        "question": "And what is the date range of the dates that they attended? That is: what is the earliest date and what is the latest date?",
+        "answer": "Sorry I cannot answer this question."
+    },
+    {
+        "question": "which student had highest grade",
+        "answer": "Here are the first and last names of the student who had the highest grade."
+    },
+    {
+        "question": "which student get low grade",
+        "answer": "Here are the first and last names of students who got low grade D-."
+    },
+    {
+        "question": "what is the park name of Anaheim city",
+        "answer": "Angel Stadium of Anaheim is the name of the park in city Anaheim."
+    },
+    {
+        "question": "how many games in 1871",
+        "answer": "Do you mean the number of home games in year 1871?"
+    },
+    {
+        "question": "What are the player names from the country code AHO?",
+        "answer": "Do you want first name and last name?"
+    },
+    {
+        "question": "What ship type was in those battles?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "list out the exhibition name",
+        "answer": "There are no records of exhibition names."
+    },
+    {
+        "question": "How many professors do you have in buildings?",
+        "answer": "Can you clarify your question?"
+    },
+    {
+        "question": "What fraction of this total is professors?",
+        "answer": "Sorry I cannot answer this question."
+    },
+    {
+        "question": "ok, which team offering the highest salary?",
+        "answer": "OK, do you want me to show the team name or id? Also, are you asking about average salary?"
+    },
+    {
+        "question": "Can you show me the ids for all these attractions?",
+        "answer": "Do you mean Tourist Attraction IDs?"
+    },
+    {
+        "question": "How many stores are there?",
+        "answer": "Did you mean to ask for the number of shops?"
+    },
+    {
+        "question": "what is the billing address of germany",
+        "answer": "Billing address is associated with each customer, not country. Please clarify your question."
+    },
+    {
+        "question": "what's the price for Wiley's publication?",
+        "answer": "Which of Wiley's publications do you want to know the price for?"
+    },
+    {
+        "question": "who's the writer of Bloody Mary?",
+        "answer": "Did you mean Bloody Mary or Bloody Mary : Lady Liberty?"
+    },
+    {
+        "question": "Hi, could you please let me know the country name of ID which has Dublin as its capital?",
+        "answer": "Sorry. Do you mean the country name and ID of the country which has Dublin as its capital?"
+    },
+    {
+        "question": "Thank you. Then could you please show me the players from Iraq?",
+        "answer": "Do you want their names?"
+    },
+    {
+        "question": "What are the names of all students who have cat pets?",
+        "answer": "Linda is the first name of the student who has a cat pet."
+    },
+    {
+        "question": "What is the average of all transactions?",
+        "answer": "The average of all transactions is 11198167.237771427"
+    },
+    {
+        "question": "Which county has a population closest to that?",
+        "answer": "Sorry the question cannot be answered by a simple query."
+    },
+    {
+        "question": "Can you list each student's first and last name?",
+        "answer": "Students majoring in 600?"
+    },
+    {
+        "question": "What was the average duration of trips in 94103?",
+        "answer": "Do you mean the average duration of trips in zip code 94103?"
+    },
+    {
+        "question": "How many trips lasted at least that long?",
+        "answer": "Do you mean the number of trips whose duration is longer than the average duration of trips in zip code 94103?"
+    },
+    {
+        "question": "can you show me useracct name?",
+        "answer": "Would you like a list of the names of the users?"
+    },
+    {
+        "question": "can you show me target user id\t",
+        "answer": "Would you like a list of all the target user id?"
+    },
+    {
+        "question": "who are the students enrolled in 2 degree programs in one semester?",
+        "answer": "did you want to return their first, middle and last names?"
+    },
+    {
+        "question": "Which team of players has the smallest age?",
+        "answer": "Did you mean to ask for the team of the player with the smallest age?"
+    },
+    {
+        "question": "I want to know how many perpetrators are taller than 1.84",
+        "answer": "So do you mean the kills of perpetrators with height more than 1.84?"
+    },
+    {
+        "question": "Which country had the most killings and injuries?",
+        "answer": "Do you mean killings plus injuries together?"
+    },
+    {
+        "question": "Can you list the orchestras by the date they were founded for me starting with the oldest?",
+        "answer": "Do you mean listing the names of the orchestras by the date they were founded starting with the oldest?"
+    },
+    {
+        "question": "What are the names of the three accounting professors?\n",
+        "answer": "Sorry the question cannot be answered from table."
+    },
+    {
+        "question": "what is the average prerequisite credits for these courses?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "how many prerequisite credits are needed?",
+        "answer": "Which course?"
+    },
+    {
+        "question": "Which Volvo car has the least accelerate?",
+        "answer": "Do you want its car id?"
+    },
+    {
+        "question": "how many phones are presented on the table",
+        "answer": "Did you mean to ask for the number of entries in the table phone?"
+    },
+    {
+        "question": "Can you show me their corresponding friends\n as well?",
+        "answer": "The following table shows the names of all the highschoolers who have friends and their corresponding number of friends."
+    },
+    {
+        "question": "OK, which of them have more than 3 districts?",
+        "answer": "What do you mean for a district to have more than 3 districts?"
+    },
+    {
+        "question": "count the number of records for each track id",
+        "answer": "do you mean count the number of race ids for each track id?"
+    },
+    {
+        "question": "What about last name Rohan?",
+        "answer": "The emails of the students with the  last name Rohan is derrick.jenkins@example.com"
+    },
+    {
+        "question": "What is the name of the student with id 4?",
+        "answer": "Here are the first, middle, and last name of the student with id  4."
+    },
+    {
+        "question": "What are the top 5 genres?",
+        "answer": "Do you mean sort by the id number?"
+    },
+    {
+        "question": "Overall, do you have the best ranked composer?",
+        "answer": "I do not quite understand what you mean. Do you mean rank by milliseconds?"
+    },
+    {
+        "question": "When is the soonest to be captains in different class?\n",
+        "answer": "What do you mean by soonest?"
+    },
+    {
+        "question": "How many are females that are voting in the election cycle ?",
+        "answer": "Did you want the number of females that are voting in the spring election cycle?"
+    },
+    {
+        "question": "Are any of these courses offered by more than one department?",
+        "answer": "Did you mean the same course titles?"
+    },
+    {
+        "question": "How many produce in the sierra foothills?",
+        "answer": "Did you want the number of appelations that produce wine in the Sierra Foothills?"
+    },
+    {
+        "question": "Which station has the highest average high temperature?",
+        "answer": "Which attributes of this station do you want?"
+    },
+    {
+        "question": "And for LSU?",
+        "answer": "Would you like to know the enrollment for the college named LSU?"
+    },
+    {
+        "question": "How many flats in this table?",
+        "answer": "Do you mean the number of apartments whose type code is Flat?"
+    },
+    {
+        "question": "How many complaints did each customer file?",
+        "answer": "Did you want the customer ids and number of complaints fold for each customer?"
+    },
+    {
+        "question": "how many votes did she get?",
+        "answer": "Do you mean the total votes in four election or list them separately?"
+    },
+    {
+        "question": "Is there an official language for the country?",
+        "answer": "For which country? Aruba?"
+    },
+    {
+        "question": "Show me the project id",
+        "answer": "Do you mean you wanna see the whole project id of the table \"Projects\"?"
+    },
+    {
+        "question": "ARRANGE THE COST OF TREATMENT IN DESCENDING ORDER",
+        "answer": "The result table of the treatment cost is listed in descending order of the cost of treatment."
+    },
+    {
+        "question": "What was the last order id for product id 13?",
+        "answer": "Sorry, I cannot answer this question."
+    },
+    {
+        "question": "What are each of those pilots' nationalities?",
+        "answer": "Do  you  want  to  konw  Pilot name and related pilots' nationalities?"
+    },
+    {
+        "question": "What are their ranks?",
+        "answer": "do you want to show their names as well?"
+    },
+    {
+        "question": "List the role of the professional named Taryn. ",
+        "answer": "The role code of the professional with first name Taryn is Employee"
+    },
+    {
+        "question": "List the name of all professionals with the same state as Taryn. ",
+        "answer": "Sorry I can't answer this question"
+    },
+    {
+        "question": "Which event has the most deaths?",
+        "answer": "What information do you need? all the information of this event or some specific information, like the note?"
+    },
+    {
+        "question": "How many boys are in that classroom?",
+        "answer": "I do not have information about gender in the table."
+    },
+    {
+        "question": "Can you rank the faculty for me by ID",
+        "answer": "what  ID  did  you  want  to  order by ?"
+    },
+    {
+        "question": "What storm affected city 10.0 and 15.0?",
+        "answer": "do you mean the name of storm that affected city 10 and 15?"
+    },
+    {
+        "question": "What is the most expensive procedure?",
+        "answer": "Do you mean the name of the procedure with the highest cost?"
+    },
+    {
+        "question": "When were they trained in that procedure?",
+        "answer": "Do you mean the certification date and the expired date of the procedure named Complete Walletectomy?"
+    },
+    {
+        "question": "What is this student's name?",
+        "answer": "There no info about the name of the student. How about the id of the student?"
+    },
+    {
+        "question": "What is partition id?",
+        "answer": "do you mean the partition id for each user or do you just want all the partition ids?"
+    },
+    {
+        "question": "How many followers to black widow?",
+        "answer": "ok, goodbye."
+    },
+    {
+        "question": "Which company have a higher sales?",
+        "answer": "do you mean which company have a highest sales?"
+    },
+    {
+        "question": "Which musician has the most number of actors who have appeared in the musicals?",
+        "answer": "Did you want the name of the musical?"
+    },
+    {
+        "question": "How many police officers are in Albonito?",
+        "answer": "Do you mean 'Aibonito' not 'Albonito'?"
+    },
+    {
+        "question": "what is the average of high speed?",
+        "answer": "Did you mean to ask for the average max speed of the storms?"
+    },
+    {
+        "question": "What are all of the routes for each source airport?",
+        "answer": "do you mean the number of all of the routes?"
+    },
+    {
+        "question": "can you list the products that have problems ",
+        "answer": "Did you mean to ask for the product names of products that have problems?"
+    },
+    {
+        "question": "Show the names of journalists and the names of the events they reported in ascending order",
+        "answer": "Here is the result table of the names of journalists and the names of the events they reported in ascending order of attendance. For example, one of the journalists is John Meaney and the event he reported is Special Exhibition."
+    },
+    {
+        "question": "Hmm, interesting. What is the nationality of Jackie Waring?",
+        "answer": "Do you mean the journalist Jackie Waring?"
+    },
+    {
+        "question": "Was this complaint closed?",
+        "answer": "Do you mean whether the complaint which raised at 2007-10-14 21:50:43 was closed?"
+    },
+    {
+        "question": "What is the customer id for that complaint?",
+        "answer": "Do you mean the customer id for the complaint which raised at 2007-10-14 21:50:43?"
+    },
+    {
+        "question": "what is the last name of room id IBS?",
+        "answer": "Do mean the last name of the reservation for the room with id IBS?"
+    },
+    {
+        "question": "what is the bed type of the column \"room in HBB ?",
+        "answer": "Do you mean the bed type for the room with id HBB?"
+    },
+    {
+        "question": "Show all companies with Headquarters USA?",
+        "answer": "Did  you  mean   to show the company IDs?"
+    },
+    {
+        "question": "Will you please tell me which of these can not interact with the product 'Heme'?",
+        "answer": "Here are the names and trade names of medicines that cannot interact with the enzyme with product 'Heme'."
+    },
+    {
+        "question": "Where was the singer from?",
+        "answer": "Do you mean Enrique?"
+    },
+    {
+        "question": "which professionals live in state of indiana?",
+        "answer": "What information do you want to know about these professionals? "
+    },
+    {
+        "question": "Are there manufacturers on the list located in the United States?\n",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "How many assets can each part be used in?",
+        "answer": "Here is the result table of the part names and the number of assets that each of them can use. For example, the middle part can use 5 assets. "
+    },
+    {
+        "question": "how many capacity in the stadium table",
+        "answer": "Do you  mean  the  sum  of   capacity in the stadium table ?"
+    },
+    {
+        "question": "how many opening year in the stadium table",
+        "answer": "Do  you  want  to  konw  the different  year   "
+    },
+    {
+        "question": "Hello!  Can you show me a list of all of the student names and their associated addresses and cities?",
+        "answer": "Hi. The following table is a list of all the student name details and their associated addresses line 1 and cities."
+    },
+    {
+        "question": "what city has the shortest trip?",
+        "answer": "sorry, there is no  feature about distance of a trip"
+    },
+    {
+        "question": "What is the latitude of the shortest trip?",
+        "answer": "there is no feature of distance in trip "
+    },
+    {
+        "question": "what is the city of the station from which the shortest trip started?",
+        "answer": "trip cannot be described by distance"
+    },
+    {
+        "question": "how many are from same hometown",
+        "answer": "Santo Domingo is the only hometown where more than 1 person is from. There are 5 people from the hometown San Domingo."
+    },
+    {
+        "question": "How old is the student?",
+        "answer": "Which student are you referring to?"
+    },
+    {
+        "question": "What about the number of people with occupations? ",
+        "answer": "By occupations, do you mean people who are not students?"
+    },
+    {
+        "question": "How many bathroom count those building 809 has?",
+        "answer": "The total number of bathrooms building 809 has is NULL."
+    },
+    {
+        "question": "What companies are in the banking or retailing industry?\n",
+        "answer": "Do you want their company id or name?"
+    },
+    {
+        "question": "What is the max of those players?",
+        "answer": "what  did  you  mean  the  max  ?"
+    },
+    {
+        "question": "can you show their name?",
+        "answer": "Do you want their first and last names?"
+    },
+    {
+        "question": "what is Armani's customer address?",
+        "answer": "Do you mean the address of the customer with a first name Armani?"
+    },
+    {
+        "question": "What building has a gym?\n",
+        "answer": "Do you mean the building ids of buildings with apartments that have gyms?"
+    },
+    {
+        "question": "Are there other rooms in those buildings?\n",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "who authored the paper Binders Unbound?",
+        "answer": "What information do you want about the author of the paper Binders Unbound? "
+    },
+    {
+        "question": "Could you give the list of all projects along with the names of scientists that worked on them?",
+        "answer": "Do you mean a list of the names of all the projects and the names of scientists that worked on them?"
+    },
+    {
+        "question": "What are those names?",
+        "answer": "Sorry, I cannot give you the names. Did you mean to ask for the department ids?"
+    },
+    {
+        "question": "Are they the same",
+        "answer": "Sorry, I cannot help you with that."
+    },
+    {
+        "question": "Hi, how many years has the Monaco Grand Prix been held?",
+        "answer": "Would you like the number of distinct years found for races?"
+    },
+    {
+        "question": "How many performances are listed?",
+        "answer": "Did you mean the count of Performance ID in the member attendance table ？"
+    },
+    {
+        "question": "What country is each member from?",
+        "answer": "Did  you  mean  show  the name of member  and the related\tNationality?"
+    },
+    {
+        "question": "Would you list the grant amounts for all grants with a sent date after 1995?",
+        "answer": "Sorry we cannot answer this question."
+    },
+    {
+        "question": "Can you list the grant IDs for all documents with a sent date after 1995?",
+        "answer": "* I have left the chat *"
+    },
+    {
+        "question": "* I have left the chat *",
+        "answer": "Sorry we cannot query about the date."
+    },
+    {
+        "question": "are those still effective?\n",
+        "answer": "Do you mean the effective-to date of those templates?"
+    },
+    {
+        "question": "how many are used in documents?",
+        "answer": "12 templates are used in a document."
+    },
+    {
+        "question": "what is the Balance Amount of the custid 2",
+        "answer": "Do you need the checking balance, saving balance, or the sum of both?"
+    },
+    {
+        "question": "yes\n",
+        "answer": "Please clarify which one do you need"
+    },
+    {
+        "question": "What are their airline ids?",
+        "answer": "Sorry, I don't have the answer to that question. Only employees with certificates have airline ID's."
+    },
+    {
+        "question": "where is Dakota State University situated ?",
+        "answer": "Did you mean the location or the street address of its building?"
+    },
+    {
+        "question": "how many credit  scores does Schrefl have?",
+        "answer": "Here are the credit scores of students named Schrefl."
+    },
+    {
+        "question": "in what department is Rumat?\n",
+        "answer": "Do you want the name of the department?"
+    },
+    {
+        "question": "* I have left the chat *",
+        "answer": "Bye"
+    },
+    {
+        "question": "Which company has the largest sales?",
+        "answer": "Did you mean the name of the company with the largest sales?"
+    },
+    {
+        "question": "Which person has American nationality?",
+        "answer": "Please clarify what information you would like about the entries where the nationality is American."
+    },
+    {
+        "question": "What is the highest number of enrollments?\n",
+        "answer": "do you mean the highest number of course enrollments of student?"
+    },
+    {
+        "question": "what product Id has the highest price? ",
+        "answer": "Do you mean the id of the product which has the highest price?"
+    },
+    {
+        "question": "what is the product name? ",
+        "answer": "Do you mean the product name of the product which has the highest price?"
+    },
+    {
+        "question": "what is the ID for electoral code?",
+        "answer": "which columns return?"
+    },
+    {
+        "question": "Show the average salary of all departments.",
+        "answer": "Would you like to the know the average  salary grouped over each department name?"
+    },
+    {
+        "question": "Who is the instructor of the department with the lowest average salary. ",
+        "answer": "Would you like to know the name corresponding to the department with the lowest average salary?"
+    },
+    {
+        "question": "Which wine products have the highest average price?",
+        "answer": "Do you mean which grape whose wine products has the highest average price?"
+    },
+    {
+        "question": "What is the GNP rate of Aruba?",
+        "answer": "did you mean the GNP or GNP old?"
+    },
+    {
+        "question": "Can you tell me which statement has the most number of accounts?\n",
+        "answer": "Do you want to know its statement id?"
+    },
+    {
+        "question": "which furniture are of highest quality?",
+        "answer": "Sorry, we don't have the information about the quarlity of furnitures in this table."
+    },
+    {
+        "question": "rank the furniture according to the number of pieces available",
+        "answer": "Do you want a list of furniture name sorted by its corresponding number of component?"
+    },
+    {
+        "question": "What name is popular for actors?\n",
+        "answer": "did you mean the most popular?"
+    },
+    {
+        "question": "Okay, that is a male. What is the 2nd most popular female name?",
+        "answer": "hmm, interesting. but there is no gender info available in the table. I cannot answer this question."
+    },
+    {
+        "question": "List the songs in increasing release years",
+        "answer": "Do you want the names of the songs ordered by their release year?"
+    },
+    {
+        "question": "Can you tell me which customers do not have a first notification of loss record?\n",
+        "answer": "What attributes of the customers that do not have a first notification of loss record would you like to know? "
+    },
+    {
+        "question": "What is the location code of the document with the latest date?",
+        "answer": "do you mean the latest Date that the document was in the location from or to?"
+    },
+    {
+        "question": "Either, whichever has the latest date",
+        "answer": "Sorry you need to specify one. Otherwise, I cannot answer this question using SQL"
+    },
+    {
+        "question": "which of those is best liked?",
+        "answer": "what  did  you mean the one  which  has  the max score?"
+    },
+    {
+        "question": "yes",
+        "answer": "Did  you  mean  the No  in  the wine  table which  is  best liked?"
+    },
+    {
+        "question": "Please answer the question.what is the orchestra of conductor?",
+        "answer": "Do you want all the orchestras of all conductors?"
+    },
+    {
+        "question": "what is the name id of the person with the longest laptime? ",
+        "answer": "Do you mean driver id?"
+    },
+    {
+        "question": "what is his status id",
+        "answer": "Sorry, the table does not contain any content about status id."
+    },
+    {
+        "question": "Which bank has the lowest savings balance?",
+        "answer": "Sorry. The balance is some customer's balance not bank's balance. You can ask for customer id or customer name. There's no bank information on these tables."
+    },
+    {
+        "question": "What is the customer name with the highest bank balance?",
+        "answer": "Do you mean his savings balance?"
+    },
+    {
+        "question": "How many customers have a minimum balance of atleast 30, 000?",
+        "answer": "Do you mean the saving balance or the checking balance or the sum of the two?"
+    },
+    {
+        "question": "how many members are on the table?",
+        "answer": "do you mean the customers?"
+    },
+    {
+        "question": "LIST ALL THE COUNTRIES WITH ORIGINS OF LEAST PLAYERS",
+        "answer": "Isn't it the same question as the last one?"
+    },
+    {
+        "question": "Which country has the largest area?",
+        "answer": "Russian Federation is the name of the country with the largest area."
+    },
+    {
+        "question": "Name players whose earnings are more than 300000.",
+        "answer": "Do you mean the names of the poker players whose earnings is more than 300000?"
+    },
+    {
+        "question": "How many dvd orders are there?",
+        "answer": "There are 3 orders for product dvds."
+    },
+    {
+        "question": "What products have less orders than dvds?",
+        "answer": "Did you want to return all info of the products or just their names?"
+    },
+    {
+        "question": "What are the names of people with overall rating between 85 and 90?",
+        "answer": "by people did you mean players?"
+    },
+    {
+        "question": "What is diego  work title?",
+        "answer": " is Diego the employee first name?"
+    },
+    {
+        "question": "Which 5 players have the highest potential?",
+        "answer": "Do you want the names of those players?"
+    },
+    {
+        "question": "How many number of platforms do they have?",
+        "answer": "could you give more info of your problem? it the \"they\" station id or location?"
+    },
+    {
+        "question": "How many type of institutions in this table?",
+        "answer": "There are 3 different types of institutions in the table."
+    },
+    {
+        "question": "Who are the members of  Bootup Baltimore? ",
+        "answer": "Here are the first names and last names of members of Bootup Baltimore"
+    },
+    {
+        "question": "Who is maker for the ID number 2 ?",
+        "answer": "Did you mean Id or ModelId?"
+    },
+    {
+        "question": "Which furniture has the highest price?",
+        "answer": "The id of the furniture with the highest price is 7."
+    },
+    {
+        "question": "What are the document id of all the location code?",
+        "answer": "Do you mean you wanna see the whole document ids or see the document id and its location codes at the same time."
+    },
+    {
+        "question": "Can you tell me which companies are located at the Torre KOI building?",
+        "answer": "What attributes of these companies do you want to know? "
+    },
+    {
+        "question": "how many names are available?",
+        "answer": "did you mean how many LastName or FirstName  are available "
+    },
+    {
+        "question": "yes",
+        "answer": " LastName or FirstName?\n"
+    },
+    {
+        "question": "How many cities have 3 cities?",
+        "answer": "Sorry, I cannot answer that question."
+    },
+    {
+        "question": "What is his id number?",
+        "answer": "Sorry we don't have pilot's id in record. Can you ask anything else?"
+    },
+    {
+        "question": "What players were those draft pick numbers for?",
+        "answer": "do you want to see both the players and the draft pick numbers? "
+    },
+    {
+        "question": "How about the price of Cola in dollars?\n\n",
+        "answer": "do you still want to know the average and minimum?"
+    },
+    {
+        "question": "How about the prices for root beer in dollars?\n",
+        "answer": "did you still want to know the average and minimum?"
+    },
+    {
+        "question": "Which county has the lowest crime rate?\n",
+        "answer": "Would you like the county name corresponding to the lowest crime rate?"
+    },
+    {
+        "question": "list together, the crime rate for Central Saanich and Campbell River counties",
+        "answer": "Would you like me to list the crime rates for counties with the name Central Saanich or Campbell River?"
+    },
+    {
+        "question": "please list by crime rate in ascending order",
+        "answer": "Would you like the crime rates for all counties in ascending order of crime rate?"
+    },
+    {
+        "question": "what is their rank? ",
+        "answer": "do you mean all their ranks in every year?"
+    },
+    {
+        "question": "show me the tweets tweeted by them.",
+        "answer": "do you want to show all the info of the tweets?"
+    },
+    {
+        "question": "Please show the location of the airport with name \"London Gatwick\".",
+        "answer": "The location of the airport cannot be found in the table."
+    },
+    {
+        "question": "Give me names of all faculty members in alphabetical order",
+        "answer": "Do you want to rank by first name or last name?"
+    },
+    {
+        "question": "How many number of hosting_city in china?",
+        "answer": "Sorry we don't have information about country in  the table"
+    },
+    {
+        "question": "who is get the high salary?\n",
+        "answer": "Do you mean the id of the player who gets the highest salary?"
+    },
+    {
+        "question": "What is the region for each of these?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "Which government forms and their populations are those for?",
+        "answer": "Sorry, I cannot understand this question. Can you elaborate?"
+    },
+    {
+        "question": "show all the procedures on the table",
+        "answer": "Did you want all the procedure names?"
+    },
+    {
+        "question": "Is it possible that i book a room with King Size bed for two for a week?\n",
+        "answer": "Sorry, there is no info related to the maximum booking duration. Could you please ask other questions related to the table. "
+    },
+    {
+        "question": "What were their times in the meter 300?",
+        "answer": "Here are the names and times in the meter 300 of swimmers who have both win and loss records."
+    },
+    {
+        "question": "Hi, could you please let me know the list of all female students who are older than 18 and not majoring in 600?",
+        "answer": "what  did  you  want  to get  about  female students who are older than 18 and not majoring in 600?"
+    },
+    {
+        "question": "Thank you again. Could you please let me know who are the oldest among them with his age?",
+        "answer": "Did  you mean  base on  the last one question?"
+    },
+    {
+        "question": "Thank you very much. This will be my last question, could you please show me the name of female students who are majoring in 520, if there are any?",
+        "answer": "Did  you  mean  the full name about  those ?"
+    },
+    {
+        "question": "which object railways that do not have any trains?",
+        "answer": "Do you mean the object number?"
+    },
+    {
+        "question": "which one is located in New York.",
+        "answer": "Do you mean York?"
+    },
+    {
+        "question": "what is name of employee id 100?",
+        "answer": "Did you mean the first name or last name of employee id 100?"
+    },
+    {
+        "question": "what is the name of the organization with the maximum outcome count? ",
+        "answer": "Sorry, the table does not have information about their name."
+    },
+    {
+        "question": "what is the outcome code? ",
+        "answer": "Whose outcome code do you want?"
+    },
+    {
+        "question": "what is the nationality of the forward-center team?",
+        "answer": "Do you mean the nationality of the pilot in the forward-center team?"
+    },
+    {
+        "question": "Hi, what are the names of the teachers?",
+        "answer": "The result shows the full names of the teachers"
+    },
+    {
+        "question": "And what are the students associated with each teacher?",
+        "answer": "The table shows the full names of students the full names of the teachers who once teach them."
+    },
+    {
+        "question": "What students aren't taught by Otha Moyer?",
+        "answer": "Did you want to return their full names?"
+    },
+    {
+        "question": "How much did Eunice Morar spend?",
+        "answer": "Sorry, I cannot answer this."
+    },
+    {
+        "question": "What code has the most number of documents?",
+        "answer": "The type code that has the most number of documents is BK"
+    },
+    {
+        "question": "How many players are on a team?",
+        "answer": "Which team are you referring to?"
+    },
+    {
+        "question": "Did they win the league that year?",
+        "answer": "Sorry, our database does not contain information on whether the Boston Red Stockings won the league in 2000."
+    },
+    {
+        "question": "Can you also show me when it was founded?",
+        "answer": "The school that has the lowest acc percent score was founded in 1957."
+    },
+    {
+        "question": "How much is Steven King Salary",
+        "answer": "The salary of Steven King is 24000."
+    },
+    {
+        "question": "How long has Steven King worked here",
+        "answer": "Sorry, I can't answer this question based on the table."
+    },
+    {
+        "question": "What is the average payment method used to process payments?\n",
+        "answer": "Sorry. Can you clarify your question?"
+    },
+    {
+        "question": "Show me the name of the store name with dept store id 1?",
+        "answer": "Do you  mean  dept  store  chain name?"
+    },
+    {
+        "question": "Show me the name of all department stores?",
+        "answer": "Do  you  mean  the store name ?"
+    },
+    {
+        "question": "What ids have more than one participant?\n",
+        "answer": "Which kind of ID do you mean?"
+    },
+    {
+        "question": "And which Event Details have more than one participant?\n",
+        "answer": "Do you mean the Event Details of the event?"
+    },
+    {
+        "question": "What is the largest oil and gas company?",
+        "answer": "i  have no  infor  about oil and gas"
+    },
+    {
+        "question": "What company has the highest market value?",
+        "answer": "Did  you  mean  the max Profits_in_Billion?"
+    },
+    {
+        "question": "Why does the table show two instance of opened policies for Ellsworth Paucek?",
+        "answer": "Sorry, I cannot answer this kind of question."
+    },
+    {
+        "question": "Which customer opened a policy on 7-22-16?",
+        "answer": "The customer who opened a policy on 2016-07-22 has the name Mrs. Hanna Willms."
+    },
+    {
+        "question": "What are their prices?",
+        "answer": "Do you mean typical buying price or typical selling price?"
+    },
+    {
+        "question": "Thanks!  Can you filter this list to show only the rows corresponding with the 3 drivers with the most years working?",
+        "answer": "Sorry, there is no \"years working\" column in the table for drivers."
+    },
+    {
+        "question": "Thank you!  Can you tell me which of the schools, if any, are associated with more than one grade?",
+        "answer": "Do you want to include college as more than one grade?"
+    },
+    {
+        "question": "which donator has the highest endowment?",
+        "answer": "Did you mean endowment id?"
+    },
+    {
+        "question": "What are the full name of amc?",
+        "answer": "Did you mean the full name of the car maker amc?"
+    },
+    {
+        "question": "What type of car making by german country?",
+        "answer": "Sorry we don't have information about type of car. Can you clarify your question?"
+    },
+    {
+        "question": "What kind of car is produced in Germany?",
+        "answer": "Did you mean the car models produced in Germany?"
+    },
+    {
+        "question": "What distance does aircraft ID fly?",
+        "answer": "Do you mean aircraft id 3? And want me to return the sum of all the distances it flew?"
+    },
+    {
+        "question": "Who is the doctor works?",
+        "answer": "Do you mean whose job is \"doctor\"?"
+    },
+    {
+        "question": "Age and sex of Smith Linda?",
+        "answer": "The age and sex of the student whose last name is Smith and first name is Linda are 18 and F respectively."
+    },
+    {
+        "question": "City code of Jones Shiela?",
+        "answer": "Do you mean the city code of the student whose first name is Shiela and last name is Jones?"
+    },
+    {
+        "question": "who is the first joined staff?",
+        "answer": "Which information do you want to know about the first joined staff?"
+    },
+    {
+        "question": "can you shoe me customers' phone numbers?",
+        "answer": "Do you mean cell mobile phone number or phone number?"
+    },
+    {
+        "question": "WHAT IS THE DOCUMENT TEXT ",
+        "answer": "Did you mean the \tParagraph Text?"
+    },
+    {
+        "question": "How many of the English professors with PhDs are female?",
+        "answer": "Sorry, the female information is not available in the table. Please ask something else. "
+    },
+    {
+        "question": "find all first-grade students who are not taught by otha moyer.",
+        "answer": "Do you mean First or Last names?"
+    },
+    {
+        "question": "What are their names?",
+        "answer": "Do you mean  the photos name"
+    },
+    {
+        "question": "how many of the parties are popular?",
+        "answer": "What do you mean by popular?"
+    },
+    {
+        "question": "Give me the names of all female students on ground",
+        "answer": "What do you mean by \"on ground\"?"
+    },
+    {
+        "question": "When was the oldest one?",
+        "answer": "Did you mean  the date "
+    },
+    {
+        "question": "How about the most recent one? ",
+        "answer": "Did you just want to know the recent date?"
+    },
+    {
+        "question": "What are the cars with the lowest horsepower?",
+        "answer": "Do you mean the id of the car with the lowest horsepower?"
+    },
+    {
+        "question": "is there any data providing who the transcript was recorded by?",
+        "answer": "Sorry, our databases do not have information on who recorded the transcripts."
+    },
+    {
+        "question": "Show me other details of those transcripts",
+        "answer": "Do you mean other details of those transcripts with at least 2 course results?"
+    },
+    {
+        "question": "Can you please give me the names of all of the professors sorted in alphabetical order of their first name?",
+        "answer": "Do you want to first name of all the professors, or last name or both?"
+    },
+    {
+        "question": "Oh sorry! Lost count of which question I was at with you... Can you tell me what the totals are for each of student ID, liked ID and friend ID?",
+        "answer": "do you mean the total number of liked id and friend id for each student id?"
+    },
+    {
+        "question": "Which students have allergies? ",
+        "answer": "Do you want to return their first and last names or other info?"
+    },
+    {
+        "question": "Thanks!  Can you please list the part id and the corresponding price of the part with the lowest chargeable amount?",
+        "answer": "We don't have price. Do you mean want the part ids and corresponding chargeable amount of the part with the lowest chargeable amount?"
+    },
+    {
+        "question": "how many male body builder of there",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "Which airport had the largest difference between domestic and international passengers?",
+        "answer": "Sorry I cannot answer this question. Can you change one please?"
+    },
+    {
+        "question": "who is the oldest artist?",
+        "answer": "do you want to show his/her name?"
+    },
+    {
+        "question": "can you show me artist's countries?",
+        "answer": "did you mean the country of the oldest artist or countries of all the artists?"
+    },
+    {
+        "question": "How long have the customers been existent?",
+        "answer": "There is no info about how long the customers have existed"
+    },
+    {
+        "question": "what is the account type? ",
+        "answer": "Would you like a list of all the account types?"
+    },
+    {
+        "question": "Ok thank you.Can you please show me the music festivals with counts more than 1?",
+        "answer": "Did you mean to ask for the categories of the music festivals with counts more than 1?"
+    },
+    {
+        "question": "Do any of these institutions have other institutions?",
+        "answer": "I don't understand your question. Please rephrase."
+    },
+    {
+        "question": "Do any of these institutions (universities, college) have any other affiliated institutions (other university locations) ?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "What is the average number of institutions?",
+        "answer": "Average number of institutions over what?"
+    },
+    {
+        "question": "ok,  how many teams are the total in this data range?",
+        "answer": "What data range are you referring to?"
+    },
+    {
+        "question": "What is the id number for the psychology department?",
+        "answer": "Sorry we don't have the id of department. We only have id of the instructors. Could you please ask another question? Thanks."
+    },
+    {
+        "question": "Hi! Which engineer has visited the most times?",
+        "answer": "What information about the engineer you want?"
+    },
+    {
+        "question": "What is the course code for the class named Statistics?",
+        "answer": "Do you mean the course code for the course whose description is Statistics?"
+    },
+    {
+        "question": "What is the name of the department that course is in?",
+        "answer": "Do you mean the name of the department which the course named 'Intro. to Statistics' is in?"
+    },
+    {
+        "question": "Do you also have a total enrollment?",
+        "answer": "What do you mean by enrollment?"
+    },
+    {
+        "question": "List the number of tickets bought in all visits ",
+        "answer": "the total number of tickets bought in all visits is 63."
+    },
+    {
+        "question": "What cities had the lowest temperature in March?",
+        "answer": "what did  you  want to get ?city ID  or  city name？"
+    },
+    {
+        "question": "What were the complaint outcome code\tof each of those claims?",
+        "answer": "Here are the complaint outcome codes of each of Product Failure type claims."
+    },
+    {
+        "question": "Could you list the catalog publishers in descending order?",
+        "answer": "order by what?"
+    },
+    {
+        "question": "What is country of origin of Eduardo Martins?",
+        "answer": "The country of the customer Eduardo Martins is Brazil."
+    },
+    {
+        "question": "Could you please tell me who is President of the club Bootup Baltimore.",
+        "answer": "Do you want the first and last name of him?"
+    },
+    {
+        "question": "Which wines are made of Red color grapes? ",
+        "answer": "Here are the wine names for wine made of Red color grapes."
+    },
+    {
+        "question": "who is the singers name?",
+        "answer": "did you mean List the names of all singers"
+    },
+    {
+        "question": "how much sales in christmas ?",
+        "answer": "sorry,i dont have the anwser you want"
+    },
+    {
+        "question": "what is the capacity of Codling?",
+        "answer": "Did you mean the capacity of the cinema with a name of Coding?"
+    },
+    {
+        "question": "what is the email id of françois tremblay",
+        "answer": "ftremblay@gmail.com is the email of the customer with first and last names françois tremblay.\n"
+    },
+    {
+        "question": "list the name of the city that students live in",
+        "answer": "The codes of the cities that students live in are listed."
+    },
+    {
+        "question": "show me the city names too",
+        "answer": "Sorry, I can't answer the question based on the table."
+    },
+    {
+        "question": "What about for history?",
+        "answer": "What do you mean exactly?"
+    },
+    {
+        "question": "what is the employee code ",
+        "answer": "Sorry, this question can not be answered by SQL. what else would you like to know? "
+    },
+    {
+        "question": "What stadiums were played in when injuries were received?",
+        "answer": "sorry  i don't  have an answer because there is no  info about  stadiums"
+    },
+    {
+        "question": "What is the sex of professor",
+        "answer": "I am sorry. Which professor are you referring to?"
+    },
+    {
+        "question": "what is problem status code of  first column",
+        "answer": "I cannot answer this question with SQL. Please provide the title of the column in the table you are interested in."
+    },
+    {
+        "question": "Address of  Luís Köhler?",
+        "answer": "Is Luís Köhler  full  name?"
+    },
+    {
+        "question": "Find the id of year 1956?",
+        "answer": "do you mean the id of the campus that is opened in 1956?"
+    },
+    {
+        "question": "Which users have the most popular role?",
+        "answer": "Do you mean the user name of the users who have the most popular role?"
+    },
+    {
+        "question": "what was my savings amount balance?",
+        "answer": "Sorry, what is your customer id?"
+    },
+    {
+        "question": "who has the second most orders?",
+        "answer": "Do you want the customer first name or something else?"
+    },
+    {
+        "question": "when is the customer with the most order's register date?",
+        "answer": "sorry, I cannot answer this."
+    },
+    {
+        "question": "now what are their major",
+        "answer": "Do you mean the major of the students whose faculty have at least 2 students?"
+    },
+    {
+        "question": "what is the average number of days",
+        "answer": "did you mean the average days held by all wrestlers?"
+    },
+    {
+        "question": "what is the name of the first wrestler id",
+        "answer": "did you mean the name of the wrestler with id 1?"
+    },
+    {
+        "question": "Can you show me all the information for employees who have the letters D or S in their names?",
+        "answer": "Do you mean first names?"
+    },
+    {
+        "question": "Everything, please. I can see it in the table there. It's correct. Can you order it by salary in descending order?",
+        "answer": "Do you mean the employees who have the letters D or S in their first names?"
+    },
+    {
+        "question": "Can you list them by the number of rooms in decending order?",
+        "answer": "Do you mean roomnumber?"
+    },
+    {
+        "question": "Find the max occupancy of bed type Queen?",
+        "answer": "Here are the max occupancies of rooms with bed type Queen."
+    },
+    {
+        "question": "What is the date average date of customers' becoming a customer?",
+        "answer": "Sorry, there is no average for the date. Could you please ask other questions?"
+    },
+    {
+        "question": "How many login names are there?\n",
+        "answer": "Did you mean the login names for all students?"
+    },
+    {
+        "question": "How about the number of projects they worked before 1989-04-24 23:51:54'?",
+        "answer": "The total number of distinct projects that have some project staffs worked as a leader and worked before 1989-04-24 23:51:54' is 2"
+    },
+    {
+        "question": "Hi, what are some tourist attractions that tourist visit?",
+        "answer": "do you want the name  of the tourist attractions  that tourist visit?"
+    },
+    {
+        "question": "What is bool's attribute name?",
+        "answer": "Do you mean the attribute names for attributes whose attribute data type is bool?"
+    },
+    {
+        "question": "Can you show me a list of apartments with the booking status of \"Provisional\"?",
+        "answer": "Sure. This is the list of numbers of apartments with the booking status of \"Provisional\"."
+    },
+    {
+        "question": "Can you show me a list of all student IDs?",
+        "answer": "Did you mean the id of all High schoolers?"
+    },
+    {
+        "question": "Can you tell me which Student ID is not on the list of Friend IDs?",
+        "answer": "by student id, do you mean the student id in the table friend or all high schoolers' ids."
+    },
+    {
+        "question": "What  attraction type do most tourist attractions belong to?",
+        "answer": "Did  you want  to  know the attraction type that most tourist attractions belong to? code  or  description?"
+    },
+    {
+        "question": "What is its description?\n",
+        "answer": "Did  you  also  want  to konw  the description the attraction type most tourist attractions belong to?"
+    },
+    {
+        "question": "List the names of the attractions which belong to gallery type\n",
+        "answer": "Did   you  mean  all  the names?"
+    },
+    {
+        "question": "How many gallery type attractions are there?",
+        "answer": "Can   you  give  more  info  about  this  ?"
+    },
+    {
+        "question": "How many attractions belong to gallery type?\n",
+        "answer": "There are 5 attractions that belong to the attraction type gallery."
+    },
+    {
+        "question": "Most GDP in this table?",
+        "answer": "Do  you  mean  the max  GDP"
+    },
+    {
+        "question": "What are the names of the students who live in the city with code HKG?",
+        "answer": "Do  you  mean the full name"
+    },
+    {
+        "question": "Please return a count of how many there are left",
+        "answer": "I don't understand. Do you mean the count of students not in the previous result?"
+    },
+    {
+        "question": "Which products were purchased in the largest amount?",
+        "answer": "4 is the id of product that was purchased in the largest amount."
+    },
+    {
+        "question": "what that a sale or purchase?",
+        "answer": "Sorry, I do not understand."
+    },
+    {
+        "question": "Can you list the residents by the count of services in descending order by count of services?\n",
+        "answer": "Do you just want the resident ids? "
+    },
+    {
+        "question": "Hi, can you tell me in what year did the artist Gorgoroth release his first song?",
+        "answer": "16 May - 30 May is the issue date of the song the artist Gorgoroth first released."
+    },
+    {
+        "question": "Excellent!  Can you update this list to show many total classes were taken in Fall of 2008?",
+        "answer": "Do you mean how many total classes were taken in Fall of 2008?"
+    },
+    {
+        "question": "What is the name of the city the student by the name of Linda Smith is from?",
+        "answer": "Do you mean the code of the city? since we don't have the name of cities."
+    },
+    {
+        "question": "I'm looking for a patient. ",
+        "answer": "What feature do you want?"
+    },
+    {
+        "question": "what is the age of smith",
+        "answer": "Do you mean the age of the student whose last name is Smith?"
+    },
+    {
+        "question": "who is the highest advisor",
+        "answer": "Sorry. Do you mean which student has an advisor with largest id? And do you need that student's first name or last name?"
+    },
+    {
+        "question": "yeah correct",
+        "answer": "So do you need the first name or last name?"
+    },
+    {
+        "question": "exactly",
+        "answer": "I mean which one do you want to know, first name or last name or both?"
+    },
+    {
+        "question": "And what is the average gender wise?",
+        "answer": "sorry,i cant understand your question"
+    },
+    {
+        "question": "Are there any captains that are included in both lists?",
+        "answer": "Did you mean ships that are included in both lists?"
+    },
+    {
+        "question": "what is the average number of faculty members?",
+        "answer": "Do you mean the average number of FacID?"
+    },
+    {
+        "question": "What is the FacID of Gerald",
+        "answer": "The FacId of Gerald as Fname is 1148 or 9643"
+    },
+    {
+        "question": "If there are three representatives and we already named Clive Burr and Time Read, who is the third representative?",
+        "answer": "I cannot answer your question because there are too many representative names. Could you please clarify your question?"
+    },
+    {
+        "question": "What gas station is the oldest one based on open year",
+        "answer": "Which kind of information about this gas station do you want?"
+    },
+    {
+        "question": "why the order was cancelled",
+        "answer": "Sorry, this question can be answered from the table. Do you want to know something else? "
+    },
+    {
+        "question": "which person had order high amount of products",
+        "answer": "What attributes do you want to know about the customer who ordered the highest amount of products? "
+    },
+    {
+        "question": "how many buildings are managed by taylor?",
+        "answer": "Sorry, this question can not be answered given the table information. (Taylor is the building name). "
+    },
+    {
+        "question": "what is the name of the settlement claim with the largest claim amount? ",
+        "answer": "What do you mean by the name of the settlement claim? "
+    },
+    {
+        "question": "Who has high loser_rank_points higher than 3500 ?",
+        "answer": "What attributes of the people  with loser_rank_points higher than 3500 would you like to know? "
+    },
+    {
+        "question": "what is the Enrollment for Lions?",
+        "answer": "The enrollment for the school with a mascot lions is 495."
+    },
+    {
+        "question": "Tell me the name of the instructor who getting high salary...And tell his department name too...",
+        "answer": "How do you define a high salary? "
+    },
+    {
+        "question": "Can you list them for me with their names and majors?",
+        "answer": "First name?"
+    },
+    {
+        "question": "show me the programmes",
+        "answer": "Do you mean all the program ids?"
+    },
+    {
+        "question": "list the name of programme  that broadcast frequently",
+        "answer": "Do you mean the name of the program that is broadcast most frequently?"
+    },
+    {
+        "question": "What is the value of the greatest number of likes for each high schooler?",
+        "answer": "what  did  you mean  the value?"
+    },
+    {
+        "question": "Which of those 5 distinct shops have the most happy hours?",
+        "answer": "Shop id 1 has the most happy hours"
+    },
+    {
+        "question": "Thank you!  Can you tell me what the average typical selling price is of all of the product types?",
+        "answer": "do you mean the average typical selling price of all product category code?"
+    },
+    {
+        "question": "what is its code?",
+        "answer": "Do you mean circuit id?"
+    },
+    {
+        "question": "What is the destination of airline United Airlines?",
+        "answer": "Sorry, I cannot understand. Can you rephrase your question?"
+    },
+    {
+        "question": "What is the flight number of Delta Airlines",
+        "answer": "Did you mean to ask for the flight numbers of all flights on Delta Airlines?"
+    },
+    {
+        "question": "may i have the order ids please?",
+        "answer": "Did you mean their order ids?"
+    },
+    {
+        "question": "How many number of matches in this table?",
+        "answer": "Sorry, there is no info about matches."
+    },
+    {
+        "question": "How many competitions in this table?",
+        "answer": "Did you mean the number of different competitions?"
+    },
+    {
+        "question": "and now just of those employees whose nationality is United States",
+        "answer": "Here are the names of employees that work for companies with sales bigger than 200 and nationality United States."
+    },
+    {
+        "question": "what the age of linda",
+        "answer": "Here is the age of student with first name \"Linda\""
+    },
+    {
+        "question": "what is the position of club id 1",
+        "answer": "What do you mean by the position of club id 1"
+    },
+    {
+        "question": "How much does the cheapest Hard drive go for?",
+        "answer": "240 is the price of the cheapest product whose name is Hard drive"
+    },
+    {
+        "question": "What is the name of the author who wrote the most papers?",
+        "answer": "Do you mean the fname or  lname?"
+    },
+    {
+        "question": "what is the claim that incurred most number of settlements? ",
+        "answer": "what do you want to know about this claim?"
+    },
+    {
+        "question": "please tell me the name of pilot",
+        "answer": "Did  you  mean  all  the  names  in the pilot?"
+    },
+    {
+        "question": "i need the pilot ID",
+        "answer": "Did  you  mean   to  show  all of the  pilot IDs ?"
+    },
+    {
+        "question": "Very good!  Can display a list of all of the employees first names which contain a letter Z in their first name?",
+        "answer": "which colums to return?"
+    },
+    {
+        "question": "wonderful, looks like nine total.  approximately how many patients do each of them take care of?\n",
+        "answer": "Would you like to know average patients corresponding to each physician?"
+    },
+    {
+        "question": "Find the porphyria ALA dehydratase?",
+        "answer": "By find, what information would you want me to find?"
+    },
+    {
+        "question": "what is the source airport of ASY",
+        "answer": "What is ASY?"
+    },
+    {
+        "question": "what is transactions type code?",
+        "answer": "Did you want all of the transactions type code?"
+    },
+    {
+        "question": "Can you list all songs that were released in March?",
+        "answer": "Do  you mean  the  songs  name?"
+    },
+    {
+        "question": "What is their name and team?",
+        "answer": "what  do  you mean  their?could  you  give  more  info ?"
+    },
+    {
+        "question": "What are the names of the course authors who teach the course with the name \"operating system\" or \"data structure\" please?",
+        "answer": "do you want to return their personal, middle, and family names?"
+    },
+    {
+        "question": "what is the best grade ?",
+        "answer": "Did you mean to ask for the highest grade?"
+    },
+    {
+        "question": "What policies does Dayana Robel have?\n",
+        "answer": "Do you mean the policy types of the customer named \"Dayana Robel\"?"
+    },
+    {
+        "question": "what is the competition id of the country",
+        "answer": "Can you clarify? The competition id is not unique to a country. "
+    },
+    {
+        "question": "What are the names of the students from ATL?",
+        "answer": "Here are the first and last names of the student from ATL"
+    },
+    {
+        "question": "please check the table once more for the name of students not enrolled in any course",
+        "answer": "Do you need those students' Fname or Lname?"
+    },
+    {
+        "question": "What is the name of the instructor who advises of all the students in the History department?",
+        "answer": "Sorry, I don't know the name of the instructor who advises of all students from History department based on the table. "
+    },
+    {
+        "question": "Which department has the lowest number of total credits?",
+        "answer": "The department in which the students have the lowest sum of total credits is Marketing."
+    },
+    {
+        "question": "Show me the instructor ID associated with the History department.",
+        "answer": "Do you mean the ids of the instructors who advises of all students from History department?"
+    },
+    {
+        "question": "Do the instructors have an adviser or department head?",
+        "answer": "I can't answer the question based on the tables."
+    },
+    {
+        "question": "What are the star rating descriptions of these hotels?",
+        "answer": "You mean the hotels with price above 10000?"
+    },
+    {
+        "question": "Who are the entrepreneurs requesting money",
+        "answer": "What attributes would you like to know about the entrepreneurs raising money? "
+    },
+    {
+        "question": "Which entrepreneur has the highest weight?  Thanks!",
+        "answer": "What attribute would you like to know about the entrepreneur with the highest weight? "
+    },
+    {
+        "question": "Give me the membership amount for those cities",
+        "answer": "Which cities?"
+    },
+    {
+        "question": "Cities that were opened before 2010",
+        "answer": "Ah, I cannot understand. Do you mean cities that have branches opened before 2010?"
+    },
+    {
+        "question": "what are the items with highest average rating",
+        "answer": "Do you mean the the title of the item with the highest average rating?"
+    },
+    {
+        "question": "Can you tell me which product has the greatest height?",
+        "answer": "Which attribute of product do you want?"
+    },
+    {
+        "question": "What is the exact address? ",
+        "answer": "Do you mean line 1 of address?"
+    },
+    {
+        "question": "List the customers not in the top ten by number of orders",
+        "answer": "Could you ask other questions? I cannot answer this one."
+    },
+    {
+        "question": "List all customers with 7 or more orders and number of orders",
+        "answer": "Here are the first and last names of the customers with 7 or more orders and their number of orders"
+    },
+    {
+        "question": "Which artist has the lowest albums?",
+        "answer": "Did you mean which artist has the least number of albums?"
+    },
+    {
+        "question": "Can you list the ids of them by the numer of people attended?",
+        "answer": "Do you want to list them in ascending order or descending order?"
+    },
+    {
+        "question": "Which instructors held classes in Fall 2009 and Spring 2010?\n",
+        "answer": "There is no information about the instructors."
+    },
+    {
+        "question": "Which building housed section ID 443?\n",
+        "answer": "You mean course id or section id?"
+    },
+    {
+        "question": "Hello, can you please tell me the average training hours of all the players?",
+        "answer": "Sorry the information is not available in the table."
+    },
+    {
+        "question": "What about the average training hours of all the players whose names contain the letter 'a'?",
+        "answer": "Sorry the training hour information is not available from the table."
+    },
+    {
+        "question": "Hmm, I want to know all the customer names that live in Brazil and have an invoice.",
+        "answer": "Here are the distinct first names of all the customer that live in Brazil and have an invoice."
+    },
+    {
+        "question": "Could you add in the typical buying price of each of those please?",
+        "answer": "The price of basil is 503.8431967. The price of sesame is 1284268.0659 and price of caraway is 24493"
+    },
+    {
+        "question": "What is the name of the stadium with the highest average  lowest attendance?",
+        "answer": "Sorry, I don't understand \"highest average lowest attendance\". Could you please clarify?"
+    },
+    {
+        "question": "Which party does Lloyd Daniels host?",
+        "answer": "Did you want the location of the party hosted by the host named Lloyd Daniels?"
+    },
+    {
+        "question": "Who is the senior employee and tell me first name? Tell me the hire date",
+        "answer": "What do you mean by senior employee? "
+    },
+    {
+        "question": "what are their performance id? ",
+        "answer": "Whose performance ids do you want?"
+    },
+    {
+        "question": "of the highest number of attendees",
+        "answer": "Did you mean to ask for the performance id of the performance with the highest number of attendees?"
+    },
+    {
+        "question": "Can you show me how many departments there are?",
+        "answer": "Did you mean the number of distinct department names?"
+    },
+    {
+        "question": "Can you also show me the total number of instructers?",
+        "answer": "what  did  you  mean by instructers?  can  you  give  more  info?"
+    },
+    {
+        "question": "Show me all the films which listed in the table?",
+        "answer": "There are the titles of all the films."
+    },
+    {
+        "question": "I need the number of amenities for the dorms that can accommodate more than 100 students\n",
+        "answer": "Are you asking for the number of distinct amenities for dorms whose student capacity is greater than 100?"
+    },
+    {
+        "question": "which postseason are highest wins",
+        "answer": "Would you like all information for the entry in postseason with the highest value for wins?"
+    },
+    {
+        "question": "how much bonus was Employee with ID 1 awarded?",
+        "answer": "The employee with employee id 1 got a total amount of 5900.0 bonus."
+    },
+    {
+        "question": "what is type of position?",
+        "answer": "I  have  no  infor  about   position"
+    },
+    {
+        "question": "for id program 9, which degree summary is the most common",
+        "answer": "Could you please clarify your question? Since one program has only one degree summary."
+    },
+    {
+        "question": "could you please find who's provide lowest cost of treatment?\n",
+        "answer": "you want first name or last name or both?"
+    },
+    {
+        "question": "Show me all the policy types available?",
+        "answer": "Do  you mean \tpolicy  type  code?"
+    },
+    {
+        "question": "Thank you!  Can you update this list to show only the Document_IDs and corresponding document_names for the documents that have 2 or more paragraphs, and then add the values from the paragraph text category?",
+        "answer": "Sorry, I do not understand your question."
+    },
+    {
+        "question": "On what date did the courses start? ",
+        "answer": "Do you mean the registration date of students or the date of attendance of students?"
+    },
+    {
+        "question": "Which course had the least attendance rate?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "Number of international passengers per airport?",
+        "answer": "Did you want the names of airports and their number of international passengers?"
+    },
+    {
+        "question": "Who is the professor in the office DRE 102?",
+        "answer": "Do you want their first name, last name, or initial?"
+    },
+    {
+        "question": "what is the name of dept of statistics",
+        "answer": "Do you mean the name of instructors from the statistics department?"
+    },
+    {
+        "question": "When is birth date for Martina ?",
+        "answer": "There are a lot of Martina. Do you mean the Marina with id 200001? "
+    },
+    {
+        "question": "Where is the location for medicine id 3?",
+        "answer": "Sorry, medicine does not have a location."
+    },
+    {
+        "question": "and Jeramie?",
+        "answer": "Jeramie made 3 orders."
+    },
+    {
+        "question": "what is the department code of 103",
+        "answer": "Do you mean the department code of professor with emp number 103?"
+    },
+    {
+        "question": "Who are the members whose hometown address includes Kentucky",
+        "answer": "Did you want the names of the members whose hometown address includes the word Kentucky?"
+    },
+    {
+        "question": "What is the Last name of staff \"Lacey\" of the list?",
+        "answer": "The last name of staff with first name \"Lacey\" is Bosco"
+    },
+    {
+        "question": "What is the first name of Staff \"Medhurst\" of the list?",
+        "answer": "The first name of Staff with last name \"Medhurst\" is Ashley."
+    },
+    {
+        "question": "how many course are presented on the table",
+        "answer": "Did you mean to ask for the number of entries in the table course?"
+    },
+    {
+        "question": "what are all the title are on the table",
+        "answer": "Did you mean to ask for the titles in the table course?"
+    },
+    {
+        "question": "Please show me the greatest total amount of loans to customers for each bank branch.",
+        "answer": "Sorry, I cannot understand what you ask. Could you ask the question in another way?"
+    },
+    {
+        "question": "what is the date of attendance of the student is 121? ",
+        "answer": "the date of attendance of the student with id 121 is 2012-04-09 11:44:34."
+    },
+    {
+        "question": "Thank you.   Can you please tell me the name of the engineer that was contacted by each manager? \n",
+        "answer": "Of course. First or Last name?"
+    },
+    {
+        "question": "How many ids are in document 'Welcome to NY'?",
+        "answer": "Do you mean how many paragraphs are associated with document 'Welcome to NY'?"
+    },
+    {
+        "question": "What are their ids?",
+        "answer": "Do you mean card ids for all cards?"
+    },
+    {
+        "question": "which player got first rank and their name",
+        "answer": "Do you want the first name or last name?"
+    },
+    {
+        "question": "can you show me a list of where i can go on bus?",
+        "answer": "do you want the id of location or tourist attraction or the name?"
+    },
+    {
+        "question": "how match total orders",
+        "answer": "Sorry I don't understand the question."
+    },
+    {
+        "question": "CAN YOU TELL AREAS RELATED TO DUBLIN",
+        "answer": "Sorry, I don't understand. What did you want, like capital?"
+    },
+    {
+        "question": "How many customers are there?",
+        "answer": "Sorry, I can not answer that question based on this table. "
+    },
+    {
+        "question": "Thanks!",
+        "answer": "Thank you,  good bye. "
+    },
+    {
+        "question": "what is the catogery of the particular year id",
+        "answer": "Do  you mean of the year id 1944?"
+    },
+    {
+        "question": "What grade do they teach?",
+        "answer": "Here are the grades of the students taught by the teacher who teaches the largest number of students."
+    },
+    {
+        "question": "Would you also add in their rankings?",
+        "answer": "Do you mean their average rankings?"
+    },
+    {
+        "question": "Hello!  Can you show me a list of all courses that were offered in the Chandler building?",
+        "answer": "Do you want just their titles, or all the course information? "
+    },
+    {
+        "question": "List all company offices",
+        "answer": "did you mean the info of all the buildings?"
+    },
+    {
+        "question": "no",
+        "answer": "Sorry, i cannot answer this question. Other than that, there is no info about company offices."
+    },
+    {
+        "question": "List the company IDs for each building id",
+        "answer": "Sorry, I cannot answer this question. Instead, I can tell you the number of companies for each building id. Do you want to show that?"
+    },
+    {
+        "question": "Thank you for that!  Can you update the list with the job of each person as well?",
+        "answer": "Would you like me to show you the names of all persons and also their corresponding job?"
+    },
+    {
+        "question": "Can you filter this list to show only the students?",
+        "answer": "Would you like me to show you a list of names and corresponding jobs for people whose job is student?"
+    },
+    {
+        "question": "* I have left the chat *",
+        "answer": "Do you mean the publishers of the result table that also have publications with prices lower than 5000000 or any publisher that has a publication with a price lower than 5000000"
+    },
+    {
+        "question": "What about his likes?",
+        "answer": "Kyle only has one like."
+    },
+    {
+        "question": "What is the average of all savings accounts?",
+        "answer": " The average savings balance of all the accounts is 166751716.5."
+    },
+    {
+        "question": "Show me the documents\n",
+        "answer": "did you mean all the info of the documents?"
+    },
+    {
+        "question": "What are entry IDs of catalog with the attribute processed by most entries?",
+        "answer": "Do you mean the catalog entry IDs of catalogs with the attribute processed by most entries?"
+    },
+    {
+        "question": "Could you order them by order quantity?",
+        "answer": "From small to large?"
+    },
+    {
+        "question": "Good! Which product has been ordered the most number of times?",
+        "answer": "Dove Chocolate has been ordered the most number of times"
+    },
+    {
+        "question": "which is the most famous stadium?\n",
+        "answer": "By which metric do you mean famous?"
+    },
+    {
+        "question": "What are names of all the students enrolled in the course?\n",
+        "answer": "Do you mean the first name and last name of all the students enrolled in the course?"
+    },
+    {
+        "question": "What is the name of the oldest student?",
+        "answer": "DO you mean the first name or the last name of that student?"
+    },
+    {
+        "question": "Yes, please.",
+        "answer": "First OR last OR both?"
+    },
+    {
+        "question": "When was the most recent appointment?",
+        "answer": "do you want the most recent start or end of appointment"
+    },
+    {
+        "question": "For each apartment, can you tell me the average of the bedroom count, bathroom count, and room count?",
+        "answer": "Do you mean for each apartment type, find the average of the bedroom count, bathroom count, and room count?"
+    },
+    {
+        "question": "What is their first name?",
+        "answer": "Do  you mean  their  ?can  you  give more  info?"
+    },
+    {
+        "question": "which furnitures are highest market rate",
+        "answer": "The name of the furniture that has the highest market rate is Billiard table"
+    },
+    {
+        "question": "Please also show me names of songs for which the format is mp3 and resolution is above 1000.",
+        "answer": "Do you mean the names of songs for which the format is mp3?"
+    },
+    {
+        "question": "What about camque?",
+        "answer": "The degree ID for camque is NULL"
+    },
+    {
+        "question": "How many people attendance for Columbia Park?",
+        "answer": "Did you mean the sum of the attendance for the Columbia Park for all the years?"
+    },
+    {
+        "question": "What lenses are those?",
+        "answer": "Which kind of information do you want about those lenses?"
+    },
+    {
+        "question": "Names of students in each major?",
+        "answer": "LName or FName?"
+    },
+    {
+        "question": "Thank you for that!  Can you filter this list to show the rows and associated Claim IDs and amounts for the claims with a higher than average amount?",
+        "answer": "Hi sorry, can you ask this question again.  "
+    },
+    {
+        "question": "which games did they participate in?",
+        "answer": "What information about the game do you need?"
+    },
+    {
+        "question": "Who is directed by Star Wars?",
+        "answer": "Did you mean to ask for the name of the director who directed Star Wars?"
+    },
+    {
+        "question": "how many on the customers cards table",
+        "answer": "Do  you  mean  the amount of customer cards?"
+    },
+    {
+        "question": "what is the 4560596484842 of customer id",
+        "answer": "The customer_id is 14"
+    },
+    {
+        "question": "What are the names of the students that have the incident type code \"VIOLENCE\"?",
+        "answer": "Do  you  mean  last name or  first name?"
+    },
+    {
+        "question": "what grade is gabriel",
+        "answer": "Did you mean the Gabriel with ID 1689?"
+    },
+    {
+        "question": "what is the card number of Aniyah",
+        "answer": "Do you mean the customer with first name Aniyah"
+    },
+    {
+        "question": "How many artists released the total number of albums?",
+        "answer": "I don't understand the question. please rephrase."
+    },
+    {
+        "question": "how many white in the city table",
+        "answer": "Which city would you like the percentage of white people for?"
+    },
+    {
+        "question": "WHAT IS THE SHOP ID",
+        "answer": "Do you mean the shop id for the shop that has the largest quantity of devices in stock?"
+    },
+    {
+        "question": "Show  me the first and last name whose id number 1",
+        "answer": "Do you mean the owner id is 1 or dog id is 1?"
+    },
+    {
+        "question": "Could you give me the names of those locations, please?",
+        "answer": "The name of locations have train statrion with exactly 19 platforms are London Waterloo and London Victoria"
+    },
+    {
+        "question": "What are the total passengers of those?",
+        "answer": "Here are the total passengers of stations with 19 platforms."
+    },
+    {
+        "question": "Hi!  Do most professors have a higher education degree?",
+        "answer": "sorry ,  i  don't  have  the answer to  your  question"
+    },
+    {
+        "question": "Who lives in Austin?",
+        "answer": "Would you like a list of the names of all the people who live in Austin?"
+    },
+    {
+        "question": "How about Salt Lake City?",
+        "answer": "Would you like a list of the names of all the people who live in Salt Lake City?"
+    },
+    {
+        "question": "What is the name of the female student?",
+        "answer": "Would you like a list of all the female students' names?"
+    },
+    {
+        "question": "What is her city?",
+        "answer": "Who's city?"
+    },
+    {
+        "question": "What is the name on the account with the lowest balance?",
+        "answer": "The name of the account with the lowest saving balance is Weeks"
+    },
+    {
+        "question": "What are the names of the two volumes that spend 3.0 weeks on top?",
+        "answer": "What do you mean by names?"
+    },
+    {
+        "question": "Did any artist have more than one volume that spent time on top?",
+        "answer": "What do you mean?"
+    },
+    {
+        "question": "Did any artist ID appear more than once in the weeks spent on top?",
+        "answer": "Do you mean the artists id which has more than one volume?"
+    },
+    {
+        "question": "What is the total number of students who were in enrolled in all colleges?",
+        "answer": "Do you mean the total number of enrollments for all colleges?"
+    },
+    {
+        "question": "how many routes pass through Italy?",
+        "answer": "I cannot answer this question because I did not have information about routes pass through Italy."
+    },
+    {
+        "question": "What dorms have no Study Room as an amenity?",
+        "answer": "Do you mean among those with a TV Lounge?"
+    },
+    {
+        "question": "What procedures is John Wen trained in?",
+        "answer": "Do you mean the name of the procedure that John Wen is trained in?"
+    },
+    {
+        "question": "Which cause has the least enrollment?",
+        "answer": "Do you want the course id or course name?"
+    },
+    {
+        "question": "Tell me the Approved (awarded 15.11.12) of the company LG-P760...",
+        "answer": "what did you mean by  the Approved (awarded 15.11.12) of the company LG-P760"
+    },
+    {
+        "question": "Sorry, I typed the question wrongly...\nWhat is the hardware model name of Lumia 620 ?",
+        "answer": "sorry,i can' understand your question, Lumia 620 is the  not hardware model name"
+    },
+    {
+        "question": "how many product booked on the table",
+        "answer": "Sorry, I cannot understand the question. Can you rephrase it?"
+    },
+    {
+        "question": "actually i mean how many product are on the table",
+        "answer": "Did you mean to ask for the distinct number of product ids in the table Products_Booked?"
+    },
+    {
+        "question": "Which claims had the maximum claim value? Please list the date the claim was made and the claim id?",
+        "answer": "Sorry there is no maximum claim value"
+    },
+    {
+        "question": "how many population in the country table",
+        "answer": "Do  you mean  the  total population in the country table ?"
+    },
+    {
+        "question": "how many country code in the city table",
+        "answer": "Do  you  want  to  know  the distinct country code?"
+    },
+    {
+        "question": "The column \"winning_pilot \" in Table: \"MATCH\" refers to column \"pilot_id\" in Table: \" pilot\"",
+        "answer": "Did  you  mean  that  you  want  to  get Pilot Id?"
+    },
+    {
+        "question": "Are there any other names that have allergies",
+        "answer": "Do you want the first name or the last name of students other than Lisa who have allergies?"
+    },
+    {
+        "question": "Is smith also allergic to egg",
+        "answer": "Here are all the allergies that the student with the last name Smith has."
+    },
+    {
+        "question": "What branch made the most sales in 2018?",
+        "answer": "Sorry, we don't have information about sales. Do you want to ask something else?"
+    },
+    {
+        "question": "what is languages for Prity and genre?",
+        "answer": "Do you mean the song with the artist name Prity?"
+    },
+    {
+        "question": "How many different aircrafts are there?",
+        "answer": "Do  you mean  different \tnames of  aircrafts?"
+    },
+    {
+        "question": "and the 747-400?",
+        "answer": "can  you  offer  more  info  about  this ?"
+    },
+    {
+        "question": "How many people have the 747-400 certificate?\n",
+        "answer": "Do you  mean \tthe  name  of  Boeing 747-400 in the \tBoeing 747-400 table ?"
+    },
+    {
+        "question": "how far is its distance?\n",
+        "answer": "Did   you  mean  the  distance of \tBoeing 747-400?"
+    },
+    {
+        "question": "and the Boeing 737-800?\n",
+        "answer": "And  what  do  you  want  to  know  about the  Boeing 737-800?"
+    },
+    {
+        "question": "What counties have more police officers than that?",
+        "answer": "do you want to return their names?"
+    },
+    {
+        "question": "Can you list the names of all the customers who have the letter \"B\" in their name, please?",
+        "answer": "The details of the customers with a letter \"B\" in their customer details are listed."
+    },
+    {
+        "question": "can you show me a list of date in location to?",
+        "answer": "Do you mean list of \"date in location to\" from the document locations table?"
+    },
+    {
+        "question": "what is the high enrollment of school",
+        "answer": "Are you asking the highest enrollment number for all schools?"
+    },
+    {
+        "question": "which school is hightest founded",
+        "answer": "Do you mean the school that is founded earliest?"
+    },
+    {
+        "question": "Out of those games, how many of them were played in Columbia Park?",
+        "answer": "Did  you  mean  how many games were played in park \"Columbia Park\" in 1907"
+    },
+    {
+        "question": "names of buildings whose status is on-hold in ascending order",
+        "answer": "In what ascending order?"
+    },
+    {
+        "question": "FIND THE NAME OF CUSTOMER WHO HAS HIGH ACCOUNT BALANCE",
+        "answer": "Did you mean the highest account balance?"
+    },
+    {
+        "question": "What is the distance of the name Boeing 747-400?",
+        "answer": "did you mean the distance of the aircraft with the name Boeing 747-400?"
+    },
+    {
+        "question": "Which is the aircraft that have the maximum distance?",
+        "answer": "Did you mean the name of the aircraft?"
+    },
+    {
+        "question": "what is the country name?",
+        "answer": "what  did  you  want  to  konw  the country name ?give  more  info about this  question"
+    },
+    {
+        "question": "what are the country id ?",
+        "answer": "Did  you  mean country id which has both roller coasters with speed higher than 60 and roller coasters with speed lower than 55?"
+    },
+    {
+        "question": "how about is the status operate in country?",
+        "answer": "sorry  ，i have no  answer  to  this question"
+    },
+    {
+        "question": "What is his tweeter account?",
+        "answer": "can you give more details? who is \"he\""
+    },
+    {
+        "question": "What are his tweets?",
+        "answer": "do you mean the text of tweets"
+    },
+    {
+        "question": "How many taught over multiple years?",
+        "answer": "Sorry, I cannot answer this question. Could you ask something else?"
+    },
+    {
+        "question": "So what is the median amount of all those payments?",
+        "answer": "Sorry, I cannot answer the median number but I can answer the average number."
+    },
+    {
+        "question": "One last question: what percentage of all payments are above the average of 4.20066?",
+        "answer": "Sorry, I cannot answer that."
+    },
+    {
+        "question": "And how many followers does Tyler have?",
+        "answer": "Tyler Swift has 99999998 followers"
+    },
+    {
+        "question": "what instructors teach courses?",
+        "answer": "Do you mean the first names of instructors who teach courses?"
+    },
+    {
+        "question": "What city are the 2 employees in?",
+        "answer": "You mean the 2 employees with title \"IT Staff\"?"
+    },
+    {
+        "question": "which singers born before 1945 and after 1955 have the same citizenship?",
+        "answer": "Did you mean the singers born before 1945 OR after 1955?"
+    },
+    {
+        "question": "How many males in this table?",
+        "answer": "Do you mean the table \"Faculty\"?"
+    },
+    {
+        "question": "List all project code name and hours worked by Scientists ssn",
+        "answer": "Do you mean list their ssn's?"
+    },
+    {
+        "question": "list results by project by scientists names",
+        "answer": "Do you mean list the project names by scientists names?"
+    },
+    {
+        "question": "Can you show me all the addresses with cities?",
+        "answer": "Did  you  mean  the address content?"
+    },
+    {
+        "question": "What are all the names of the customers?",
+        "answer": "Did you mean customer details in the table?"
+    },
+    {
+        "question": "What are the addresses of the employees?",
+        "answer": "Do you mean all of the employees?"
+    },
+    {
+        "question": "What is the average for all movies?",
+        "answer": "average what?"
+    },
+    {
+        "question": "Which coach has been at the school longer?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "What day of the week was that claim made?",
+        "answer": "Sorry, I cannot find info about this."
+    },
+    {
+        "question": "What is the name of the youngest employee?",
+        "answer": "the first and last name of the youngest employee is Ralph Matler."
+    },
+    {
+        "question": "What is the email address of Jaclyn?",
+        "answer": "Do you mean the owner with first name Jaclyn?"
+    },
+    {
+        "question": "What player received the injury? ",
+        "answer": "You mean all the players having injuries?"
+    },
+    {
+        "question": "which manufacturer has the least revenue? ",
+        "answer": "Did   you mean  to get  the name  of manufacturer has the least revenue"
+    },
+    {
+        "question": "can you tell me the email id of the owner id ?",
+        "answer": "Do you mean all owner id and all email address?"
+    },
+    {
+        "question": "Fantastic! Between Hangzhou and Nantong, which city has the cooler weather? ",
+        "answer": "Did  you  mean what  time  to compare the  weather ?"
+    },
+    {
+        "question": "what is the highest rating on this table",
+        "answer": "Can you please clarify which column of the Rating table you would like the highest value on?"
+    },
+    {
+        "question": "first column",
+        "answer": "I cannot answer this question using SQL.  Please specify the name of a column."
+    },
+    {
+        "question": "actually i mean which movie rating is high",
+        "answer": "Would you like the movie with the greatest number of rating stars?"
+    },
+    {
+        "question": "What is the loser id  of petra kvitota?",
+        "answer": "Do  you mean \tloser  id"
+    },
+    {
+        "question": "Please tell me the product names and ids.",
+        "answer": "Did you mean all the product details and ids?"
+    },
+    {
+        "question": "Hmm, I want to know the product names and the order quantities.",
+        "answer": "Did  you  mean  the \tproduct details as product names?"
+    },
+    {
+        "question": "What is the nearest competing shop?",
+        "answer": "What do you mean by the nearest competing shop? "
+    },
+    {
+        "question": "Which address is nearest to shop 10?",
+        "answer": "Sorry, we can not tell the the nearest address from the table information. Please ask something else. "
+    },
+    {
+        "question": "And are there any other shops on the same street?",
+        "answer": "What street are you referring to? "
+    },
+    {
+        "question": "which city in Dr. Julia Wuckert MD?",
+        "answer": "What you mean?"
+    },
+    {
+        "question": "Which of those documents is the oldest?",
+        "answer": "which kind of information the oldest documents do you want me to give you?"
+    },
+    {
+        "question": "Hi can you tell me what activities are listed?",
+        "answer": "The following table shows activity names"
+    },
+    {
+        "question": "What outside activity is most popular?",
+        "answer": "Sorry the question cannot be answered from the table."
+    },
+    {
+        "question": "Which id has the least rating on the table?",
+        "answer": "Which id do you need, a id, u id, or i id?"
+    },
+    {
+        "question": "Who is the artist of the song \"Le Pop\"?",
+        "answer": "Sorry, we don't have this information. The structure of this database just has songs and instruments."
+    },
+    {
+        "question": "Give me names for those employees",
+        "answer": "Do you want their first name, last name, or both?"
+    },
+    {
+        "question": "plese list me about airports\n",
+        "answer": "Do you mean the airport ids of all the airports?"
+    },
+    {
+        "question": "Who are the captains?\n",
+        "answer": "Do you mean you want the name of captain?"
+    },
+    {
+        "question": "What ship does Captain Henry steer?",
+        "answer": "Do you mean the name of ships of Captain Henry?"
+    },
+    {
+        "question": "Now please list all colleges that have enrollment higher than the average.",
+        "answer": "LSU, OU, and FSU have enrollment higher than the average."
+    },
+    {
+        "question": "What was their activation dates?",
+        "answer": "do you want the active_from_date or active_to_date or both of them?"
+    },
+    {
+        "question": "Can you also show me the lowest rating of songs for each genre?",
+        "answer": "do you want to order them by genre as well?"
+    },
+    {
+        "question": "How many billing countries in this invoice?",
+        "answer": "Do  you  mean  the types  of  billing countries in this invoice"
+    },
+    {
+        "question": "Can you give me the billing cities for these invoices?",
+        "answer": "here are the billing cities of the invoices from the state in the USA with the most invoices"
+    },
+    {
+        "question": "Can you give me the billing dates as well?",
+        "answer": "do you mean the date of invoice?"
+    },
+    {
+        "question": "what do you meant by number of component",
+        "answer": "i  can 't  answer  this question"
+    },
+    {
+        "question": "what is the quality of furniture",
+        "answer": "There is no  infor  about   quality of furniture"
+    },
+    {
+        "question": "When did they first start working on the projects?",
+        "answer": "Do you mean the date when the staff with id 56.0 started the project?"
+    },
+    {
+        "question": "Can you show me the date of when every project's first staff started working?",
+        "answer": "Sorry, I can't answer this question in SQL."
+    },
+    {
+        "question": "What is the building name of division AS?",
+        "answer": "Do  you  mean \tDName?"
+    },
+    {
+        "question": "What are the station ids for San Francisco?",
+        "answer": "Do you mean the city San Francisco?"
+    },
+    {
+        "question": "how many customer list ?",
+        "answer": "Do you want the number of documents in the list?"
+    },
+    {
+        "question": "hi. can you tell me which product made the highest number of outcomes?",
+        "answer": "What attributes of the product that made the highest number of outcomes would you like to know? "
+    },
+    {
+        "question": "can you give me the project ID?",
+        "answer": "Sorry, what would you like the project id for?"
+    },
+    {
+        "question": "what is the product name of red",
+        "answer": "Sorry, I cannot understand your question. Can you rephrase it?"
+    },
+    {
+        "question": "Can you list how many car makers are on each continent please?",
+        "answer": "Do you want the name of the continent and the count of car makers on each of them?"
+    },
+    {
+        "question": "Can you list the full name and country of every car maker from asia?",
+        "answer": "Do you want the full name and country name of the car makers from asia?"
+    },
+    {
+        "question": "How long has customer id 4 been a customer?",
+        "answer": "Sorry we don't have enough information to answer that. Please ask something else."
+    },
+    {
+        "question": "Can you show me the director names together with the name and years?",
+        "answer": "Did you mean the directors of the movies that have the top 3 highest rating stars?"
+    },
+    {
+        "question": "how rooms are presented on the table",
+        "answer": "Did you mean to ask how many entries are in the table rooms?"
+    },
+    {
+        "question": "what is the capacity for England? ",
+        "answer": "You mean the stadium in England?"
+    },
+    {
+        "question": "Which product has a height smaller than 5?",
+        "answer": "Do  you  want  to  know  the names of the products with heights smaller than 5"
+    },
+    {
+        "question": "What are the delivery dates of orders with 1 quantity?",
+        "answer": "do you mean the actual delivery dates ?"
+    },
+    {
+        "question": "Great!  Could you update this list to include both the first names and treatment type codes for each of these professionals IDs?",
+        "answer": "Do you want the ids, first name for all professionals, along with the type codes of the treatment they have done?"
+    },
+    {
+        "question": "What are the sale details of those?",
+        "answer": "Here is the table of the sale details of transcation with an amount smaller than 3000. For example, they are o，f, y"
+    },
+    {
+        "question": "What are the transaction ids of those?",
+        "answer": "Here is the table of the transaction ids of transcation with an amount smaller than 3000. For example, they are  2, 4 , 5"
+    },
+    {
+        "question": "What are the dates of those transactions?",
+        "answer": "Here is the table of dates of transcations with an amount smaller than 3000. For example, they are 1982-06-06 17:19:00."
+    },
+    {
+        "question": "how  many party theme in the united states?",
+        "answer": "Sorry, I can not answer this question in sql."
+    },
+    {
+        "question": "Can you list the cities of these students?",
+        "answer": "Do you want both the cities and the first names of the students?"
+    },
+    {
+        "question": "which location in 2004?",
+        "answer": "do you mean campus?"
+    },
+    {
+        "question": "Hello! Can you provide me with a list of the tourist attractions that are walking distance?",
+        "answer": "do you want to just return their names？"
+    },
+    {
+        "question": "Show me the all student's names from the college named 'Yale University'",
+        "answer": "Do you mean the given names of all the students from the college named 'Yale University'?"
+    },
+    {
+        "question": "Show me the height list of the student players from this university",
+        "answer": "Do you mean the height of the players from the college named 'Yale University'?"
+    },
+    {
+        "question": "what is the  friend id of  1689",
+        "answer": "Do you mean the id of students with friend id 1689?"
+    },
+    {
+        "question": "Out of those customers, who has spent the least amount of money?",
+        "answer": "Do you want the first and last names and id of the customer who has spent the least amount of money?"
+    },
+    {
+        "question": "Which department is the smallest?",
+        "answer": "Do you mean the department that has the fewest members?"
+    },
+    {
+        "question": "Hello, I'm looking for information about the directors",
+        "answer": "Hello, sorry I cannot answer your question. Can you ask something more specific?"
+    },
+    {
+        "question": "Does Schreiner have more shows than Trevino?",
+        "answer": "Sorry the system cannot answer comparison question in one time. Please either break it down to ask them separately and then compare or change a question. Thanks."
+    },
+    {
+        "question": "Show me the price for each of those tracks",
+        "answer": "Do  you mean  unit price?"
+    },
+    {
+        "question": "WHO IS THEIR LEADER \n",
+        "answer": "Sorry this question cannot be answered by information from the table."
+    },
+    {
+        "question": "TELL ME THE LOCATION OF GLENN",
+        "answer": "Do you mean the location of the school named \"Glenn\"?"
+    },
+    {
+        "question": "show the genre name",
+        "answer": "The table shows the genre name."
+    },
+    {
+        "question": "what are the official unique official language spoken in the country\n",
+        "answer": "In which country?"
+    }
+]
