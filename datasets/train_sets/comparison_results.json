@@ -1,0 +1,2202 @@
+[
+    {
+        "iteration": 1,
+        "qa_pair_a": {
+            "question": "What is the average age of the members who have a black membership card?",
+            "answer": "I am sorry, I cannot answer this question because the database does not include information about the average age of members who have a black membership card."
+        },
+        "qa_pair_b": {
+            "question": "how many membership cards?",
+            "answer": "There are 2 different membership cards."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 2,
+        "qa_pair_a": {
+            "question": "* I have left the chat *",
+            "answer": "Sorry we cannot query about the date."
+        },
+        "qa_pair_b": {
+            "question": "How many songs are released before 2001?",
+            "answer": "I'm sorry, I cannot answer your question because there is no column named 'releasedate' in the database."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 3,
+        "qa_pair_a": {
+            "question": "What is the average num employees of departments with ranking between 10 and 15",
+            "answer": "Do you mean average number of employees of departments with ranking between 10 and 15?"
+        },
+        "qa_pair_b": {
+            "question": "what is the name of dept of statistics",
+            "answer": "Do you mean the name of instructors from the statistics department?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 4,
+        "qa_pair_a": {
+            "question": "Which shop is hiring the highest number of employees?",
+            "answer": "do you want the name of the shop ?"
+        },
+        "qa_pair_b": {
+            "question": "How many documents are there with type book?",
+            "answer": "Do you mean to ask how many documents have document type code equal to 'Book'?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 1
+        }
+    },
+    {
+        "iteration": 5,
+        "qa_pair_a": {
+            "question": "What is the average number of staff and average score of the shops located in California?",
+            "answer": "I am sorry, but the database does not contain any data on the average number of staff or the average score of shops located in California. Therefore, I cannot generate a meaningful description to answer the question."
+        },
+        "qa_pair_b": {
+            "question": "What is their name and team?",
+            "answer": "what  do  you mean  their?could  you  give  more  info ?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 4,
+            "losses": 0,
+            "ties": 1
+        }
+    },
+    {
+        "iteration": 6,
+        "qa_pair_a": {
+            "question": "Can you show the names of owners and the states they live in?",
+            "answer": "Do you want the first and last names of owners and the states they live in?"
+        },
+        "qa_pair_b": {
+            "question": "What is the name of the cheapest furniture?",
+            "answer": "What do you mean by the cheapest: the lowest price, or the lowest market rate?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 4,
+            "losses": 0,
+            "ties": 2
+        }
+    },
+    {
+        "iteration": 7,
+        "qa_pair_a": {
+            "question": "Who has more money in their savings account than their checking account?",
+            "answer": "Do you mean who has more money in their checking account than their savings account, or who has more money in their savings account than their checking account?"
+        },
+        "qa_pair_b": {
+            "question": "can you show their name?",
+            "answer": "Do you want their first and last names?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 4,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 8,
+        "qa_pair_a": {
+            "question": "What cities had the lowest temperature in March?",
+            "answer": "what did  you  want to get ?city ID  or  city name？"
+        },
+        "qa_pair_b": {
+            "question": "What is the average age of band members who play the drums?",
+            "answer": "I apologize, but the database lacks information regarding the age of band members. It only contains information about which band members play which instruments."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 4,
+            "losses": 0,
+            "ties": 4
+        }
+    },
+    {
+        "iteration": 9,
+        "qa_pair_a": {
+            "question": "Can you tell me the name of the student who lives in CHI?",
+            "answer": "The database does not contain the column 'city', so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "What is the average salary for all the staff living in Port Melyssa?",
+            "answer": "We don't have that information."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "tie",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 5,
+            "losses": 0,
+            "ties": 4
+        }
+    },
+    {
+        "iteration": 10,
+        "qa_pair_a": {
+            "question": "can you show me a list of where i can go on bus?",
+            "answer": "do you want the id of location or tourist attraction or the name?"
+        },
+        "qa_pair_b": {
+            "question": "What is the average order quantity of the product with the product name 'film'?",
+            "answer": "Do you mean the product with product id '154' or '156'?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 5,
+            "losses": 0,
+            "ties": 5
+        }
+    },
+    {
+        "iteration": 1,
+        "qa_pair_a": {
+            "question": "What is the name of the song with a resolution greater than the minimum resolution of English songs?",
+            "answer": "Do you mean the song with a resolution greater than the minimum resolution of English songs?"
+        },
+        "qa_pair_b": {
+            "question": "how many survied  entirely",
+            "answer": "Sorry, we don't have this information."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 1,
+        "qa_pair_a": {
+            "question": "When did the first maintenance contract start?",
+            "answer": "It is not possible to answer this question from the given data because the database lacks start dates for maintenance contracts."
+        },
+        "qa_pair_b": {
+            "question": "ARRANGE THE COST OF TREATMENT IN DESCENDING ORDER",
+            "answer": "The result table of the treatment cost is listed in descending order of the cost of treatment."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 2,
+        "qa_pair_a": {
+            "question": "when does the datetime detention end\t",
+            "answer": "What did you mean by the datetime detention end? Do you want a list of all the datetime detention end or a specific one?"
+        },
+        "qa_pair_b": {
+            "question": "How many different bed types are there in the rooms with decor modern and base price less than 170 and max occupancy less than 2 and room name is Interim but salutary?",
+            "answer": "The question is unanswerable because the database does not have a column named \"room name\"."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 3,
+        "qa_pair_a": {
+            "question": "What is the price range of the hotel 123?",
+            "answer": "I am sorry, but I cannot answer that question. The database does not contain any information about the price range of hotels."
+        },
+        "qa_pair_b": {
+            "question": "The column \"winning_pilot \" in Table: \"MATCH\" refers to column \"pilot_id\" in Table: \" pilot\"",
+            "answer": "Did  you  mean  that  you  want  to  get Pilot Id?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 0
+        }
+    },
+    {
+        "iteration": 4,
+        "qa_pair_a": {
+            "question": "what is the department code of 103",
+            "answer": "Do you mean the department code of professor with emp number 103?"
+        },
+        "qa_pair_b": {
+            "question": "Are there any students that are majoring in 600 and are on scholarship?",
+            "answer": "Do you mean the students that are majoring in 600 and are on scholarship?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 1
+        }
+    },
+    {
+        "iteration": 5,
+        "qa_pair_a": {
+            "question": "Can you list the shops that were opened in 2005?",
+            "answer": "Sorry, I cannot answer your question. The database does not include any shops that were opened in 2005, I cannot generate an sql for it."
+        },
+        "qa_pair_b": {
+            "question": "Whats the elevation of hartsfueld jacksin atlanta?",
+            "answer": "Do you mean the elevation of the airport named Hartsfield Jackson Atlanta International Airport?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 4,
+            "losses": 0,
+            "ties": 1
+        }
+    },
+    {
+        "iteration": 6,
+        "qa_pair_a": {
+            "question": "Hi can you tell me how many games were in 1885?",
+            "answer": "Did  you  also  requre  the   \"ties\" is '1'"
+        },
+        "qa_pair_b": {
+            "question": "Which services are not booked by any party?",
+            "answer": "Do you mean services that have never been booked?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 5,
+            "losses": 0,
+            "ties": 1
+        }
+    },
+    {
+        "iteration": 7,
+        "qa_pair_a": {
+            "question": "Which genre is Balls to the Wall?",
+            "answer": "Do you mean the genre of the album Balls to the Wall?"
+        },
+        "qa_pair_b": {
+            "question": "Who the founder of Sony?",
+            "answer": "Did you mean the founder of the manufacturer named Sony?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 5,
+            "losses": 0,
+            "ties": 2
+        }
+    },
+    {
+        "iteration": 8,
+        "qa_pair_a": {
+            "question": "What are their genders?",
+            "answer": "Would you like their names and their genders? "
+        },
+        "qa_pair_b": {
+            "question": "What is the name of the oldest gymnast?",
+            "answer": "I cannot answer this question because the database does not contain information about the age of gymnasts."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 6,
+            "losses": 0,
+            "ties": 2
+        }
+    },
+    {
+        "iteration": 9,
+        "qa_pair_a": {
+            "question": "Which shop has the most happy hours?",
+            "answer": "Do you mean the shop with the most happy hours in total or the shop with the most happy hours in a specific month?"
+        },
+        "qa_pair_b": {
+            "question": "show all the procedures on the table",
+            "answer": "Did you want all the procedure names?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 6,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 10,
+        "qa_pair_a": {
+            "question": "What does the ones and twos mean in the table?",
+            "answer": "Sorry, I don't know the answer. Please ask me other questions related to the data."
+        },
+        "qa_pair_b": {
+            "question": "Can you list the albums that have more than 100 tracks?",
+            "answer": "I'm sorry, but I cannot answer your question. The database does not contain any information about the number of tracks in each album."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 7,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 11,
+        "qa_pair_a": {
+            "question": "What is the age of the drivers who are not living in Hartford?",
+            "answer": "I am sorry, I cannot answer this question because the database does not include information about the age of drivers who are not living in Hartford."
+        },
+        "qa_pair_b": {
+            "question": "how many members are on the table?",
+            "answer": "do you mean the customers?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 8,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 12,
+        "qa_pair_a": {
+            "question": "what is the account type? ",
+            "answer": "Would you like a list of all the account types?"
+        },
+        "qa_pair_b": {
+            "question": "Which department has the most students that also have an advisor?",
+            "answer": "This question is unanswerable because the database does not contain any information about which students have advisors."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 9,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 13,
+        "qa_pair_a": {
+            "question": "What is the name of the company that has the most maintenance contracts?",
+            "answer": "I cannot answer this question. The database does not contain information about the company that has the most maintenance contracts."
+        },
+        "qa_pair_b": {
+            "question": "What is the total number of students who were in enrolled in all colleges?",
+            "answer": "Do you mean the total number of enrollments for all colleges?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 10,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 14,
+        "qa_pair_a": {
+            "question": "How many performances are listed?",
+            "answer": "Did you mean the count of Performance ID in the member attendance table ？"
+        },
+        "qa_pair_b": {
+            "question": "How many schools are not in the player table?",
+            "answer": "Do you mean the number of schools that do not have any players in the player table?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 11,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 15,
+        "qa_pair_a": {
+            "question": "What is the name of the staff who were assigned to a department in 2016?",
+            "answer": "I am sorry, I cannot answer this question because the database does not contain any information about staff assignments in 2016."
+        },
+        "qa_pair_b": {
+            "question": "What day of the week was that claim made?",
+            "answer": "Sorry, I cannot find info about this."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 12,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 16,
+        "qa_pair_a": {
+            "question": "How many of them are from Miami?",
+            "answer": "Do you mean the number of authors who are from Miami?"
+        },
+        "qa_pair_b": {
+            "question": "What is the most popular start station in August?",
+            "answer": "I apologize, but the database lacks information on the most popular start station."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 13,
+            "losses": 0,
+            "ties": 3
+        }
+    },
+    {
+        "iteration": 17,
+        "qa_pair_a": {
+            "question": "Is there any product named \"flax\"?",
+            "answer": "Do you mean the product with product name \"flax\"?"
+        },
+        "qa_pair_b": {
+            "question": "and the Boeing 737-800?\n",
+            "answer": "And  what  do  you  want  to  know  about the  Boeing 737-800?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 13,
+            "losses": 0,
+            "ties": 4
+        }
+    },
+    {
+        "iteration": 18,
+        "qa_pair_a": {
+            "question": "how many buildings are managed by taylor?",
+            "answer": "Sorry, this question can not be answered given the table information. (Taylor is the building name). "
+        },
+        "qa_pair_b": {
+            "question": "What is the average salary of employees who work for airlines with names starting with \"A\"?",
+            "answer": "The database does not contain any information about the names of airlines."
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 13,
+            "losses": 0,
+            "ties": 5
+        }
+    },
+    {
+        "iteration": 19,
+        "qa_pair_a": {
+            "question": "What is the average amount of money customers spend on orders?",
+            "answer": "Do you mean the total amount of money spent by each customer on all of their orders?"
+        },
+        "qa_pair_b": {
+            "question": "Which of the previous products are more expensive than the average price of all products?",
+            "answer": "Do you mean to find the names of those products that are more expensive than the average price of all products?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 13,
+            "losses": 0,
+            "ties": 6
+        }
+    },
+    {
+        "iteration": 20,
+        "qa_pair_a": {
+            "question": "what is the competition id of the country",
+            "answer": "Can you clarify? The competition id is not unique to a country. "
+        },
+        "qa_pair_b": {
+            "question": "What is the total amount of money budgeted by all schools in 2004?",
+            "answer": "I cannot answer this question because the provided information does not include the total amount of money budgeted by all schools in 2004 or later."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 14,
+            "losses": 0,
+            "ties": 6
+        }
+    },
+    {
+        "iteration": 21,
+        "qa_pair_a": {
+            "question": "What type of attraction is the American Adventure?",
+            "answer": "I cannot answer your question because the database does not contain information about the type of attraction for tourist attraction American Adventure."
+        },
+        "qa_pair_b": {
+            "question": "could you please show their names as well?",
+            "answer": "Do you mean the apartment type code?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 15,
+            "losses": 0,
+            "ties": 6
+        }
+    },
+    {
+        "iteration": 22,
+        "qa_pair_a": {
+            "question": "what is the savings balance of  id 1?",
+            "answer": "Did you mean the saving balance of the customer with id 1?"
+        },
+        "qa_pair_b": {
+            "question": "What is the total amount of loans in New York City 'broadway' and 'morningside'?",
+            "answer": "Do you mean to ask about the total amount of loans in New York City 'broadway' and 'morningside' separately?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 15,
+            "losses": 0,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 23,
+        "qa_pair_a": {
+            "question": "Can you list out the countries of people who are younger than 25 and older than 30?",
+            "answer": "I'm sorry, I cannot answer this question because the database does not have a column for age ranges."
+        },
+        "qa_pair_b": {
+            "question": "what is the ID for electoral code?",
+            "answer": "which columns return?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 16,
+            "losses": 0,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 24,
+        "qa_pair_a": {
+            "question": "What are the tourist attractions available?",
+            "answer": "Did you mean to show you all the attractions?"
+        },
+        "qa_pair_b": {
+            "question": "What is the type of the game Call of Duty?",
+            "answer": "Do you mean \"Call of Destiny\"?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 16,
+            "losses": 1,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 25,
+        "qa_pair_a": {
+            "question": "What is the most popular language of the songs?",
+            "answer": "I apologize, but I cannot answer that question. The database does not contain any information about the language of the songs."
+        },
+        "qa_pair_b": {
+            "question": "What are the engineers first names?",
+            "answer": "Do you mean the first name of all the engineers?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 17,
+            "losses": 1,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 26,
+        "qa_pair_a": {
+            "question": "for which user id rating is high",
+            "answer": "did you mean for which user id is the rating highest?"
+        },
+        "qa_pair_b": {
+            "question": "What is the average time of 700-meter swimming of Polish swimmers?",
+            "answer": "I cannot answer this question because the database does not include information about the average time of 700-meter swimming of Polish swimmers."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 18,
+            "losses": 1,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 27,
+        "qa_pair_a": {
+            "question": "What is the average age of people who live in Sweden?",
+            "answer": "The database does not include any information about the average age of people who live in Sweden."
+        },
+        "qa_pair_b": {
+            "question": "What are those id's\n",
+            "answer": "You mean the detailed information about the lesson with id 4?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 19,
+            "losses": 1,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 28,
+        "qa_pair_a": {
+            "question": "Which student have allergy to both milk and cats? ",
+            "answer": "Here are the student ids of the students who have allergies to both milk and cat."
+        },
+        "qa_pair_b": {
+            "question": "Is Janessa Sawayn a good staff?",
+            "answer": "Do you mean good at work?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 19,
+            "losses": 2,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 29,
+        "qa_pair_a": {
+            "question": "What is the average crime rate in the East region?",
+            "answer": "The provided database does not include regional information, so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "Who is the director of \"walter hill\"?",
+            "answer": "do you mean which film is directed by the director of \"walter hill\"?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 20,
+            "losses": 2,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 30,
+        "qa_pair_a": {
+            "question": "list the name of a shooting game.\n",
+            "answer": "Do you mean \"First-person shooter\" games?"
+        },
+        "qa_pair_b": {
+            "question": "What are the login names of the authors and students?",
+            "answer": "Do you mean the login names of the authors or the login names of the students?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 20,
+            "losses": 3,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 31,
+        "qa_pair_a": {
+            "question": "Who is the youngest player?",
+            "answer": "Do you mean the players with the youngest age?"
+        },
+        "qa_pair_b": {
+            "question": "what was the name of the winning team in 1885?",
+            "answer": "There  is no  infor  about name of the winning team in 1885"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "CoSQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 20,
+            "losses": 4,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 32,
+        "qa_pair_a": {
+            "question": "how many are used in documents?",
+            "answer": "12 templates are used in a document."
+        },
+        "qa_pair_b": {
+            "question": "What is the average rating of apple?",
+            "answer": "Sorry, I cannot answer this question because the database does not contain information about the average rating of specific items."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "tie",
+            "utility": "CoSQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 20,
+            "losses": 5,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 33,
+        "qa_pair_a": {
+            "question": "Is the customer with the second most policies also the customer with the most claims?",
+            "answer": "Sorry, I cannot answer this question. I need more information about the claim."
+        },
+        "qa_pair_b": {
+            "question": "how many of the parties are popular?",
+            "answer": "What do you mean by popular?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 20,
+            "losses": 6,
+            "ties": 7
+        }
+    },
+    {
+        "iteration": 34,
+        "qa_pair_a": {
+            "question": "Which of the previous products are more expensive than the average price of all products?",
+            "answer": "Do you mean to find the names of those products that are more expensive than the average price of all products?"
+        },
+        "qa_pair_b": {
+            "question": "Show me the top 3 complaint status code.",
+            "answer": "Do you want to see the top 3 complaint status code by count?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 20,
+            "losses": 6,
+            "ties": 8
+        }
+    },
+    {
+        "iteration": 35,
+        "qa_pair_a": {
+            "question": "What is the total number of people who use CACHEbox?",
+            "answer": "I cannot answer this question, because the database does not contain any information about the number of people who use a particular web client accelerator."
+        },
+        "qa_pair_b": {
+            "question": "What is the first name of Staff \"Medhurst\" of the list?",
+            "answer": "The first name of Staff with last name \"Medhurst\" is Ashley."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 21,
+            "losses": 6,
+            "ties": 8
+        }
+    },
+    {
+        "iteration": 36,
+        "qa_pair_a": {
+            "question": "Remove all instructor IDs who did not teach in Spring 2010 from the list.",
+            "answer": "Did  you  mean  retain  the instructor IDs who  both teach in Spring 2010   and  in Fall 2009"
+        },
+        "qa_pair_b": {
+            "question": "How many films have a rating of 'G' and a rental duration of 6?",
+            "answer": "The database does not contain information about the rental duration of films, so I cannot answer this question."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 22,
+            "losses": 6,
+            "ties": 8
+        }
+    },
+    {
+        "iteration": 37,
+        "qa_pair_a": {
+            "question": "How many employees are in the US?",
+            "answer": "I apologize, but the database doesn't have information about employees' locations, so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "Which customer opened a policy on 7-22-16?",
+            "answer": "The customer who opened a policy on 2016-07-22 has the name Mrs. Hanna Willms."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "CoSQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 22,
+            "losses": 7,
+            "ties": 8
+        }
+    },
+    {
+        "iteration": 38,
+        "qa_pair_a": {
+            "question": "What is the used id 1?",
+            "answer": "Do you mean what is the name of the user with id 1?"
+        },
+        "qa_pair_b": {
+            "question": "How many rooms are in each block code?",
+            "answer": "Do you mean the number of rooms in each block code?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 22,
+            "losses": 7,
+            "ties": 9
+        }
+    },
+    {
+        "iteration": 39,
+        "qa_pair_a": {
+            "question": "What are the cities of the addresses in the system?",
+            "answer": "The database does not contain the column \"cities of the addresses in the system\"."
+        },
+        "qa_pair_b": {
+            "question": "What is the median price of wines produced in Sonoma County?",
+            "answer": "Did you mean the average price of wines produced in Sonoma County?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 23,
+            "losses": 7,
+            "ties": 9
+        }
+    },
+    {
+        "iteration": 40,
+        "qa_pair_a": {
+            "question": "What are the current average age of all males",
+            "answer": "I do not have information about age in the table."
+        },
+        "qa_pair_b": {
+            "question": "How many hours per week does he play sports and how many games has he played?",
+            "answer": "Do you want to know the total number of hours per week that David Shieber plays sports or the total number of games that he has played?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 23,
+            "losses": 7,
+            "ties": 10
+        }
+    },
+    {
+        "iteration": 41,
+        "qa_pair_a": {
+            "question": "Tell me the NHL teams in the past 5 years that have had a buildUpPlaySpeedClass column with at least 76.",
+            "answer": "I am sorry, I cannot answer your question as the database does not contain any information about the NHL or the buildUpPlaySpeedClass column."
+        },
+        "qa_pair_b": {
+            "question": "Thank you very much. This will be my last question, could you please show me the name of female students who are majoring in 520, if there are any?",
+            "answer": "Did  you  mean  the full name about  those ?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 24,
+            "losses": 7,
+            "ties": 10
+        }
+    },
+    {
+        "iteration": 42,
+        "qa_pair_a": {
+            "question": "No, how many violin players were present during the performances?",
+            "answer": "Each performance is only associated with one violin player from the table."
+        },
+        "qa_pair_b": {
+            "question": "Who is not a student and lives in austin?",
+            "answer": "Who is not a student and lives in austin?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "CoSQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 24,
+            "losses": 8,
+            "ties": 10
+        }
+    },
+    {
+        "iteration": 43,
+        "qa_pair_a": {
+            "question": "Which cities have more than 2 companies headquartered there?",
+            "answer": "The info is not available in the database."
+        },
+        "qa_pair_b": {
+            "question": "What is the number of staff living in Port Melyssa and what are their names?",
+            "answer": "first name or last name?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 25,
+            "losses": 8,
+            "ties": 10
+        }
+    },
+    {
+        "iteration": 44,
+        "qa_pair_a": {
+            "question": "Find the station id of Ananthapuri Express?",
+            "answer": "the station ids that serve the train Ananthapuri Express are 1 and 2"
+        },
+        "qa_pair_b": {
+            "question": "What is the average number of goals scored by players who play for teams in the Premier League?",
+            "answer": "I cannot calculate the average number of goals scored by players who play for teams in the Premier League because the database does not contain information about goals scored by players."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 25,
+            "losses": 8,
+            "ties": 11
+        }
+    },
+    {
+        "iteration": 45,
+        "qa_pair_a": {
+            "question": "How many gymnasts are from Santo Domingo?",
+            "answer": "Do you mean the hometown of gymnasts?"
+        },
+        "qa_pair_b": {
+            "question": "What was the average duration of trips in 94103?",
+            "answer": "Do you mean the average duration of trips in zip code 94103?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 25,
+            "losses": 8,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 46,
+        "qa_pair_a": {
+            "question": "Which of the claims had only one settlement?",
+            "answer": "There is no claim which had only one settlement."
+        },
+        "qa_pair_b": {
+            "question": "How many artists are over the age of 46 and have joined after 1990?",
+            "answer": "I'm sorry, I cannot answer that question. The database does not include information about the age of artists."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 25,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 47,
+        "qa_pair_a": {
+            "question": "How many counties are located in the East region?",
+            "answer": "The provided database does not include regional information, so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "How about for the supplier who supplies the least products?",
+            "answer": "Did  you  want to get the supplier id  who supplies the least products?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 26,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 48,
+        "qa_pair_a": {
+            "question": "What are the total passengers of those?",
+            "answer": "Here are the total passengers of stations with 19 platforms."
+        },
+        "qa_pair_b": {
+            "question": "What is the campus fee of Stanford University in 1996?",
+            "answer": "I am sorry, I cannot answer this question. The database does not have information about the campus fee of Stanford University."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 27,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 49,
+        "qa_pair_a": {
+            "question": "Is this movie any good?",
+            "answer": "I'm sorry, but I cannot answer that question. The term \"good\" is ambiguous and I need more information to clarify what you mean."
+        },
+        "qa_pair_b": {
+            "question": "What is the highest number of skills needed to fix a part fault?",
+            "answer": "what  did  you want  to get  about the highest number of skills needed to fix a part fault"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 28,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 50,
+        "qa_pair_a": {
+            "question": "How many built year same in this table?",
+            "answer": "did you mean 'How many built year saved this table'?"
+        },
+        "qa_pair_b": {
+            "question": "How many documents are named 'Review on Chinese files'?",
+            "answer": "Sorry, the database does not contain any information about documents named 'Review on Chinese files'."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 29,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 51,
+        "qa_pair_a": {
+            "question": "What is the name and distance of the aircraft with aid 12?",
+            "answer": "Do you mean the name and distance of the aircraft with aid 12?"
+        },
+        "qa_pair_b": {
+            "question": "What product has the most distinct characteristic names?",
+            "answer": "Sorry I cannot answer this question. Can you break down the question or ask something else?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 30,
+            "losses": 9,
+            "ties": 12
+        }
+    },
+    {
+        "iteration": 52,
+        "qa_pair_a": {
+            "question": "can you show me Manufacturers' name that starting with 'S'?",
+            "answer": "Sorry, I cannot answer. Please change\n"
+        },
+        "qa_pair_b": {
+            "question": "Which building has the most institutions?",
+            "answer": "Do you want to know the building with the most institutions in the database or in the real world?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 30,
+            "losses": 9,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 53,
+        "qa_pair_a": {
+            "question": "What is the most common document type in the database?",
+            "answer": "I'm sorry, but I cannot answer that question. The database does not contain information about the most common document type."
+        },
+        "qa_pair_b": {
+            "question": "The column \"customer_id \" in Table: \"Accounts\" refers to column \"customer_id\" in Table: \" Customers\"",
+            "answer": "Sorry I don't understand. Could you ask something else?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 31,
+            "losses": 9,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 54,
+        "qa_pair_a": {
+            "question": "Can you list all the schools that have less than 5 different departments?",
+            "answer": "BUS is the school code for schools with less than 5 different departments."
+        },
+        "qa_pair_b": {
+            "question": "Which reviewers gave a rating of 3 or 4?",
+            "answer": "I'm sorry, I can't answer that question. Do you mean the reviewers who gave a rating of 3 or 4, or the reviewers who gave a rating of 4 or 5?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 31,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 55,
+        "qa_pair_a": {
+            "question": "Which staff's nickname is like \"thompson\" and they have a lesson that lesson_id is 1?",
+            "answer": "The question is unanswerable because there is no column called \"nickname\" in the \"Lessons\" table."
+        },
+        "qa_pair_b": {
+            "question": "which city in Dr. Julia Wuckert MD?",
+            "answer": "What you mean?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 32,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 56,
+        "qa_pair_a": {
+            "question": "Show the average salary of all departments.",
+            "answer": "Would you like to the know the average  salary grouped over each department name?"
+        },
+        "qa_pair_b": {
+            "question": "List the manufacturers that do not produce any products named 'DVD drive' or 'Hard drive'.",
+            "answer": "Do you mean the manufacturers that do not produce any products named 'DVD drive' or 'Hard drive'?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 33,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 57,
+        "qa_pair_a": {
+            "question": "How many songs are released in 2023?",
+            "answer": "The database does not contain information about the release year of songs, so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "how many male body builder of there",
+            "answer": "Sorry the question cannot be answered from the table."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 34,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 58,
+        "qa_pair_a": {
+            "question": "Which building housed section ID 443?\n",
+            "answer": "You mean course id or section id?"
+        },
+        "qa_pair_b": {
+            "question": "I would like to know Fred Keenor's attendance at events.",
+            "answer": "I cannot answer this question based on the information provided in the database. It does not include information about the attendance of specific journalists at events."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 35,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 59,
+        "qa_pair_a": {
+            "question": "Which stations have fewer platforms than 15?",
+            "answer": "Sorry, I cannot answer this question. The database does not contain information about the number of platforms at each station."
+        },
+        "qa_pair_b": {
+            "question": "Hello, can you tell me which city hosted events in the most recent year?",
+            "answer": "Which attribute of the city do you want?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 36,
+            "losses": 10,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 60,
+        "qa_pair_a": {
+            "question": "can you list the elimination times of those with the largest days held?",
+            "answer": "Again, there can only be one with the largest days held, would you like that one? There are  not multiple that can be \"largest\""
+        },
+        "qa_pair_b": {
+            "question": "How many students are in the mathematics department?",
+            "answer": "I do not have access to that information."
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 36,
+            "losses": 11,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 61,
+        "qa_pair_a": {
+            "question": "How many people are from the same birth place?",
+            "answer": "I am sorry, I cannot answer this question. The database does not include information about the number of people from the same birth place."
+        },
+        "qa_pair_b": {
+            "question": "what is the date of settlement on Overtime Meal Subsidy",
+            "answer": "Did you want the date of settlement of claim headers with a type code Overtime Meal Subsidy?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 37,
+            "losses": 11,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 62,
+        "qa_pair_a": {
+            "question": "what is the brand name of id  2 ?",
+            "answer": "Did you mean the brand or name of the camera lens with ID 2?"
+        },
+        "qa_pair_b": {
+            "question": "How many world records are there in the database?",
+            "answer": "I am sorry, I cannot answer this question. The database does not contain information about the number of world records."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 38,
+            "losses": 11,
+            "ties": 13
+        }
+    },
+    {
+        "iteration": 63,
+        "qa_pair_a": {
+            "question": "Which party has the most counties represented?",
+            "answer": "Do you mean which party has the most counties represented in the election?"
+        },
+        "qa_pair_b": {
+            "question": "what is customer Wendell address?",
+            "answer": "Do  you  mean  the customer address of  Wendell"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 38,
+            "losses": 11,
+            "ties": 14
+        }
+    },
+    {
+        "iteration": 64,
+        "qa_pair_a": {
+            "question": "How many of them are from Miami?",
+            "answer": "Do you mean the number of authors who are from Miami?"
+        },
+        "qa_pair_b": {
+            "question": "What is the average rating of movies that are not rated by Brittany Harris?",
+            "answer": "Do you mean the average rating of all movies or the average rating of movies not rated by Brittany Harris?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 38,
+            "losses": 11,
+            "ties": 15
+        }
+    },
+    {
+        "iteration": 65,
+        "qa_pair_a": {
+            "question": "What are the show times for the film titled The Case of the Mystery Weekend at Codling cinema on 21 May?",
+            "answer": "Do you want to know the show times for the film titled The Case of the Mystery Weekend at Codling cinema on 21 May?"
+        },
+        "qa_pair_b": {
+            "question": "What is the highest average monthly rental?",
+            "answer": "what do you mean by \"highest average monthly rental\""
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 39,
+            "losses": 11,
+            "ties": 15
+        }
+    },
+    {
+        "iteration": 66,
+        "qa_pair_a": {
+            "question": "Where does the student live?",
+            "answer": "Which student are you referring to?"
+        },
+        "qa_pair_b": {
+            "question": "What is the most common month for happy hours?",
+            "answer": "Do you mean the month with the highest number of happy hours or the month with the highest average number of happy hours per shop?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 40,
+            "losses": 11,
+            "ties": 15
+        }
+    },
+    {
+        "iteration": 67,
+        "qa_pair_a": {
+            "question": "Who are the top three directors who gave their movies the highest ratings?",
+            "answer": "This question cannot be answered because the available information does not include data about the directors of the movies."
+        },
+        "qa_pair_b": {
+            "question": "Are any of these courses offered by more than one department?",
+            "answer": "Did you mean the same course titles?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 41,
+            "losses": 11,
+            "ties": 15
+        }
+    },
+    {
+        "iteration": 68,
+        "qa_pair_a": {
+            "question": "What about last name Rohan?",
+            "answer": "The emails of the students with the  last name Rohan is derrick.jenkins@example.com"
+        },
+        "qa_pair_b": {
+            "question": "What are the titles of the items that have at least one review with a rank greater than 3 or an average rating greater than 5?",
+            "answer": "Do you mean the titles of the items that have at least one review with a rank greater than 3 and an average rating greater than 5?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "CoSQL",
+            "utility": "CoSQL"
+        },
+        "winner": "CoSQL",
+        "counters": {
+            "wins": 41,
+            "losses": 12,
+            "ties": 15
+        }
+    },
+    {
+        "iteration": 69,
+        "qa_pair_a": {
+            "question": "What's the total number of credits offered by the Accounting and CIS departments?",
+            "answer": "Do you want to know the total number of credits offered by all courses in the Accounting and CIS departments?"
+        },
+        "qa_pair_b": {
+            "question": "what is the name of most winning aircraft ?",
+            "answer": "sorry, I cannot answer this question based on the tables. there is no info about aircraft name. could you please ask other related questions?"
+        },
+        "evaluation": {
+            "completeness": "CoSQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 41,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 70,
+        "qa_pair_a": {
+            "question": "Most GDP in this table?",
+            "answer": "Do  you  mean  the max  GDP"
+        },
+        "qa_pair_b": {
+            "question": "How much HS did all players get?",
+            "answer": "HS column does not exist."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 42,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 71,
+        "qa_pair_a": {
+            "question": "What is the date of birth of the entrepreneurs who invested by Peter Jones or Simon Woodroffe?",
+            "answer": "The database does not have the column 'date of birth' in the 'entrepreneur' table, so I cannot answer this question."
+        },
+        "qa_pair_b": {
+            "question": "What polls are those from?",
+            "answer": "Did you want the poll source for these polls?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 43,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 72,
+        "qa_pair_a": {
+            "question": "What position and how many wins does the forename Fernando have?",
+            "answer": "Do you mean the position of the driver with forename Fernando when he ranked 1 and the number of times that he ranked 1?"
+        },
+        "qa_pair_b": {
+            "question": "What is the total number of reported problems?",
+            "answer": "Do you mean the total number of reported problems for all products?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 44,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 73,
+        "qa_pair_a": {
+            "question": "Which students play games and do sports?",
+            "answer": "Do you mean the students who play video games and do sports?"
+        },
+        "qa_pair_b": {
+            "question": "What are the names of their coaches?",
+            "answer": "Do you mean list the names of players and names of their coaches together?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 45,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 74,
+        "qa_pair_a": {
+            "question": "What are the dates of those transactions?",
+            "answer": "Here is the table of dates of transcations with an amount smaller than 3000. For example, they are 1982-06-06 17:19:00."
+        },
+        "qa_pair_b": {
+            "question": "How tall is the most supported candidate?",
+            "answer": "The database does not contain information about the height of candidates."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 46,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 75,
+        "qa_pair_a": {
+            "question": "What is the average temperature in Chennai?",
+            "answer": "I apologize, but I cannot answer this question based on the provided database. The database does not contain information about weather or temperature."
+        },
+        "qa_pair_b": {
+            "question": "What is the exact address? ",
+            "answer": "Do you mean line 1 of address?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 47,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 76,
+        "qa_pair_a": {
+            "question": "What are all the names of the customers?",
+            "answer": "Did you mean customer details in the table?"
+        },
+        "qa_pair_b": {
+            "question": "How many stations have 11 bikes available?",
+            "answer": "Do you mean the station names that have 11 bikes available?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 48,
+            "losses": 12,
+            "ties": 16
+        }
+    },
+    {
+        "iteration": 77,
+        "qa_pair_a": {
+            "question": "What are the titles of the items that have at least one review with a rank greater than 3 or an average rating greater than 5?",
+            "answer": "Do you mean the titles of the items that have at least one review with a rank greater than 3 and an average rating greater than 5?"
+        },
+        "qa_pair_b": {
+            "question": "Which aircraft did not win any match?",
+            "answer": "What information do you want about the aircrafts? Their names, their ids, or all their information? "
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 48,
+            "losses": 12,
+            "ties": 17
+        }
+    },
+    {
+        "iteration": 78,
+        "qa_pair_a": {
+            "question": "Are there manufacturers on the list located in the United States?\n",
+            "answer": "Sorry, I cannot answer this."
+        },
+        "qa_pair_b": {
+            "question": "What is the combined tonnage of all ships in the database?",
+            "answer": "I am sorry, I cannot answer this question. The database does not contain information about the combined tonnage of all ships."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "tie",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 49,
+            "losses": 12,
+            "ties": 17
+        }
+    },
+    {
+        "iteration": 79,
+        "qa_pair_a": {
+            "question": "Which stations have fewer platforms?",
+            "answer": "Do you mean which stations have fewer than 15 platforms?"
+        },
+        "qa_pair_b": {
+            "question": "the corresponding number of gymnasts?",
+            "answer": "Can you clarity what do you mean by the corresponding number?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 49,
+            "losses": 12,
+            "ties": 18
+        }
+    },
+    {
+        "iteration": 80,
+        "qa_pair_a": {
+            "question": "The column \"product_id \" in Table: \"problems\" refers to column \"product_id\" in Table: \" product\"",
+            "answer": "could  give more info about  this question?"
+        },
+        "qa_pair_b": {
+            "question": "Give me lots not related to transactions.",
+            "answer": "Do you want lots not related to any transaction records?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 50,
+            "losses": 12,
+            "ties": 18
+        }
+    },
+    {
+        "iteration": 81,
+        "qa_pair_a": {
+            "question": "What is the average age of people who live in New York City and are doctors?",
+            "answer": "I am sorry, but the database does not contain information about the city where people reside or their profession. Therefore, I cannot provide you with the average age of people living in New York City who are doctors."
+        },
+        "qa_pair_b": {
+            "question": "Do you know the total credits for the Civil Eng. Department?",
+            "answer": "Did you want the sum of total credits across all students in the Civil Eng. department?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 51,
+            "losses": 12,
+            "ties": 18
+        }
+    },
+    {
+        "iteration": 82,
+        "qa_pair_a": {
+            "question": "What is the appelation of Giana",
+            "answer": "What is Giana?"
+        },
+        "qa_pair_b": {
+            "question": "Which course is taught in the room with the highest capacity?",
+            "answer": "Do you mean the room with the highest capacity in Chandler?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 52,
+            "losses": 12,
+            "ties": 18
+        }
+    },
+    {
+        "iteration": 83,
+        "qa_pair_a": {
+            "question": "How many checking accounts have a balance that is above the average balance of all checking and savings accounts?",
+            "answer": "Do you mean the average balance of all checking accounts or the average balance of all savings accounts?"
+        },
+        "qa_pair_b": {
+            "question": "what is the billing address of germany",
+            "answer": "Billing address is associated with each customer, not country. Please clarify your question."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "CoSQL",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 52,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 84,
+        "qa_pair_a": {
+            "question": "What is the region for each of these?",
+            "answer": "Sorry, I cannot answer this."
+        },
+        "qa_pair_b": {
+            "question": "What is the document type code of the document with ID 11?",
+            "answer": "Do you mean the document type code of the document with ID 7?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "tie"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 53,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 85,
+        "qa_pair_a": {
+            "question": "What is the average rating of apple?",
+            "answer": "Sorry, I cannot answer this question because the database does not contain information about the average rating of specific items."
+        },
+        "qa_pair_b": {
+            "question": "What is the distance of the name Boeing 747-400?",
+            "answer": "did you mean the distance of the aircraft with the name Boeing 747-400?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "CoSQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 54,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 86,
+        "qa_pair_a": {
+            "question": "Out of those customers, who has spent the least amount of money?",
+            "answer": "Do you want the first and last names and id of the customer who has spent the least amount of money?"
+        },
+        "qa_pair_b": {
+            "question": "What are the names of the pilots who have operated flights for companies that offer both cargo and catering services?",
+            "answer": "The database does not contain information about which flights each pilot has operated, so I cannot answer this question."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 55,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 87,
+        "qa_pair_a": {
+            "question": "What is the name of the song with a resolution greater than the minimum resolution of English songs?",
+            "answer": "Do you mean the song with a resolution greater than the minimum resolution of English songs?"
+        },
+        "qa_pair_b": {
+            "question": "which player got first rank and their name",
+            "answer": "Do you want the first name or last name?"
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 56,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 88,
+        "qa_pair_a": {
+            "question": "And which Event Details have more than one participant?\n",
+            "answer": "Do you mean the Event Details of the event?"
+        },
+        "qa_pair_b": {
+            "question": "Can you list down all the bandmates who played guitar in the song Badlands and performed at the back?",
+            "answer": "I'm sorry, I cannot answer this question because I don't have information about which bandmates played guitar in a song."
+        },
+        "evaluation": {
+            "completeness": "QDA-SQL",
+            "relevance": "QDA-SQL",
+            "utility": "QDA-SQL"
+        },
+        "winner": "QDA-SQL",
+        "counters": {
+            "wins": 57,
+            "losses": 12,
+            "ties": 19
+        }
+    },
+    {
+        "iteration": 89,
+        "qa_pair_a": {
+            "question": "Who has the most assessment notes?",
+            "answer": "Do you want to see the students with the most assessment notes or the student with the most assessment notes?"
+        },
+        "qa_pair_b": {
+            "question": "What are names of all the students enrolled in the course?\n",
+            "answer": "Do you mean the first name and last name of all the students enrolled in the course?"
+        },
+        "evaluation": {
+            "completeness": "tie",
+            "relevance": "tie",
+            "utility": "tie"
+        },
+        "winner": "tie",
+        "counters": {
+            "wins": 57,
+            "losses": 12,
+            "ties": 20
+        }
+    }
+]
