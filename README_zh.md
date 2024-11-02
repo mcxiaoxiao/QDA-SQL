@@ -2,6 +2,18 @@
 **其他语言版本: [English](README.md).**</br></br>
 QDA-SQL 是一种利用大型语言模型（LLM）生成多类型问题的多轮对话样本的 Text-to-SQL 数据增强方案。通过给定的问题案例和数据库，生成高质量样本。本文以 CoSQL 数据集中的问题案例和数据库为例，数据集中不包含领域知识，若需要包含领域知识，请在 `goals_of_cosql_dev.csv` 中注明。
 
+## BibTeX 引用
+```
+@misc{sun2024qdasqlquestionsenhanceddialogue,
+      title={QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL}, 
+      author={Yinggang Sun and Ziming Guo and Haining Yu and Chuanyi Liu and Xiang Li and Bingxuan Wang and Xiangzhan Yu and Tiancheng Zhao},
+      year={2024},
+      eprint={2406.10593},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2406.10593}, 
+}
+```
 
 ## 开始使用
 😉 您需要根据[文件规则](#文件夹文件的作用)首先布置好自己的数据集。
