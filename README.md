@@ -1,7 +1,8 @@
 # QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL
 **Other language versions: [中文](README_zh.md).**
 
-QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue samples with diverse question types for Text-to-SQL data augmentation. Given a set of question examples and databases, it produces high-quality samples. This document uses the CoSQL dataset as an example, which does not include domain-specific knowledge. If domain-specific knowledge is required, please specify it in `goals_of_cosql_dev.csv`.
+QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue samples with diverse question types for Text-to-SQL data augmentation. Given a set of question examples and databases, it produces high-quality samples. This document uses the CoSQL dataset as an example, which does not include domain-specific knowledge. If domain-specific knowledge is required, please specify it in `goals_of_cosql_dev.csv`. Additionally, `Supplementary_Material.pdf` contains written information that aids in understanding the paper.
+
 
 ## Citations
 ```
