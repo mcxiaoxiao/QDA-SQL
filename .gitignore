@@ -156,3 +156,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 QAs_generate/tools/llm.py
+QAs_generate/tools/llm.py
