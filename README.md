@@ -1,4 +1,4 @@
-# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  **[Arxiv](https://arxiv.org/abs/2406.10593).**
+# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  [**[Arxiv](https://arxiv.org/abs/2406.10593)**]
 
 **Other language versions: [中文](README_zh.md).**
 
