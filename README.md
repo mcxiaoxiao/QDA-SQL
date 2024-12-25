@@ -11,7 +11,7 @@ QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue s
 😉 To ensure the project runs correctly, you need to first organize your dataset according to the [file structure](#file-structure)
 ### STEP 1: Parse Dataset (Optional)
 (**CSV file has already been generated. If no new data needs to be added, you can proceed to the next step**. New data can be added following the format in `goals_of_cosql_dev.csv`). To parse the dataset, specify the path to `cosql_all_info_dialogs.json` and run `cosql_parse_to_csv.py` to generate `goals_of_cosql_dev.csv`.
-```
+```bash
 python cosql_parse_to_csv.py
 ```
 
@@ -24,7 +24,7 @@ Run `classification_generate_multithread.py` to generate multi-turn dialogues wi
 - `threads`: Number of threads.
 - `projectname`: Name of the folder to save the results.
 
-```
+```bash
 # Example
 python classification_generate_multithread.py --csv_file_path goals_of_cosql_dev.csv --type_needed 10 --start_id 20 --end_id 1000 --threads 5 --projectname "test"
 ```
@@ -35,7 +35,7 @@ Run `critic_merge_classification_generate.py` to merge, filter, and optimize the
 - `csv_file_path`: Path to the CSV file containing the organized goalsql data.
 - `filename`: Name of the folder to save the results.
 
-```
+```bash
 # Example
 python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_dev.csv --projectname "test" --threads 5 --savename "merged_test.json"
 ```
@@ -45,7 +45,7 @@ python critic_merge_classification_generate.py --csv_file_path goals_of_cosql_de
 We follow the SParC evaluation methodology to compute metrics such as Exact Match (EM), Interaction Exact Match (IEM), Execution Match (EX), and Interaction Execution Match (IEX). For detailed definitions, refer to the [SParC GitHub page](https://github.com/taoyds/sparc).</br>
 We have provided an evaluation script `evaluation.py` in the `evaluation` folder, adapted from the SParC test scripts, to evaluate our outputs. An example model output is also provided as `example.json`.
 
-```
+```bash
 # Example
 python evaluation.py --json example.json --etype all --db ../QAs_generate/datasets/cosql_dataset/database --table ../QAs_generate/datasets/cosql_dataset/tables.json
 ```
@@ -78,7 +78,7 @@ These datasets are organized in format compatible with our generation scripts.
 - **QAs_generate/classification_generate_multithread.py**: Runs `classification_generate` in multiple threads to speed up the generation of Q&A samples.
 
 ## Citations
-```
+```BibTeX
 @misc{sun2024qdasqlquestionsenhanceddialogue,
       title={QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL}, 
       author={Yinggang Sun and Ziming Guo and Haining Yu and Chuanyi Liu and Xiang Li and Bingxuan Wang and Xiangzhan Yu and Tiancheng Zhao},
