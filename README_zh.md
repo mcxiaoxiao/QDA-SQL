@@ -73,7 +73,7 @@ python evaluation.py --json example.json --etype all --db ../QAs_generate/datase
 
 
 ## BibTeX
-```
+```BibTeX
 @misc{sun2024qdasqlquestionsenhanceddialogue,
       title={QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL}, 
       author={Yinggang Sun and Ziming Guo and Haining Yu and Chuanyi Liu and Xiang Li and Bingxuan Wang and Xiangzhan Yu and Tiancheng Zhao},
