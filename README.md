@@ -1,6 +1,6 @@
-# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  
+# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  [**[Arxiv](https://arxiv.org/abs/2406.10593)**]
 
-
+**Other language versions: [中文](README_zh.md).**
 ## Abstract
 QDA-SQL leverages large language models (LLMs) to generate multi-turn dialogue samples with diverse question types for Text-to-SQL data augmentation. Given a set of question examples and databases, it produces high-quality samples. This document uses the CoSQL dataset as an example, which does not include domain-specific knowledge. If domain-specific knowledge is required, please specify it in `goals_of_cosql_dev.csv`. Additionally, `Supplementary_Material.pdf` contains written information that aids in understanding the paper.
 
@@ -77,4 +77,15 @@ These datasets are organized in format compatible with our generation scripts.
 
 - **QAs_generate/classification_generate_multithread.py**: Runs `classification_generate` in multiple threads to speed up the generation of Q&A samples.
 
-- **stageflow/**: Example scripts for stageflow.
+## Citations
+```BibTeX
+@misc{sun2024qdasqlquestionsenhanceddialogue,
+      title={QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL}, 
+      author={Yinggang Sun and Ziming Guo and Haining Yu and Chuanyi Liu and Xiang Li and Bingxuan Wang and Xiangzhan Yu and Tiancheng Zhao},
+      year={2024},
+      eprint={2406.10593},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2406.10593}, 
+}
+```
