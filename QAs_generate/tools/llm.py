@@ -3,13 +3,13 @@ import json
 import time
 from zhipuai import ZhipuAI
 import re
-import openai
+from openai import OpenAI
 import os
 import random
 from IPython.display import Markdown
  
 
-
+client1 = OpenAI(api_key="") # please fill in your own API key
 
 def remove_sql_blocks(text):
     cleaned_text = text.replace('sql', '',1)
@@ -18,57 +18,25 @@ def remove_sql_blocks(text):
         return code_blocks[0]
     else: 
         return  text
-    
 
-# openai
-def ask_question_gpt(question):
-    openai.api_key = "xxxxx"    # please fill in your own API key
-    prompt = question
-    max_retries = 5
-    retry_count = 0
-    def request(prompt):
-        # 调用GPT-4 API的函数
+def ask_question_gpt(prompt):
+    messages = [{"role": "user", "content": prompt}]
+    for attempt in range(10):  # Retry up to 10 times
         try:
-            print("waiting response from GPT....")
-            result = openai.ChatCompletion.create(model="gpt-4", messages=[{"role": "user", "content": prompt}])
-            print("Received response from GPT.")
-        
-            # 读取文件中的 token 计数
-            # print("Reading token count from file...")
-            with open("token_count.txt", "r") as file:
-                token_count = file.read()
-                if token_count == '':
-                    token_count = 0
-                else:
-                    token_count = int(token_count)
-            print(f"Current token count: {token_count}")
-            token_count += int(result['usage']['total_tokens'])
-            print(f"New token count: {token_count}")
-    
-            with open("token_count.txt", "w") as file:
-                # print(token_count)
-                file.write(str(token_count))
-    
-            return(result['choices'][0]['message']['content'].strip())
-        
+            response = client1.chat.completions.create(
+                model='gpt-4o',
+                messages=messages,
+                temperature=0.0
+            )
+            response_message = response.choices[0].message.content
+            return response_message
         except Exception as e:
-            print(f"An error occurred: {e}")
-            return None
-
-    while retry_count < max_retries:
-        result = request(prompt)
-        # 调试用：
-        # result = '[{"text": "Which circuit has the highest altitude?", "sql": "SELECT name, MAX(alt) FROM circuits","des":"这是描述1"}, {"text": "Who is the oldest driver?", "sql": "SELECT forename, surname, MAX(dob) FROM drivers","des":"这是描述2"}]'
-        
-        if result is not None:
-            return result
-        else:
-            print("Failed to make request, retrying...")
-        retry_count += 1
-        time.sleep(3)  # 暂停一秒再重试，以防止过于频繁的请求
-    return "请求错误"
-    
-        
+            print(e)
+            if attempt < 50:  # Don't wait after the last attempt
+                time.sleep(2)  # Wait for 2 seconds before retrying
+            else:
+                print(f"An error occurred with GPT request after 10 attempts: {e}")
+                return "failed"
 
 # glm
 def ask_question_glm(question):
