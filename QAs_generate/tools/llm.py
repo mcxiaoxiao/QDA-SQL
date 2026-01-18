@@ -3,13 +3,13 @@ import json
 import time
 from zhipuai import ZhipuAI
 import re
-from openai import OpenAI
+import openai
 import os
 import random
 from IPython.display import Markdown
  
 
-client1 = OpenAI(api_key="") # please fill in your own API key
+
 
 def remove_sql_blocks(text):
     cleaned_text = text.replace('sql', '',1)
@@ -18,31 +18,62 @@ def remove_sql_blocks(text):
         return code_blocks[0]
     else: 
         return  text
+    
 
-def ask_question_gpt(prompt):
-    messages = [{"role": "user", "content": prompt}]
-    for attempt in range(10):  # Retry up to 10 times
+# openai
+def ask_question_gpt(question):
+    openai.api_key = "your_openai_api_key" 
+    prompt = question
+    max_retries = 5
+    retry_count = 0
+    def request(prompt):
+
         try:
-            response = client1.chat.completions.create(
-                model='gpt-4o',
-                messages=messages,
-                temperature=0.0
-            )
-            response_message = response.choices[0].message.content
-            return response_message
+            print("waiting response from GPT....")
+            result = openai.ChatCompletion.create(model="gpt-4", messages=[{"role": "user", "content": prompt}])
+            print("Received response from GPT.")
+        
+            # print("Reading token count from file...")
+            with open("token_count.txt", "r") as file:
+                token_count = file.read()
+                if token_count == '':
+                    token_count = 0
+                else:
+                    token_count = int(token_count)
+            print(f"Current token count: {token_count}")
+            token_count += int(result['usage']['total_tokens'])
+            print(f"New token count: {token_count}")
+    
+            with open("token_count.txt", "w") as file:
+                # print(token_count)
+                file.write(str(token_count))
+    
+            return(result['choices'][0]['message']['content'].strip())
+        
         except Exception as e:
-            print(e)
-            if attempt < 50:  # Don't wait after the last attempt
-                time.sleep(2)  # Wait for 2 seconds before retrying
-            else:
-                print(f"An error occurred with GPT request after 10 attempts: {e}")
-                return "failed"
+            print(f"An error occurred: {e}")
+            return None
+
+    while retry_count < max_retries:
+        result = request(prompt)
+        # 调试用：
+        # result = '[{"text": "Which circuit has the highest altitude?", "sql": "SELECT name, MAX(alt) FROM circuits","des":"这是描述1"}, {"text": "Who is the oldest driver?", "sql": "SELECT forename, surname, MAX(dob) FROM drivers","des":"这是描述2"}]'
+        
+        if result is not None:
+            return result
+        else:
+            print("Failed to make request, retrying...")
+        retry_count += 1
+        time.sleep(3)  # 暂停一秒再重试，以防止过于频繁的请求
+    return "请求错误"
+    
+        
 
 # glm
 def ask_question_glm(question):
     
     
-    client = ZhipuAI(api_key="xxxxx") # 请填写您自己的APIKey
+    client = ZhipuAI(api_key="") # 请填写您自己的APIKey
     
     response = client.chat.asyncCompletions.create(
         model="glm-4",  # 填写需要调用的模型名称
@@ -70,24 +101,35 @@ def ask_question_glm(question):
         
 #gemini
 def ask_question_gemini(question):
-    gemini_api_keys = [
-    "xxxxx",
-    # 添加更多API密钥
-    ]
+    gemini_api_keys = ['your-api']  # 请填写您的多个API Key
     selected_gemini_api_key = random.choice(gemini_api_keys)
     print("waiting response from Gemini....")
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key="+selected_gemini_api_key
     
+    url = "https://api.vectorengine.ai/v1beta/models/gemini-3-pro-preview:generateContent"
+
+    payload = json.dumps({
+       "contents": [
+          {
+             "role": "user",
+             "parts": [
+                {
+                   "text": question
+                }
+             ]
+          }
+       ],
+       "generationConfig": {
+          "temperature": 1,
+          "topP": 1,
+          "thinkingConfig": {
+             "includeThoughts": True,
+             "thinkingBudget": 26240
+          }
+       }
+    })
     headers = {
-        'Content-Type': 'application/json'
-    }
-    
-    data = {
-        "contents": [{
-            "parts": [{
-                "text": question
-            }]
-        }]
+       'Authorization': 'Bearer '+selected_gemini_api_key,
+       'Content-Type': 'application/json'
     }
     
     max_retries = 5
@@ -95,21 +137,22 @@ def ask_question_gemini(question):
     response = None
     
     while retry_count < max_retries:
-        response = requests.post(url, headers=headers, json=data,timeout = 30)
+
+        response = requests.request("POST", url, headers=headers, data=payload)
     
         if response.status_code == 200:
             break
         else:
             print("Failed to make request, retrying...")
             retry_count += 1
-            time.sleep(3)  # 暂停一秒再重试，以防止过于频繁的请求
+            time.sleep(6)  # 暂停一秒再重试，以防止过于频繁的请求
     
     if response is not None and response.status_code == 200:
         response_json = response.json()
         print("Received response from Gemini.")
         # generated_text = response_json['candidates'][0]['content']['parts'][0]['text']
         # 安全地访问嵌套的字典和列表
-        generated_text = response_json.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[0].get('text', '')
+        generated_text = response_json.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[1].get('text', '')
         return generated_text
     else:
         print("Error: Failed after {} retries".format(max_retries))

@@ -101,21 +101,35 @@ def ask_question_glm(question):
         
 #gemini
 def ask_question_gemini(question):
-    gemini_api_keys = ['your_gemini_api_key1', 'your_gemini_api_key2']  # 请填写您的多个API Key
+    gemini_api_keys = ['your-api']  # 请填写您的多个API Key
     selected_gemini_api_key = random.choice(gemini_api_keys)
     print("waiting response from Gemini....")
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key="+selected_gemini_api_key
     
+    url = "https://api.vectorengine.ai/v1beta/models/gemini-3-pro-preview:generateContent"
+
+    payload = json.dumps({
+       "contents": [
+          {
+             "role": "user",
+             "parts": [
+                {
+                   "text": question
+                }
+             ]
+          }
+       ],
+       "generationConfig": {
+          "temperature": 1,
+          "topP": 1,
+          "thinkingConfig": {
+             "includeThoughts": True,
+             "thinkingBudget": 26240
+          }
+       }
+    })
     headers = {
-        'Content-Type': 'application/json'
-    }
-    
-    data = {
-        "contents": [{
-            "parts": [{
-                "text": question
-            }]
-        }]
+       'Authorization': 'Bearer '+selected_gemini_api_key,
+       'Content-Type': 'application/json'
     }
     
     max_retries = 5
@@ -123,7 +137,8 @@ def ask_question_gemini(question):
     response = None
     
     while retry_count < max_retries:
-        response = requests.post(url, headers=headers, json=data,timeout = 30)
+
+        response = requests.request("POST", url, headers=headers, data=payload)
     
         if response.status_code == 200:
             break
@@ -137,7 +152,7 @@ def ask_question_gemini(question):
         print("Received response from Gemini.")
         # generated_text = response_json['candidates'][0]['content']['parts'][0]['text']
         # 安全地访问嵌套的字典和列表
-        generated_text = response_json.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[0].get('text', '')
+        generated_text = response_json.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[1].get('text', '')
         return generated_text
     else:
         print("Error: Failed after {} retries".format(max_retries))
