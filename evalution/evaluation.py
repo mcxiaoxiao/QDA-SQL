@@ -592,6 +592,7 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
                     predict = match.group(1)
                     predict = "SELECT " + predict
                     predict = predict.replace("\n"," ")
+                    predict = predict.replace("sql"," ")
                     predict = predict.replace(";","")
                     
                 else:
@@ -662,7 +663,9 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
                 p_str = ' '.join(p_str.split())
                 g_str = ' '.join(g_str.split())
                 p_str = p_str.replace("\"","'")
+                p_str = p_str.replace("sql","")
                 g_str = g_str.replace("\"","'")
+                g_str = g_str.replace("sql","")
                 print("p_str: "+p_str)
                 print("g_str: "+g_str)
 
