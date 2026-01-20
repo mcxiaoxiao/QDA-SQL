@@ -34,7 +34,8 @@ def parse_json(content):
 logger.info(f'Loading input data from: {input_file_path}')
 with open(input_file_path, 'r', encoding='utf-8') as infile:
     items = json.load(infile)
-
+    #只选择一部分的输入
+    items = items[:100]
 
 # 初始化输出文件
 if os.path.exists(output_file_path):
@@ -90,18 +91,8 @@ for item in tqdm(items):
             outfile.seek(0)
             current_data = json.load(outfile)
             
-            # 检查当前对话是否已存在
-            existing_index = -1
-            for i, existing_item in enumerate(current_data):
-                if existing_item['db_name'] == item['db_name']:
-                    existing_index = i
-                    break
-            
-            # 更新或添加对话
-            if existing_index >= 0:
-                current_data[existing_index] = item
-            else:
-                current_data.append(item)
+        
+            current_data.append(item)
             
             # 重新写入完整数据
             outfile.seek(0)

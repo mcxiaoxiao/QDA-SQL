@@ -1,0 +1,69 @@
+[
+  {
+    "db_name": "car_1",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "which horsepower is hight?",
+        "type": [
+          "CANNOT_UNDERSTAND"
+        ]
+      },
+      {
+        "isUser": false,
+        "text": "Can you please clarify your question?",
+        "query": "",
+        "predict_type": "answerable",
+        "predict": "```sql\nSELECT MAX(Horsepower) FROM cars_data;\n```"
+      },
+      {
+        "isUser": true,
+        "text": "what is the highest horsepower on the table?",
+        "type": "answerable"
+      },
+      {
+        "isUser": false,
+        "text": "",
+        "query": "SELECT Horsepower FROM CARS_DATA ORDER BY Horsepower DESC LIMIT 1",
+        "predict_type": "answerable",
+        "predict": "```sql\nSELECT MAX(Horsepower) FROM cars_data;\n```"
+      },
+      {
+        "isUser": true,
+        "text": "how many cars data on the table?",
+        "type": "answerable"
+      },
+      {
+        "isUser": false,
+        "text": "",
+        "query": "SELECT count(*) FROM CARS_DATA",
+        "predict_type": "answerable",
+        "predict": "```sql\nSELECT COUNT(*) FROM cars_data;\n```"
+      },
+      {
+        "isUser": true,
+        "text": "how many cylinders on the table?",
+        "type": "answerable"
+      },
+      {
+        "isUser": false,
+        "text": "",
+        "query": "SELECT sum(cylinders) FROM CARS_DATA",
+        "predict_type": "answerable",
+        "predict": "Answer: ```sql\nSELECT COUNT(DISTINCT Cylinders) FROM cars_data;\n```"
+      },
+      {
+        "isUser": true,
+        "text": "thanks",
+        "type": "improper"
+      },
+      {
+        "isUser": false,
+        "text": "Thank you! Goodbye.",
+        "query": "",
+        "predict_type": "improper",
+        "predict": "You are welcome!"
+      }
+    ]
+  }
+]

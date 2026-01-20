@@ -10,7 +10,8 @@ from tools.llm import ask_question_gemini
 
 # 配置参数
 input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev201-f.json'  # 输出文件路径
+output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev补充1.json'  # 输出文件路径
+missing_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev200-.json' # 存在缺失需要补充补充的文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -48,7 +49,12 @@ logger.info(f'Loading input data from: {input_file_path}')
 with open(input_file_path, 'r', encoding='utf-8') as infile:
     items = json.load(infile)
     #只选择一部分的输入
-    items = items[201:]
+    items = items[:]
+
+# 加载需要补充的原文件
+logger.info(f'Loading missing data from: {missing_file_path}')
+with open(missing_file_path, 'r', encoding='utf-8') as infile:
+    missing_items = json.load(infile)
 
 
 # 初始化输出文件
@@ -60,12 +66,19 @@ with open(output_file_path, 'w', encoding='utf-8') as outfile:
 
 # 遍历处理每个对话
 for item in tqdm(items):
-
     # 统计进度：当前是第几个 item，还剩几个
     current_idx = items.index(item) + 1
     remaining = len(items) - current_idx
     logger.success(f"Progress: {current_idx}/{len(items)} processed, {remaining} remaining.")
+    
+    # 如果发现item第一个turns中的第一个text在missing_items中出现过任何一次，就跳过直接遍历下一个item
+    if any(item['turns'][0]['text'] == missing_item['turns'][0]['text'] for missing_item in missing_items):
+        # 报告缺失的item
+        logger.info(f"Item with question '{item['turns'][0]['text']}' is exist in {missing_file_path}. Neglect it.")
+        continue
 
+    logger.warning(f"Item with question '{item['turns'][0]['text']}' is not exist in {missing_file_path}. Process it.")
+    
     try:
         # 初始化对话历史
         history = []
