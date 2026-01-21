@@ -7665,9 +7665,9 @@
       {
         "isUser": false,
         "text": "",
-        "query": "select count(*) from Countries;",
+        "query": "select count(*) from Country;",
         "predict_type": "answerable",
-        "predict": "```sql\nSELECT\n  count(*)\nFROM Countries;\n```"
+        "predict": "```sql\nSELECT\n  count(*)\nFROM country;\n```"
       },
       {
         "isUser": true,
@@ -7677,9 +7677,9 @@
       {
         "isUser": false,
         "text": "",
-        "query": "select count(distinct Language) from countrieslanguage",
+        "query": "select count(distinct Language) from countrylanguage",
         "predict_type": "answerable",
-        "predict": "SQL: ```sql\nSELECT\n  count(*)\nFROM countrieslanguage;\n```"
+        "predict": "SQL: ```sql\nSELECT\n  count(*)\nFROM countrylanguage;\n```"
       },
       {
         "isUser": true,
@@ -7691,7 +7691,7 @@
         "text": "",
         "query": "select SurfaceArea from Country where Code = 'AFG';",
         "predict_type": "answerable",
-        "predict": "SQL: ```sql\nSELECT\n  SurfaceArea\nFROM countries\nWHERE\n  Code = 'AFG';\n```"
+        "predict": "SQL: ```sql\nSELECT\n  SurfaceArea\nFROM country\nWHERE\n  Code = 'AFG';\n```"
       },
       {
         "isUser": true,
@@ -7706,7 +7706,7 @@
         "predict": "You are welcome!"
       }
     ]
-  },  
+  },
   {
     "db_name": "world_1",
     "turns": [

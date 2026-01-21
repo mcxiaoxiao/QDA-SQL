@@ -463,20 +463,20 @@ def print_scores(scores, etype):
         print('\n====================== EXACT MATCHING ACCURACY =====================')
         exact_scores = [scores[level]['exact'] for level in levels]
         print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format("exact match", *exact_scores))
-        # print('\n---------------------PARTIAL MATCHING ACCURACY----------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['acc'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('\n---------------------PARTIAL MATCHING ACCURACY----------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['acc'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
-        # print('---------------------- PARTIAL MATCHING RECALL ----------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['rec'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('---------------------- PARTIAL MATCHING RECALL ----------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['rec'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
-        # print('---------------------- PARTIAL MATCHING F1 --------------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['f1'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('---------------------- PARTIAL MATCHING F1 --------------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['f1'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
     print("\n\n{:20} {:20} {:20} {:20} {:20} {:20}".format("", *turns))
     counts = [scores[turn]['count'] for turn in turns]

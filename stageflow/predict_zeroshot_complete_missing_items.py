@@ -8,9 +8,12 @@ from tqdm import tqdm
 from tools.db_detail import bird_getdesc
 from tools.llm import ask_question_gemini
 
+# 这个脚本的作用是补齐predict_zeroshot.py生成过程中因为各种各样原因而缺失的项
+# 具体来说，就是将missing_file_path中的项补充到output_file_path中
+
 # 配置参数
 input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev补充1.json'  # 输出文件路径
+output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev补充4.json'  # 输出文件路径
 missing_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev200-.json' # 存在缺失需要补充补充的文件路径
 
 # 确保输出目录存在

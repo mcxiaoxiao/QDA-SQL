@@ -8,6 +8,8 @@ from tqdm import tqdm
 from tools.db_detail import bird_getdesc
 from tools.llm import ask_question_gemini
 
+# 这个脚本不考虑stateflow中所谓的类型识别，只考虑SQL语句的生成，贴合CoSQL和Sparc中纯SQL任务的要求；但考虑到控制变量，这里的输出结果不适合在QDASQL论文主实验的那张表里用
+
 # 配置参数
 input_file_path = 'testsets/cosql_dev_SQLonly.json'  # 修改为testset文件夹下的cosql_dev.json
 output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev_SQLonly.json'  # 输出文件路径
