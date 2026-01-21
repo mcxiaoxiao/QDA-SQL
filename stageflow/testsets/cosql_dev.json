@@ -430,9 +430,7 @@
       {
         "isUser": true,
         "text": "which horsepower is hight?",
-        "type": [
-          "CANNOT_UNDERSTAND"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -852,7 +850,7 @@
       {
         "isUser": true,
         "text": "Thanks!",
-        "type": []
+        "type": ""
       }
     ]
   },
@@ -1047,9 +1045,7 @@
       {
         "isUser": true,
         "text": "Yes.",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -1069,9 +1065,7 @@
       {
         "isUser": true,
         "text": "How many students in this table?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1146,7 +1140,7 @@
       {
         "isUser": true,
         "text": "bye",
-        "type": []
+        "type": ""
       }
     ]
   },
@@ -1201,9 +1195,7 @@
       {
         "isUser": true,
         "text": "hey",
-        "type": [
-          "GREETING"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -1223,9 +1215,7 @@
       {
         "isUser": true,
         "text": "which ones are London bound?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1655,9 +1645,7 @@
       {
         "isUser": true,
         "text": "What does the ones and twos mean in the table?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1782,9 +1770,7 @@
       {
         "isUser": true,
         "text": "How many people visited the plaza museum in 2009?\n",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1794,9 +1780,7 @@
       {
         "isUser": true,
         "text": "What is the average number of tickets sold at the Plaza Museum?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1906,7 +1890,7 @@
       {
         "isUser": true,
         "text": "List the first names of all left hand players please",
-        "type": []
+        "type": ""
       },
       {
         "isUser": true,
@@ -1966,9 +1950,7 @@
       {
         "isUser": true,
         "text": "Yes!",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -2373,9 +2355,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -2395,9 +2375,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -2532,9 +2510,7 @@
       {
         "isUser": true,
         "text": "yes.\n\n",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -2554,9 +2530,7 @@
       {
         "isUser": true,
         "text": "how is about the summer?",
-        "type": [
-          "CANNOT_UNDERSTAND"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -2566,9 +2540,7 @@
       {
         "isUser": true,
         "text": "how many female contestants are there?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -2588,9 +2560,7 @@
       {
         "isUser": true,
         "text": "yes can tell me?\n",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -2860,9 +2830,7 @@
       {
         "isUser": true,
         "text": "Awesome!  Can you show me which of the contestants received the most votes and show me that total please?",
-        "type": [
-          "NOT_RELATED"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -3642,9 +3610,7 @@
       {
         "isUser": true,
         "text": "exactly",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -3664,9 +3630,7 @@
       {
         "isUser": true,
         "text": "exactly",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -4311,9 +4275,7 @@
       {
         "isUser": true,
         "text": "Which of these is spoken in the most other countries?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -4333,9 +4295,7 @@
       {
         "isUser": true,
         "text": "How many people in Canada speak Chinese?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -4795,9 +4755,7 @@
       {
         "isUser": true,
         "text": "Yes please.",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -5877,9 +5835,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -5964,9 +5920,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -6356,9 +6310,7 @@
       {
         "isUser": true,
         "text": "No.",
-        "type": [
-          "NEGATE"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -6383,9 +6335,7 @@
       {
         "isUser": true,
         "text": "Cool who was the winner?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -6525,9 +6475,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -6557,9 +6505,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -6604,9 +6550,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -6636,9 +6580,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -6858,9 +6800,7 @@
       {
         "isUser": true,
         "text": "NO",
-        "type": [
-          "NEGATE"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -7010,9 +6950,7 @@
       {
         "isUser": true,
         "text": "What ship type was in those battles?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -7057,9 +6995,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -7174,9 +7110,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -7321,9 +7255,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -7483,9 +7415,7 @@
       {
         "isUser": true,
         "text": "yes.",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -7635,9 +7565,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -7717,7 +7645,7 @@
       {
         "isUser": true,
         "text": "thanks",
-        "type": []
+        "type": ""
       }
     ]
   },
@@ -8097,9 +8025,7 @@
       {
         "isUser": true,
         "text": "Nope, that's all.",
-        "type": [
-          "NEGATE"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -8234,9 +8160,7 @@
       {
         "isUser": true,
         "text": "yes, please",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -8281,9 +8205,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -8328,9 +8250,7 @@
       {
         "isUser": true,
         "text": "List the name of all professionals with the same state as Taryn. ",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -8910,9 +8830,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -8947,9 +8865,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -9154,9 +9070,7 @@
       {
         "isUser": true,
         "text": "Yes I do\n",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -9191,9 +9105,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "GREETING"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -9213,9 +9125,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -9580,9 +9490,7 @@
       {
         "isUser": true,
         "text": "That would be fine if it is easier for you.  ",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10147,9 +10055,7 @@
       {
         "isUser": true,
         "text": "What is the region for each of these?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -10424,9 +10330,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10436,9 +10340,7 @@
       {
         "isUser": true,
         "text": "What type of car making by german country?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -10458,9 +10360,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10570,9 +10470,7 @@
       {
         "isUser": true,
         "text": "YES \n",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10672,9 +10570,7 @@
       {
         "isUser": true,
         "text": "Give me the names of all female students on ground",
-        "type": [
-          "CANNOT_UNDERSTAND"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -10739,9 +10635,7 @@
       {
         "isUser": true,
         "text": "Yes please.",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10816,9 +10710,7 @@
       {
         "isUser": true,
         "text": "is there any data providing who the transcript was recorded by?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -10863,9 +10755,7 @@
       {
         "isUser": true,
         "text": "Yes!",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -10920,10 +10810,7 @@
       {
         "isUser": true,
         "text": "Yes!  Exactly that please!",
-        "type": [
-          "CANNOT_ANSWER",
-          "AFFIRM"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -11078,7 +10965,7 @@
       {
         "isUser": true,
         "text": "What is the average life expectancy in countries where English is the official language?",
-        "type": []
+        "type": ""
       },
       {
         "isUser": true,
@@ -12043,9 +11930,7 @@
       {
         "isUser": true,
         "text": "No.",
-        "type": [
-          "NEGATE"
-        ]
+        "type": "improper"
       },
       {
         "isUser": false,
@@ -12160,9 +12045,7 @@
       {
         "isUser": true,
         "text": "What is the destination of airline United Airlines?",
-        "type": [
-          "CANNOT_UNDERSTAND"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -12202,9 +12085,7 @@
       {
         "isUser": true,
         "text": "yes flight numbers of all flights on Delta Airlines",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -12424,9 +12305,7 @@
       {
         "isUser": true,
         "text": "yes\n",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -12706,9 +12585,7 @@
       {
         "isUser": true,
         "text": "What is the name of the stadium with the highest average  lowest attendance?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -13048,9 +12925,7 @@
       {
         "isUser": true,
         "text": "Thank you!  Can you update this list to show only the Document_IDs and corresponding document_names for the documents that have 2 or more paragraphs, and then add the values from the paragraph text category?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -13550,7 +13425,7 @@
       {
         "isUser": true,
         "text": "Which of those cities have Chinese as their official language?",
-        "type": []
+        "type": ""
       },
       {
         "isUser": false,
@@ -13610,9 +13485,7 @@
       {
         "isUser": true,
         "text": "How many customers are there?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -13822,9 +13695,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": true,
@@ -14254,7 +14125,7 @@
       {
         "isUser": true,
         "text": "What are the dates first registered of all students from the country Iceland?",
-        "type": []
+        "type": ""
       },
       {
         "isUser": false,
@@ -14414,9 +14285,7 @@
       {
         "isUser": true,
         "text": "yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -14541,9 +14410,7 @@
       {
         "isUser": true,
         "text": "the course name",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -14663,9 +14530,7 @@
       {
         "isUser": true,
         "text": "Yes, I do.",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -15410,9 +15275,7 @@
       {
         "isUser": true,
         "text": "Yes",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -15767,9 +15630,7 @@
       {
         "isUser": true,
         "text": "Yes please, in a table if possible?",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -15789,9 +15650,7 @@
       {
         "isUser": true,
         "text": "Yes please",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,
@@ -15866,9 +15725,7 @@
       {
         "isUser": true,
         "text": "Yes please!",
-        "type": [
-          "AFFIRM"
-        ]
+        "type":"answerable"
       },
       {
         "isUser": false,

@@ -23,6 +23,10 @@ for item in data:
             # 检查是否包含AMBIGUOUS
             elif 'AMBIGUOUS' in type_list:
                 turn['type'] = 'ambiguous'
+            # 检查是否包含CANNOT_ANSWER
+            elif 'CANNOT_ANSWER' in type_list or 'CANNOT_UNDERSTAND' in type_list:
+                turn['type'] = 'unanswerable'
+
 
 # 将修改后的数据写回文件
 with open(file_path, 'w', encoding='utf-8') as f:

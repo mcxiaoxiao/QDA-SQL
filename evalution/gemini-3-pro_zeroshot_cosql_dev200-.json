@@ -1438,9 +1438,7 @@
       {
         "isUser": true,
         "text": "how is about the summer?",
-        "type": [
-          "CANNOT_UNDERSTAND"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
@@ -1452,9 +1450,7 @@
       {
         "isUser": true,
         "text": "how many female contestants are there?",
-        "type": [
-          "CANNOT_ANSWER"
-        ]
+        "type": "unanswerable"
       },
       {
         "isUser": false,
