@@ -9,7 +9,7 @@ from tools.db_detail import bird_getdesc
 from tools.llm import ask_question_gemini
 
 # 配置参数
-input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的cosql_dev.json
+input_file_path = 'testsets/sparc_dev_SQLonly.json'  # 修改为testset文件夹下的cosql_dev.json
 output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev201-f.json'  # 输出文件路径
 
 # 确保输出目录存在

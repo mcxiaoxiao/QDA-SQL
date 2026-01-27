@@ -6,13 +6,14 @@ import copy
 import re
 from tqdm import tqdm
 from tools.db_detail import bird_getdesc
-from tools.llm import ask_question_gemini
+# from tools.llm import ask_question_gemini
+from tools.llm import ask_question_gpt_request
 
 # 这个脚本不考虑stateflow中所谓的类型识别，只考虑SQL语句的生成，贴合CoSQL和Sparc中纯SQL任务的要求；但考虑到控制变量，这里的输出结果不适合在QDASQL论文主实验的那张表里用
 
 # 配置参数
-input_file_path = 'testsets/cosql_dev_SQLonly.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev_SQLonly.json'  # 输出文件路径
+input_file_path = 'testsets/sparc_dev_SQLonly.json'  # 修改为testset文件夹下的dev.json
+output_file_path = 'outputs/gpt-5.2-zeroshot_sparc_dev_SQLonly.json'  # 输出文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -37,7 +38,7 @@ logger.info(f'Loading input data from: {input_file_path}')
 with open(input_file_path, 'r', encoding='utf-8') as infile:
     items = json.load(infile)
     #只选择一部分的输入
-    items = items[:100]
+    items = items[:]
 
 # 初始化输出文件
 if os.path.exists(output_file_path):
@@ -72,7 +73,7 @@ for item in tqdm(items):
                 logger.info(f'Query IS with history: {query_is}')
                 
                 # 使用Gemini API获取响应
-                response = ask_question_gemini(query_is)
+                response = ask_question_gpt_request(query_is)
                 logger.info(f'Received response: {response}')
                 # 解析响应
                 result = parse_json(response)
