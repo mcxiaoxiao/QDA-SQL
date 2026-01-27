@@ -13,7 +13,7 @@ from tools.llm import ask_question_gpt_request
 
 # 配置参数
 input_file_path = 'testsets/sparc_dev_SQLonly.json'  # 修改为testset文件夹下的dev.json
-output_file_path = 'outputs/gpt-5.2-zeroshot_sparc_dev_SQLonly.json'  # 输出文件路径
+output_file_path = 'outputs/gpt-5-zeroshot_sparc_dev_SQLonly.json'  # 输出文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -63,11 +63,11 @@ for item in tqdm(items):
             if index + 1 < len(item['turns']):
                 question = item['turns'][index]['text']
                 description = bird_getdesc(item['db_name'])
-                system_is = "You are a SQL question detector and you need to categorize the type of user question and answer the user with the requested content"
+                system_is = "You are a SQL question detector and you need to categorize the type of user question and answer the user with the requested content Generate SQL that exactly matches the schema and keywords—no extras. eg: - Use * for all; no COUNT(*) unless asked.  - No WHERE 1=1, no ORDER BY rand(), no back-ticks. - DONT CHANGE COLUMN NAME casually"
                 
                 # 构建带有历史的查询提示词
                 history_str = "Previous Conversation History:" + "\n".join([f"User: {h['user']}\nAssistant: {h['assistant']}" for h in history]) + "\n" if history else ""
-                query_is = 'Database Structure:' + description + history_str + "User Question:" + question + '\nReply user questions based on database structure and conversation history in SQL format, output in json format {"reply":""} don\'t output other text or explanation other than the json and sql'
+                query_is = system_is + '\nDatabase Structure:' + description + history_str + "User Question:" + question + '\nReply user questions based on database structure and conversation history in SQL format, output in json format {"reply":""} don\'t output other text or explanation other than the json and sql'
                 
                 logger.info(f'Processing question: {question}' + f' Index: {index}')
                 logger.info(f'Query IS with history: {query_is}')

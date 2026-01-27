@@ -1,0 +1,126 @@
+[
+  {
+    "db_name": "flight_2",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "What are all the airlines?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM AIRLINES",
+        "predict": "SELECT * FROM airlines;"
+      },
+      {
+        "isUser": true,
+        "text": "Of these, which is Jetblue Airways?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+        "predict": "SELECT * FROM airlines WHERE Airline = 'Jetblue Airways';"
+      },
+      {
+        "isUser": true,
+        "text": "What is the country corresponding it?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Country FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+        "predict": "SELECT Country FROM airlines WHERE Airline = 'Jetblue Airways';"
+      }
+    ]
+  },
+  {
+    "db_name": "flight_2",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "What are all the abbreviations?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Abbreviation FROM AIRLINES",
+        "predict": "SELECT Abbreviation FROM airlines;"
+      },
+      {
+        "isUser": true,
+        "text": "What is the abbreviation for Jetblue Airways?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Abbreviation FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+        "predict": "SELECT Abbreviation FROM airlines WHERE Airline = 'Jetblue Airways';"
+      }
+    ]
+  },
+  {
+    "db_name": "flight_2",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "List all airline names and their abbreviations."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Airline ,  Abbreviation FROM AIRLINES",
+        "predict": "SELECT Airline, Abbreviation FROM airlines;"
+      },
+      {
+        "isUser": true,
+        "text": "Of these, list only those in the USA."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Airline ,  Abbreviation FROM AIRLINES WHERE Country  =  \"USA\"",
+        "predict": "SELECT Airline, Abbreviation FROM airlines WHERE Country = 'USA';"
+      }
+    ]
+  },
+  {
+    "db_name": "flight_2",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "Find all information about the airport in the city Anthony."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM AIRPORTS WHERE city  =  \"Anthony\"",
+        "predict": "SELECT * FROM airports WHERE City = 'Anthony';"
+      },
+      {
+        "isUser": true,
+        "text": "What is the airport code and airport name?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT AirportCode ,  AirportName FROM AIRPORTS WHERE city  =  \"Anthony\"",
+        "predict": "SELECT AirportCode, AirportName FROM airports WHERE City = 'Anthony';"
+      }
+    ]
+  },
+  {
+    "db_name": "flight_2",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "What are all the airlines?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM AIRLINES",
+        "predict": "SELECT * FROM airlines;"
+      },
+      {
+        "isUser": true,
+        "text": "How many are there?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT count(*) FROM AIRLINES",
+        "predict": "SELECT COUNT(*) FROM airlines;"
+      }
+    ]
+  }
+]
