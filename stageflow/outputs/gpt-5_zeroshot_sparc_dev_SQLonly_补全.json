@@ -1,0 +1,217 @@
+[
+  {
+    "db_name": "world_1",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "What are the distinct forms of government in the continent of Africa?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT DISTINCT GovernmentForm FROM country WHERE Continent  =  \"Africa\"",
+        "predict": "SELECT DISTINCT GovernmentForm FROM country WHERE Continent = 'Africa'"
+      },
+      {
+        "isUser": true,
+        "text": "How many are there?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  \"Africa\"",
+        "predict": "SELECT COUNT(DISTINCT GovernmentForm) FROM country WHERE Continent = 'Africa'"
+      }
+    ]
+  },
+  {
+    "db_name": "tvshow",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "Show me all the information about the Italian TV Channels."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM TV_Channel WHERE Country = \"Italy\"",
+        "predict": "SELECT * FROM TV_Channel WHERE Country = 'Italy';"
+      },
+      {
+        "isUser": true,
+        "text": "How about the Polish TV Channels?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT * FROM TV_Channel WHERE Country = \"Poland\"",
+        "predict": "SELECT * FROM TV_Channel WHERE Country = 'Poland';"
+      },
+      {
+        "isUser": true,
+        "text": "Which country has the most of TV Channels? List the country and number of TV Channels it has."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Country ,  count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+        "predict": "SELECT Country, COUNT(*) FROM TV_Channel GROUP BY Country ORDER BY COUNT(*) DESC LIMIT 1;"
+      }
+    ]
+  },
+  {
+    "db_name": "tvshow",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "Tell me the TV Channel of the cartoon titled \"The Eyes of Despero!\"."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Channel FROM Cartoon WHERE Title = \"The Eyes of Despero!\"",
+        "predict": "SELECT Channel FROM Cartoon WHERE Title = 'The Eyes of Despero!';"
+      },
+      {
+        "isUser": true,
+        "text": "How about this channel's series name?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT series_name FROM TV_Channel WHERE id IN (SELECT Channel FROM Cartoon WHERE Title = \"The Eyes of Despero!\")",
+        "predict": "SELECT series_name FROM TV_Channel WHERE id = (SELECT Channel FROM Cartoon WHERE Title = 'The Eyes of Despero!');"
+      },
+      {
+        "isUser": true,
+        "text": "Tell me the number of different series names and contents in the TV Channel table."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT count(DISTINCT series_name) ,  count(DISTINCT content) FROM TV_Channel",
+        "predict": "SELECT COUNT(DISTINCT series_name), COUNT(DISTINCT Content) FROM TV_Channel;"
+      }
+    ]
+  },
+  {
+    "db_name": "tvshow",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "Tell me the package option for the series named \"Rock TV\"."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Package_Option FROM TV_Channel WHERE series_name = \"Rock TV\"",
+        "predict": "SELECT Package_Option FROM TV_Channel WHERE series_name = 'Rock TV'"
+      },
+      {
+        "isUser": true,
+        "text": "tell me the language of this series."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Language FROM TV_Channel WHERE series_name = \"Rock TV\"",
+        "predict": "SELECT Language FROM TV_Channel WHERE series_name = 'Rock TV'"
+      },
+      {
+        "isUser": true,
+        "text": "List the language used least number of TV Channel. List language and number of TV Channel."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT LANGUAGE ,  count(*) FROM TV_Channel GROUP BY LANGUAGE ORDER BY count(*) ASC LIMIT 1",
+        "predict": "SELECT Language, COUNT(*) AS number_of_TV_Channel FROM TV_Channel GROUP BY Language HAVING COUNT(*) = (SELECT MIN(cnt) FROM (SELECT COUNT(*) AS cnt FROM TV_Channel GROUP BY Language) AS sub);"
+      }
+    ]
+  },
+  {
+    "db_name": "tvshow",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "Tell me the author of the cartoon \"The Rise of the Blue Beetle!\""
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Written_by FROM Cartoon WHERE Title = \"The Rise of the Blue Beetle!\"",
+        "predict": "SELECT Written_by FROM Cartoon WHERE Title = 'The Rise of the Blue Beetle!';"
+      },
+      {
+        "isUser": true,
+        "text": "How about its director?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Directed_by FROM Cartoon WHERE Title = \"The Rise of the Blue Beetle!\"",
+        "predict": "SELECT Directed_by FROM Cartoon WHERE Title = 'The Rise of the Blue Beetle!';"
+      },
+      {
+        "isUser": true,
+        "text": "What is its TV Channel?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT T1.series_name FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T2.Title = \"The Rise of the Blue Beetle!\"",
+        "predict": "SELECT Channel FROM Cartoon WHERE Title = 'The Rise of the Blue Beetle!';"
+      }
+    ]
+  },
+  {
+    "db_name": "tvshow",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "tell me the country of the TV Channel for the series named \"Sky Radio\"."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Country FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+        "predict": "SELECT Country FROM TV_Channel WHERE series_name = 'Sky Radio';"
+      },
+      {
+        "isUser": true,
+        "text": "How about its content?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+        "predict": "SELECT Content FROM TV_Channel WHERE series_name = 'Sky Radio';"
+      },
+      {
+        "isUser": true,
+        "text": "I want to know the title of all Cartoons showed on TV Channel with series name \"Sky Radio\"."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT T2.Title FROM TV_Channel AS T1 JOIN Cartoon AS T2 ON T1.id = T2.Channel WHERE T1.series_name = \"Sky Radio\"",
+        "predict": "SELECT Title FROM Cartoon WHERE Channel = 'Sky Radio';"
+      }
+    ]
+  },
+  {
+    "db_name": "poker_player",
+    "turns": [
+      {
+        "isUser": true,
+        "text": "What is the birth date of each poker player?"
+      },
+      {
+        "isUser": false,
+        "query": "SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID",
+        "predict": "SELECT people.Birth_Date FROM people JOIN poker_player ON people.People_ID = poker_player.People_ID;"
+      },
+      {
+        "isUser": true,
+        "text": "Sort the list by the poker player's earnings."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Earnings",
+        "predict": "SELECT people.Birth_Date FROM people JOIN poker_player ON people.People_ID = poker_player.People_ID ORDER BY poker_player.Earnings;"
+      },
+      {
+        "isUser": true,
+        "text": "Give me the result for the player with the lowest earnings."
+      },
+      {
+        "isUser": false,
+        "query": "SELECT T1.Birth_Date FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Earnings ASC LIMIT 1",
+        "predict": "SELECT people.Birth_Date FROM people JOIN poker_player ON people.People_ID = poker_player.People_ID ORDER BY poker_player.Earnings LIMIT 1;"
+      }
+    ]
+  }
+]
