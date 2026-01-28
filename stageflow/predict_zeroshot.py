@@ -6,11 +6,11 @@ import copy
 import re
 from tqdm import tqdm
 from tools.db_detail import bird_getdesc
-from tools.llm import ask_question_gemini
+from tools.llm import ask_question_gpt_request
 
 # 配置参数
 input_file_path = 'testsets/sparc_dev_SQLonly.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev201-f.json'  # 输出文件路径
+output_file_path = 'outputs/gpt-5_zeroshot_cosql_dev.json'  # 输出文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -84,7 +84,7 @@ for item in tqdm(items):
                 logger.info(f'Query IS with history: {query_is}')
                 
                 # 使用Gemini API获取响应
-                response = ask_question_gemini(query_is)
+                response = ask_question_gpt_request(query_is)
                 logger.info(f'Received response: {response}')
                 sql_query = ''
                 # 解析响应
@@ -107,7 +107,7 @@ for item in tqdm(items):
                     logger.info(f'SQL Query Prompt with history: {query_final}')
                     
                     # 使用Gemini API获取SQL响应
-                    sql_response = ask_question_gemini(query_final)
+                    sql_response = ask_question_gpt_request(query_final)
                     logger.info(f'Received SQL response: {sql_response}')
                     
                     # 提取SQL查询
