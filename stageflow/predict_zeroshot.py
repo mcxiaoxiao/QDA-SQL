@@ -9,8 +9,8 @@ from tools.db_detail import bird_getdesc
 from tools.llm import ask_question_gpt_request
 
 # 配置参数
-input_file_path = 'testsets/sparc_dev_SQLonly.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gpt-5_zeroshot_cosql_dev.json'  # 输出文件路径
+input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的cosql_dev.json
+output_file_path = 'outputs/gpt-5_zeroshot_cosql_dev0-63buquan.json'  # 输出文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -48,7 +48,7 @@ logger.info(f'Loading input data from: {input_file_path}')
 with open(input_file_path, 'r', encoding='utf-8') as infile:
     items = json.load(infile)
     #只选择一部分的输入
-    items = items[201:]
+    items = items[:63]
 
 
 # 初始化输出文件
@@ -78,7 +78,7 @@ for item in tqdm(items):
                 
                 # 构建带有历史的查询提示词
                 history_str = "Previous Conversation History:" + "\n".join([f"User: {h['user']}\nAssistant: {h['assistant']}" for h in history]) + "\n" if history else ""
-                query_is = 'Database Structure:' + description + "Classification Definition:" + definition + history_str + "User Question:" + question + '\nCategorize and answer user questions based on database structure and conversation history, output in json format {"type":"", "reply":""} don\'t output other text or explanation'
+                query_is = 'Database Structure:' + system_is + description + "Classification Definition:" + definition + history_str + "User Question:" + question + '\nCategorize and answer user questions based on database structure and conversation history, output in json format {"type":"", "reply":""} don\'t output other text or explanation'
                 
                 logger.info(f'Processing question: {question}' + f' Index: {index}')
                 logger.info(f'Query IS with history: {query_is}')
@@ -99,7 +99,7 @@ for item in tqdm(items):
                     logger.info(f'Answerable question: {question}' + f' Index: {index}')
 
                     # 构建SQL查询提示词，包含对话历史
-                    system = f"/* Given the following tables in the sqlite database: */\n{description}\n/* Answer the following dialogue questions based on the above database information, conversation history, and using only SQL: */\n"
+                    system = f"/* Given the following tables in the sqlite database: */\n{description}\n/* Answer the following dialogue questions based on the above database information, conversation history, and using only SQL that exactly matches the schema and keywords—no extras. eg: - Use * for all; no COUNT(*) unless asked.  - No WHERE 1=1, no ORDER BY rand(), no back-ticks. - DONT CHANGE COLUMN NAME casually: */\n"
                     sql_history_str = "Conservation History:\n".join([f"User: {h['user']}\nAnswer: {h['assistant']}\n SQL: {h['sql']}" for h in history]) + "\n" if history else ""
                     query_final = system + sql_history_str + "Current User Question:" + question
                     

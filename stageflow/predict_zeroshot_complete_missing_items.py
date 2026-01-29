@@ -12,9 +12,9 @@ from tools.llm import ask_question_gemini
 # 具体来说，就是将missing_file_path中的项补充到output_file_path中
 
 # 配置参数
-input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的cosql_dev.json
-output_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev补充4.json'  # 输出文件路径
-missing_file_path = 'outputs/gemini-3-pro_zeroshot_cosql_dev200-.json' # 存在缺失需要补充补充的文件路径
+input_file_path = 'testsets/cosql_dev.json'  # 修改为testset文件夹下的dev.json
+output_file_path = 'outputs/gpt-5_zeroshot_cosql_dev_补全.json'  # 输出文件路径
+missing_file_path = 'outputs/gpt-5_zeroshot_cosql_dev.json' # 存在缺失需要补充补充的文件路径
 
 # 确保输出目录存在
 os.makedirs(os.path.dirname(output_file_path), exist_ok=True)

@@ -101,7 +101,7 @@ def ask_question_glm(question):
         
 #gemini
 def ask_question_gemini(question):
-    gemini_api_keys = ['your-api']  # 请填写您的多个API Key
+    gemini_api_keys = ['your gemini api key']  # 请填写您的多个API Key
     selected_gemini_api_key = random.choice(gemini_api_keys)
     print("waiting response from Gemini....")
     
@@ -120,7 +120,7 @@ def ask_question_gemini(question):
        ],
        "generationConfig": {
           "temperature": 1,
-          "topP": 1,
+          "topP": 	0.95,
           "thinkingConfig": {
              "includeThoughts": True,
              "thinkingBudget": 26240
@@ -132,27 +132,92 @@ def ask_question_gemini(question):
        'Content-Type': 'application/json'
     }
     
-    max_retries = 5
+    max_retries = 10
     retry_count = 0
     response = None
     
     while retry_count < max_retries:
-
-        response = requests.request("POST", url, headers=headers, data=payload)
-    
-        if response.status_code == 200:
-            break
-        else:
-            print("Failed to make request, retrying...")
+        try:
+            response = requests.request("POST", url, headers=headers, data=payload, timeout=120)  # 设置30秒超时
+            if response.status_code == 200:
+                break
+            else:
+                print("Failed to make request, retrying...")
+                retry_count += 1
+                time.sleep(6)  # 暂停6秒再重试，以防止过于频繁的请求
+        except requests.exceptions.Timeout:
+            print("Request timed out, retrying...")
             retry_count += 1
-            time.sleep(6)  # 暂停一秒再重试，以防止过于频繁的请求
+            time.sleep(6)
+        except Exception as e:
+            print(f"An error occurred: {e}, retrying...")
+            retry_count += 1
+            time.sleep(6)
     
     if response is not None and response.status_code == 200:
         response_json = response.json()
         print("Received response from Gemini.")
-        # generated_text = response_json['candidates'][0]['content']['parts'][0]['text']
         # 安全地访问嵌套的字典和列表
         generated_text = response_json.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[1].get('text', '')
+        return generated_text
+    else:
+        print("Error: Failed after {} retries".format(max_retries))
+        return "请求错误"
+
+# GPT request using vectorengine API
+def ask_question_gpt_request(question):
+    gpt_api_keys = ['your gpt api key']  # 请填写您的多个API Key
+    selected_gpt_api_key = random.choice(gpt_api_keys)
+    print("waiting response from GPT....")
+    
+    url = "https://api.vectorengine.ai/v1/chat/completions"
+
+    payload = json.dumps({
+       "stream": False,
+       "messages": [
+          {
+             "role": "user",
+             "content": question
+          }
+       ],
+       "max_tokens": 1000,
+       "temperature": 0.8,
+       "model": "gpt-5"
+    })
+    headers = {
+       'Accept': 'application/json',
+       'Authorization': 'Bearer '+selected_gpt_api_key,
+       'Content-Type': 'application/json'
+    }
+    
+    max_retries = 20
+    retry_count = 0
+    response = None
+    
+    while retry_count < max_retries:
+        try:
+            response = requests.request("POST", url, headers=headers, data=payload, timeout=120)  # 设置120秒超时
+            if response.status_code == 200 and response.json().get('choices', [{}])[0].get('message', {}).get('content', '') != '':
+                break
+            else:
+                print("Failed to make request, retrying...")
+                retry_count += 1
+                time.sleep(6)  # 暂停6秒再重试，以防止过于频繁的请求
+        except requests.exceptions.Timeout:
+            print("Request timed out, retrying...")
+            retry_count += 1
+            time.sleep(6)
+        except Exception as e:
+            print(f"An error occurred: {e}, retrying...")
+            retry_count += 1
+            time.sleep(6)
+    
+    if response is not None and response.status_code == 200:
+        response_json = response.json()
+        print("Received response from GPT.")
+        # 安全地访问嵌套的字典和列表
+        # print(response_json)
+        generated_text = response_json.get('choices', [{}])[0].get('message', {}).get('content', '')
         return generated_text
     else:
         print("Error: Failed after {} retries".format(max_retries))
