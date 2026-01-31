@@ -2,3 +2,4 @@ zhipuai
 openai
 pandas
 sqlparse
+loguru
