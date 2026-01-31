@@ -3,3 +3,12 @@ openai
 pandas
 sqlparse
 loguru
+numpy
+requests
+python-dotenv
+pydantic
+typing-extensions
+asyncio
+aiohttp
+json5
+tqdm
