@@ -528,8 +528,6 @@ def eval_exec_match(db_path, db, p_str, g_str):
         bool: True if the predicted and gold standard queries produce the same results, False otherwise.
     """
 
-
-
     # Preprocess the queries
     p_str = p_str.replace("```", "").replace(";", "").replace("`", "'").replace(" ", " ").replace("\"", "'")
     g_str = g_str.replace("```", "").replace(";", "").replace("`", "'").replace(" ", " ").replace("\"", "'")
@@ -557,7 +555,7 @@ def eval_exec_match(db_path, db, p_str, g_str):
     print("Pred Result")
     print(p_r)
 
-    # Compare the results
+
     if "ORDER BY" in g_str:
         # If the gold standard query has an ORDER BY clause, the results must be identical
         return g_r == p_r
@@ -723,9 +721,9 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
             
             if etype in ["all", "exec"]:
                 try:
-                    print("测试exec")
+                    # print("测试exec")
                     exec_score = eval_exec_match(db_dir,db_name, p_str, g_str)
-                    print("exec测试完毕")
+                    # print("exec测试完毕")
                     print("eval_exec:"+str(exec_score))
                 except Exception as e:
                     print(f"*** 在执行eval_exec_match时发生异常: {e} ***")
