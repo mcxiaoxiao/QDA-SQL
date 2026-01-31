@@ -463,20 +463,20 @@ def print_scores(scores, etype):
         print('\n====================== EXACT MATCHING ACCURACY =====================')
         exact_scores = [scores[level]['exact'] for level in levels]
         print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format("exact match", *exact_scores))
-        # print('\n---------------------PARTIAL MATCHING ACCURACY----------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['acc'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('\n---------------------PARTIAL MATCHING ACCURACY----------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['acc'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
-        # print('---------------------- PARTIAL MATCHING RECALL ----------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['rec'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('---------------------- PARTIAL MATCHING RECALL ----------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['rec'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
-        # print('---------------------- PARTIAL MATCHING F1 --------------------------')
-        # for type_ in partial_types:
-        #     this_scores = [scores[level]['partial'][type_]['f1'] for level in levels]
-        #     print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
+        print('---------------------- PARTIAL MATCHING F1 --------------------------')
+        for type_ in partial_types:
+            this_scores = [scores[level]['partial'][type_]['f1'] for level in levels]
+            print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format(type_, *this_scores))
 
     print("\n\n{:20} {:20} {:20} {:20} {:20} {:20}".format("", *turns))
     counts = [scores[turn]['count'] for turn in turns]
@@ -492,6 +492,76 @@ def print_scores(scores, etype):
         exact_scores = [scores[turn]['exact'] for turn in turns]
         print("{:20} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f} {:<20.3f}".format("exact match", *exact_scores))
 
+
+
+def execute_query(db, query):
+    """
+    在独立的线程内执行数据库查询。
+    创建自己的数据库连接和游标来执行查询。
+    """
+    conn = sqlite3.connect(db)
+    cursor = conn.cursor()
+    cursor.execute(query)
+    result = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return result
+    
+# Define the exception you want to raise when the timeout occurs
+class TimeoutException(Exception):
+    pass
+
+# Define the signal handler function
+def signal_handler(signum, frame):
+    raise TimeoutException
+    
+def eval_exec_match(db_path, db, p_str, g_str):
+    """Evaluates the EX of SQL query.
+
+    Args:
+        db_path (str): Path to the SQLite database directory.
+        db (str): Name of the SQLite database file.
+        p_str (str): The predicted SQL query.
+        g_str (str): The gold standard SQL query.
+
+    Returns:
+        bool: True if the predicted and gold standard queries produce the same results, False otherwise.
+    """
+
+    # Preprocess the queries
+    p_str = p_str.replace("```", "").replace(";", "").replace("`", "'").replace(" ", " ").replace("\"", "'")
+    g_str = g_str.replace("```", "").replace(";", "").replace("`", "'").replace(" ", " ").replace("\"", "'")
+
+    # Handle potential '=' issues
+    split_index = p_str.find('=')
+    if split_index != -1:
+        p_str = p_str[:split_index] + ' = ' + p_str[split_index + 1:]
+    split_index = g_str.find('=')
+    if split_index != -1:
+        g_str = g_str[:split_index] + ' = ' + g_str[split_index + 1:]
+
+    # Execute the queries
+    db_file = os.path.join(db_path, db, db + ".sqlite")
+
+    print(db_file)
+    g_r = execute_query(db_file, g_str)
+    p_r = execute_query(db_file, p_str)
+
+
+
+    # Print the results for debugging
+    print("Gold Result")
+    print(g_r)
+    print("Pred Result")
+    print(p_r)
+
+
+    if "ORDER BY" in g_str:
+        # If the gold standard query has an ORDER BY clause, the results must be identical
+        return g_r == p_r
+    else:
+        # If the gold standard query doesn't have an ORDER BY clause, the results must have the same elements (regardless of order)
+        return set(g_r) == set(p_r)
 
 def evaluate(json_file_path, db_dir, etype, kmaps):
     # 加载JSON文件
@@ -520,6 +590,7 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
                     predict = match.group(1)
                     predict = "SELECT " + predict
                     predict = predict.replace("\n"," ")
+                    predict = predict.replace("sql"," ")
                     predict = predict.replace(";","")
                     
                 else:
@@ -590,7 +661,9 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
                 p_str = ' '.join(p_str.split())
                 g_str = ' '.join(g_str.split())
                 p_str = p_str.replace("\"","'")
+                p_str = p_str.replace("sql","")
                 g_str = g_str.replace("\"","'")
+                g_str = g_str.replace("sql","")
                 print("p_str: "+p_str)
                 print("g_str: "+g_str)
 
@@ -648,10 +721,12 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
             
             if etype in ["all", "exec"]:
                 try:
-                    
-                    exec_score = eval_exec_match(db, p_str, g_str, p_sql, g_sql)
+                    # print("测试exec")
+                    exec_score = eval_exec_match(db_dir,db_name, p_str, g_str)
+                    # print("exec测试完毕")
                     print("eval_exec:"+str(exec_score))
-                except:
+                except Exception as e:
+                    print(f"*** 在执行eval_exec_match时发生异常: {e} ***")
                     exec_score = False
                 if exec_score:
                     scores[hardness]['exec'] += 1
@@ -748,79 +823,7 @@ def evaluate(json_file_path, db_dir, etype, kmaps):
     print("符合条件对话总数：" + str(len(glist)))
 
 
-def eval_exec_match(db, p_str, g_str, pred, gold):
-    """
-    return 1 if the values between prediction and gold are matching
-    in the corresponding index. Currently not support multiple col_unit(pairs).
-    """
-def execute_query(db, query):
-    """
-    在独立的线程内执行数据库查询。
-    创建自己的数据库连接和游标来执行查询。
-    """
-    conn = sqlite3.connect(db)
-    cursor = conn.cursor()
-    cursor.execute(query)
-    result = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    return result
-    
-# Define the exception you want to raise when the timeout occurs
-class TimeoutException(Exception):
-    pass
 
-# Define the signal handler function
-def signal_handler(signum, frame):
-    raise TimeoutException
-    
-def eval_exec_match(db, p_str, g_str, pred, gold):
-    print("Connect to db:" + str(db))
-    # print("执行第一个查询1")
-    with ThreadPoolExecutor(max_workers=1) as executor:
-        # print("执行第一个查询2")
-        # 执行第一个查询
-        future = executor.submit(execute_query, db, p_str)
-
-        signal.signal(signal.SIGALRM, signal_handler)
-        # Start the timer, this will raise TimeoutException after 10 seconds
-        signal.alarm(10)
-        # print("执行第一个查询3")
-        try:
-            p_res = future.result(timeout=10)  # 设置超时时间为10秒
-        except TimeoutError:
-            print("操作超时")
-            return False
-        except Exception as e:
-            print(f"执行出错: {e}")
-            return False
-            
-        # print("执行第二个查询")
-        # 执行第二个查询
-        future = executor.submit(execute_query, db, g_str)
-        try:
-            q_res = future.result(timeout=10)  # 设置超时时间为10秒
-        except TimeoutError:
-            print("操作超时")
-            return False
-        except Exception as e:
-            print(f"执行出错: {e}")
-            return False
-        finally:
-            # Cancel the timer if the operation completes in time
-            signal.alarm(0)
-
-    def res_map(res, val_units):
-        rmap = {}
-        for idx, val_unit in enumerate(val_units):
-            key = tuple(val_unit[1]) if not val_unit[2] else (val_unit[0], tuple(val_unit[1]), tuple(val_unit[2]))
-            rmap[key] = [r[idx] for r in res]
-        return rmap
-
-    p_val_units = [unit[1] for unit in pred['select'][1]]
-    q_val_units = [unit[1] for unit in gold['select'][1]]
-
-    return res_map(p_res, p_val_units) == res_map(q_res, q_val_units)
 
 
 # Rebuild SQL functions for value evaluation
