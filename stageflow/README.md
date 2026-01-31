@@ -12,9 +12,6 @@ Below is a brief description of each `.py` file:
 - **predict_IS_complex.py**  
     Inference code without question type recognition functionality, focusing on complex reasoning.
 
-- **predict.py**  
-    Standard inference code for general reasoning tasks.
-
 - **predict_zeroshot.py**  
     Zero-shot inference code for open-source general reasoning tasks.
 
