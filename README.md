@@ -1,4 +1,4 @@
-# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  
+# QDA-SQL: Questions Enhanced Dialogue Augmentation for Multi-Turn Text-to-SQL  [Arxiv](https://arxiv.org/abs/2412.17867) [CICAI2026](https://cicai.caai.cn/)
 
 
 ## Abstract
