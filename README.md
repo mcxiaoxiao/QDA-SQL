@@ -79,3 +79,7 @@ These datasets are organized in format compatible with our generation scripts.
 - **QAs_generate/classification_generate_multithread.py**: Runs `classification_generate` in multiple threads to speed up the generation of Q&A samples.
 
 - **stageflow/**: Example scripts for stageflow.
+
+## Star History
+
+[![Star History Chart](star-history.svg)](https://github.com/mcxiaoxiao/QDA-SQL)
